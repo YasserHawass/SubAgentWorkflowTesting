@@ -1,4 +1,8 @@
-# TC ids that fail because of a filed product bug, one per line: <TC id> <bug report path>
+# TC ids (or method names, when one TC id has several methods) failing because of a filed product bug: <id> <bug report path>
 # CI still runs and reports these; it only turns red for failures NOT listed here.
 # Remove a line as soon as the site fixes the bug (the test will then pass).
 TC-LOGOUT-08 tests/reports/bugs/logout-1.md
+tcProducts10_nonNumericId tests/reports/bugs/products-1.md
+tcSearch07_ampersand tests/reports/bugs/search-1.md
+tcCart09b_quantityNegative tests/reports/bugs/cart-1.md
+tcCart09c_quantityNonNumeric tests/reports/bugs/cart-2.md

@@ -121,3 +121,34 @@ TC1 Register User · TC2 Login correct · TC3 Login incorrect · TC4 Logout · T
 - The `user` object's keys differ from the create form's: `birth_day`, `first_name` and `last_name` (not `birth_date`, `firstname`, `lastname`), plus `id`. `password` and `mobile_number` are not returned.
 - In a form body a raw `+` decodes to a space. For `curl -d`, URL-encode `+` as `%2B`. Playwright `FormData` encodes it correctly.
 - A transient **HTTP 503 HTML "heavy load"** page is possible, like the Cloudflare 520. Treat both as `env` or `flake`.
+
+## Discovered during `products` (2026-09-29)
+
+- `/products` shows **all 34 products on one page**, with no pagination or lazy load. The heading DOM text is "All Products", which CSS renders as "ALL PRODUCTS" (use `innerText` for the rendered case).
+- The card root is `.product-image-wrapper`. A hover overlay **duplicates** the name, price and Add to cart, so scope to `.productinfo`. The "Add to cart" `<a>` has no href, so it has no link role.
+- On the detail page the wrapper is `.product-information`. The name is its only heading, and the price is a bare `<span>` ("Rs. N"). Rows read "Category: Women > Tops" (API `usertype > category`), "Availability: In Stock", "Condition: New", "Brand: Polo".
+- `#quantity` is `type=number` with a default of 1. `fill("abc")` throws, so use `pressSequentially`. 0, -1 and 1.5 are kept as typed. Letters leave the field empty.
+- `/product_details/999999` and `/product_details/0` return HTTP 200 with an **empty** detail page, not a 404.
+- **BUG candidate: `/product_details/abc` returns 404 with the Django DEBUG page** ("DEBUG = True", URLconf listing). Same root cause as bugs/logout-1.md: DEBUG is on in production.
+- `page.request()` GETs work for `/api/productsList` and `/product_details/<id>`, which is fast for bulk checks.
+
+## Discovered during `search` (2026-09-29)
+
+- Search is a GET to **`/products?search=<term>`**, and the URL works directly and survives a reload. The heading changes to "Searched Products" ("SEARCHED PRODUCTS" rendered).
+- The box is `getByPlaceholder("Search Product")` (`#search_product`, name `search`). The button is an icon-only `<button id="submit_search">` with **no accessible name**, so it's tier 5.
+- **Search matches the name OR the category**, case-insensitively. For example, "Dress" matches a "Sleeves Top and Short" product in category Dress. Counts: Tshirt 6, Dress 9, shirt 13, top 14.
+- No-match input (`zzzxqv123`, `<b>x</b>`, `'; --`, `%`) gives 0 cards and keeps the heading. Markup is not rendered.
+- An empty search (`?search=`) keeps "All Products" and lists all 34.
+- **BUG (low): `&` is not URL-encoded** by the search form. `&` becomes `?search=&`, which is treated as an empty search and lists everything, so terms like "Tops & Shirts" break.
+- `POST /api/searchProduct` returns HTTP 200 even when the body says 400.
+
+## Discovered during `cart` (2026-09-29)
+
+- Add to cart is an ajax **`GET /add_to_cart/<id>?quantity=N`**, followed by the "Added!" modal `#cartModal` (View Cart / Continue Shopping). Wait on the modal or on the response.
+- Cart rows are `tr#product-<id>` with cells `.cart_price`, `.cart_quantity` (a **disabled button**, not an input, so the quantity can't be edited in the cart), `.cart_total_price` and `a.cart_quantity_delete`. **There is no grand total** on `/view_cart`.
+- The same product added twice gives **one row with quantity 2**. The header shows **no cart count**.
+- Empty cart: `#empty_cart` is always in the DOM, hidden when there are items. Its text is "Cart is empty! Click here to buy products." and "here" links to `/products`. On a fresh empty cart "Proceed To Checkout" is absent; after deleting the last row it's present but hidden.
+- **BUG: an empty quantity** (`/add_to_cart/1?quantity=`) returns **HTTP 500**.
+- **BUG: a negative quantity is accepted**: -1 creates a cart line with total Rs. -500. Quantity 0 is also accepted (total Rs. 0). 999 works (Rs. 499500).
+- The recommended items carousel is `#recommended-item-carousel` with `.item.active`. It shows 3 cards per slide and **auto-advances about every 6s**, so locate cards by name, not position. In its markup, product 3's name `<p>` holds "Rs. 1000".
+- Locator gotcha: a `has:` locator inside `filter()` resolves relative to each row. Don't repeat the `#cart_info_table` scope inside it.
