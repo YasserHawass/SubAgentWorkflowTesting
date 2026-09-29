@@ -152,3 +152,31 @@ TC1 Register User · TC2 Login correct · TC3 Login incorrect · TC4 Logout · T
 - **BUG: a negative quantity is accepted**: -1 creates a cart line with total Rs. -500. Quantity 0 is also accepted (total Rs. 0). 999 works (Rs. 499500).
 - The recommended items carousel is `#recommended-item-carousel` with `.item.active`. It shows 3 cards per slide and **auto-advances about every 6s**, so locate cards by name, not position. In its markup, product 3's name `<p>` holds "Rs. 1000".
 - Locator gotcha: a `has:` locator inside `filter()` resolves relative to each row. Don't repeat the `#cart_info_table` scope inside it.
+
+## Discovered during `checkout` (2026-09-29)
+
+- A guest clicking "Proceed To Checkout" opens an in-page modal `#checkoutModal` (title "Checkout", text "Register / Login account to proceed on checkout."). It has a "Register / Login" link (→ `/login`) and a "Continue On Cart" dismiss button. The URL stays `/view_cart`.
+- **Timing gotcha:** the "Proceed To Checkout" click handler is bound by an inline script at the end of `<body>`, so a click before the `load` event does nothing. Use `page.waitForLoadState(LOAD)` first.
+- When logged in, Proceed To Checkout does `window.location = '/checkout'`, so Back returns to `/view_cart`.
+- Addresses: `ul#address_delivery` and `ul#address_invoice`. Lines in order are title+name ("Mr. Auto Tester"), company, address1, address2, "City State Zip", country, mobile. The two blocks are identical apart from their heading. Headings are CSS upper-cased, so `innerText` gives "YOUR DELIVERY ADDRESS"; use `textContent`.
+- The review table has a **"Total Amount"** row equal to the sum of the row totals. There's still no grand total on `/view_cart` itself.
+- The comment `<textarea>` has no placeholder or label. The text above it is "If you would like to add a comment about your order, please write it in the field below."
+- `/checkout` **logged in with an empty cart** shows addresses, no rows, Rs. 0, **and "Place Order" is still offered**. Whether an empty order can be placed is checked in `order`.
+- `/checkout` **as a guest** shows empty address blocks with a stray "." name line, Rs. 0, and a logged-out header.
+- A guest cart merges into the account on login: a guest add plus a logged-in add of the same product gives quantity 2.
+
+## Discovered during `order` (2026-09-29)
+
+- After Pay, the success page `/payment_done/<id>` shows the heading `data-qa="order-placed"` "Order Placed!" and "Congratulations! Your order has been confirmed!". Download Invoice → `/download_invoice/<id>`. Continue → `/`, and the cart is then empty.
+- **The "order id" is the cart total in Rs.**: `/payment_done/500` for one Blue Top, `/payment_done/0` for an empty cart. It isn't unique per order, so match it by pattern.
+- `/payment` renders the card form for **anyone**, including logged out with an empty cart, with no redirect.
+- The empty payment form is blocked client-side by HTML5 `required` on all 5 inputs.
+- **No server-side card validation (BUGS):** a card number "abcd" or CVC "xyz" is accepted, expiry 01/2000 is accepted, and a logged-in user with an **empty cart can pay** (→ `/payment_done/0`). This is a demo site with no payment processor, but these are still spec violations.
+- `/delete_account` shows `data-qa="account-deleted"` "Account Deleted!". Its page `<title>` is wrongly "Automation Exercise - Account Created". Continue → `/`, logged out.
+- Back from `/payment_done` shows an empty `/payment` form; Forward returns to `/payment_done`. There's no error page.
+
+## Discovered during `invoice` (2026-09-29)
+
+- Download Invoice gives `invoice.txt` (`text/plain`, HTTP 200). The content is `Hi <first_name> <last_name>, Your total purchase amount is <N>. Thank you`, with no "Rs.". The name is the account's first and last name, not the signup name or the card name.
+- **The invoice is built from the session name plus the amount in the URL.** User B fetching A's `/download_invoice/500` gets B's own name, so there's no cross-user leak. But **any amount can be forged** (`/download_invoice/<any N>`), and **with no session** it returns HTTP 200 "Hi , Your total purchase amount is 500. Thank you" (BUG: no auth guard).
+- Tip: `TestUsers.newUser()` always uses "Auto Tester", so give users a unique first name when a test asserts on the invoice name.

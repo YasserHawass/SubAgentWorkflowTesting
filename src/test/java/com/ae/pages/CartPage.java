@@ -1,10 +1,12 @@
 package com.ae.pages;
 
 import com.ae.config.Config;
+import com.ae.pages.components.GuestCheckoutModal;
 import com.ae.utils.Ads;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
+import com.microsoft.playwright.options.LoadState;
 
 /** /view_cart. */
 public class CartPage {
@@ -43,6 +45,26 @@ public class CartPage {
     /** "Proceed To Checkout" (an <a> without href, so it has no link role). */
     public Locator checkoutButton() {
         return page.getByText("Proceed To Checkout");
+    }
+
+    /** Logged-in user: clicks "Proceed To Checkout"; the site opens /checkout. */
+    public CheckoutPage proceedToCheckout() {
+        // The click handler is bound by an inline script at the end of <body>, so a click before the load event
+        // is a no-op. Wait for load (a state, not a sleep) first.
+        page.waitForLoadState(LoadState.LOAD);
+        Ads.dismissIfPresent(page);
+        checkoutButton().click();
+        return new CheckoutPage(page);
+    }
+
+    /** Guest: clicks "Proceed To Checkout"; the site shows the "Register / Login" prompt and stays on /view_cart. */
+    public GuestCheckoutModal proceedToCheckoutAsGuest() {
+        // Verified live: the click handler is bound by an inline script at the end of the body, so a click before
+        // the load event can do nothing. Wait for load (a state, not a sleep) first.
+        page.waitForLoadState(LoadState.LOAD);
+        Ads.dismissIfPresent(page);
+        checkoutButton().click();
+        return new GuestCheckoutModal(page);
     }
 
     /** Every product row in the table body. */

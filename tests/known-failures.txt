@@ -6,3 +6,8 @@ tcProducts10_nonNumericId tests/reports/bugs/products-1.md
 tcSearch07_ampersand tests/reports/bugs/search-1.md
 tcCart09b_quantityNegative tests/reports/bugs/cart-1.md
 tcCart09c_quantityNonNumeric tests/reports/bugs/cart-2.md
+TC-ORDER-06 tests/reports/bugs/order-1.md
+TC-ORDER-07 tests/reports/bugs/order-2.md
+TC-ORDER-09 tests/reports/bugs/order-3.md
+TC-INVOICE-07 tests/reports/bugs/invoice-1.md
+TC-INVOICE-08 tests/reports/bugs/invoice-2.md
