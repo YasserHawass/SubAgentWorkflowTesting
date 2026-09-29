@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-29T15:45:52+00:00",
-  "commit": "38b602e5707ed05cd310c9f4e628105a275f3b22",
-  "runUrl": "https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/36591906330",
+  "generatedAt": "2026-09-29T16:31:30+00:00",
+  "commit": "6d15665c2863a0a052795a85630c7b3e8ae3e2a7",
+  "runUrl": "https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/36597693336",
   "result": "green-with-known-bugs",
   "totals": {
-    "passed": 55,
-    "failed": 1,
+    "passed": 88,
+    "failed": 5,
     "skipped": 0
   },
   "perClass": {
@@ -24,6 +24,11 @@
       "failed": 0,
       "skipped": 0
     },
+    "CartTest": {
+      "passed": 13,
+      "failed": 2,
+      "skipped": 0
+    },
     "LoginTest": {
       "passed": 12,
       "failed": 0,
@@ -34,22 +39,72 @@
       "failed": 1,
       "skipped": 0
     },
+    "ProductsTest": {
+      "passed": 10,
+      "failed": 1,
+      "skipped": 0
+    },
     "RegisterTest": {
       "passed": 12,
       "failed": 0,
+      "skipped": 0
+    },
+    "SearchTest": {
+      "passed": 10,
+      "failed": 1,
       "skipped": 0
     }
   },
   "failures": [
     {
+      "id": "",
+      "class": "CartTest",
+      "method": "tcCart09c_quantityNonNumeric",
+      "status": "failed",
+      "timeSec": 0.961,
+      "message": "Expecting actual: 500 to be less than: 500",
+      "known": true,
+      "bug": "tests/reports/bugs/cart-2.md"
+    },
+    {
+      "id": "",
+      "class": "CartTest",
+      "method": "tcCart09b_quantityNegative",
+      "status": "failed",
+      "timeSec": 6.122,
+      "message": "Locator expected to have count: 0 Received: 1 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\"#cart_info_table tbody tr\").locator(\".cart_quantity\").filter(new Locator.FilterOptions().setHasText(Pattern.compile(\"-\"))) 9 \u00d7 locator resolved to 1 element - unexpected value \"1\"",
+      "known": true,
+      "bug": "tests/reports/bugs/cart-1.md"
+    },
+    {
       "id": "TC-LOGOUT-08",
       "class": "LogoutTest",
       "method": "tcLogout08_logoutWhileLoggedOut",
       "status": "failed",
-      "timeSec": 1.48,
+      "timeSec": 1.058,
       "message": "Expecting actual: \"KeyError at /logout\" not to contain: \"KeyError\"",
       "known": true,
       "bug": "tests/reports/bugs/logout-1.md"
+    },
+    {
+      "id": "TC-PRODUCTS-10",
+      "class": "ProductsTest",
+      "method": "tcProducts10_nonNumericId",
+      "status": "failed",
+      "timeSec": 0.539,
+      "message": "Expecting actual: \"<!DOCTYPE html><html lang=\"en\"><head> <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"> <title>Page not found at /product_details/abc</title> <meta name=\"robots\" content=\"NONE,NOARCHIVE\"> <style type=\"text/css\"> html * { padding:0; margin:0; } body * { padding:10",
+      "known": true,
+      "bug": "tests/reports/bugs/products-1.md"
+    },
+    {
+      "id": "TC-SEARCH-07",
+      "class": "SearchTest",
+      "method": "tcSearch07_ampersand",
+      "status": "failed",
+      "timeSec": 7.814,
+      "message": "Page URL expected to match regex: ^.*/products\\?search=%26$ Received: https://www.automationexercise.com/products?search=& Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automationexercise",
+      "known": true,
+      "bug": "tests/reports/bugs/search-1.md"
     }
   ],
   "newFailures": []

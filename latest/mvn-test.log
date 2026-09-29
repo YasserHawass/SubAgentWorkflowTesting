@@ -4,12 +4,6 @@
 [INFO] Building automationexercise-tests 0.1.0
 [INFO]   from pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.5.2/maven-surefire-plugin-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.5.2/maven-surefire-plugin-3.5.2.pom (5.7 kB at 19 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.5.2/surefire-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.5.2/surefire-3.5.2.pom (20 kB at 403 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.5.2/maven-surefire-plugin-3.5.2.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.5.2/maven-surefire-plugin-3.5.2.jar (46 kB at 680 kB/s)
 [INFO] 
 [INFO] --- resources:3.4.0:resources (default-resources) @ automationexercise-tests ---
 [INFO] skip non existing resourceDirectory /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/src/main/resources
@@ -24,89 +18,7 @@
 [INFO] Nothing to compile - all classes are up to date.
 [INFO] 
 [INFO] --- surefire:3.5.2:test (default-test) @ automationexercise-tests ---
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.pom (3.5 kB at 77 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.pom (3.3 kB at 81 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.pom (4.7 kB at 98 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.pom (3.5 kB at 80 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.pom (7.8 kB at 150 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.pom (4.8 kB at 103 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.pom (1.8 kB at 19 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.pom (5.4 kB at 85 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/42/maven-shared-components-42.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/42/maven-shared-components-42.pom (3.8 kB at 70 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/42/maven-parent-42.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/42/maven-parent-42.pom (50 kB at 731 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/32/apache-32.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/32/apache-32.pom (24 kB at 484 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.pom (14 kB at 252 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7/asm-9.7.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7/asm-9.7.pom (2.4 kB at 50 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.pom (18 kB at 248 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar (171 kB at 3.1 MB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar (14 kB at 400 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar (8.2 kB at 115 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar (118 kB at 1.4 MB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar (311 kB at 3.6 MB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7/asm-9.7.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar (26 kB at 260 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.4.0/maven-common-artifact-filters-3.4.0.jar (58 kB at 579 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar (57 kB at 521 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar (2.8 MB at 19 MB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar (348 kB at 2.1 MB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.7/asm-9.7.jar (125 kB at 232 kB/s)
 [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.pom (5.7 kB at 211 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.5.2/surefire-providers-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.5.2/surefire-providers-3.5.2.pom (2.6 kB at 109 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.pom (2.8 kB at 138 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.pom (3.2 kB at 123 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom (5.6 kB at 256 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom (1.7 kB at 76 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.pom (2.8 kB at 118 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.pom (3.0 kB at 126 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.jar (27 kB at 1.4 MB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar (103 kB at 4.1 MB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar (189 kB at 6.8 MB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.jar (18 kB at 549 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar (7.7 kB at 232 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar (169 kB at 4.5 MB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.pom (3.0 kB at 101 kB/s)
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.jar (189 kB at 5.7 MB/s)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
@@ -139,16 +51,350 @@ Playwright Host validation warning:
 ║                                                                                                      ║
 ║ <3 Playwright Team                                                                                   ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
-    at validateDependenciesLinux (/tmp/playwright-java-14891676316766586855/package/lib/server/registry/dependencies.js:216:9)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async Registry._validateHostRequirements (/tmp/playwright-java-14891676316766586855/package/lib/server/registry/index.js:753:43)
-    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-14891676316766586855/package/lib/server/registry/index.js:851:7)
-    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-14891676316766586855/package/lib/server/registry/index.js:840:43)
-    at async t.<anonymous> (/tmp/playwright-java-14891676316766586855/package/lib/cli/program.js:137:7)
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 123.8 s -- in com.ae.specs.ui.RegisterTest
+    at validateDependenciesLinux (/tmp/playwright-java-96425690637044202/package/lib/server/registry/dependencies.js:216:9)
+    at async Registry._validateHostRequirements (/tmp/playwright-java-96425690637044202/package/lib/server/registry/index.js:753:43)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-96425690637044202/package/lib/server/registry/index.js:851:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-96425690637044202/package/lib/server/registry/index.js:840:43)
+    at async t.<anonymous> (/tmp/playwright-java-96425690637044202/package/lib/cli/program.js:137:7)
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.71 s -- in com.ae.specs.ui.RegisterTest
+[INFO] Running com.ae.specs.ui.SearchTest
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 37.57 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
+[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 7.814 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to match regex: ^.*/products\?search=%26$
+Received: https://www.automationexercise.com/products?search=&
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/products?search=&"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:68)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:181)
+	at com.ae.specs.ui.SearchTest.tcSearch07_ampersand(SearchTest.java:198)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.ProductsTest
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.72 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
+[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.539 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /product_details/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/product_details/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>product_details/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+	at com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId(ProductsTest.java:209)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
 [INFO] Running com.ae.specs.ui.LogoutTest
-[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 69.85 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
-[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 1.480 s <<< FAILURE!
+[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.43 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
+[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 1.058 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -162,27 +408,384 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.LoginTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 64.18 s -- in com.ae.specs.ui.LoginTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.70 s -- in com.ae.specs.ui.LoginTest
+[INFO] Running com.ae.specs.ui.CartTest
+[ERROR] Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 46.82 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
+[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 0.961 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  500
+to be less than:
+  500 
+	at com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric(CartTest.java:278)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 6.122 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Locator expected to have count: 0
+Received: 1
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("#cart_info_table tbody tr").locator(".cart_quantity").filter(new Locator.FilterOptions().setHasText(Pattern.compile("-")))
+    9 × locator resolved to 1 element
+      - unexpected value "1"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.hasCount(LocatorAssertionsImpl.java:186)
+	at com.microsoft.playwright.assertions.LocatorAssertions.hasCount(LocatorAssertions.java:1510)
+	at com.ae.specs.ui.CartTest.tcCart09b_quantityNegative(CartTest.java:260)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
 [INFO] Running com.ae.specs.api.AuthApiTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.03 s -- in com.ae.specs.api.AuthApiTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.218 s -- in com.ae.specs.api.AuthApiTest
 [INFO] Running com.ae.specs.api.AccountApiTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.11 s -- in com.ae.specs.api.AccountApiTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.48 s -- in com.ae.specs.api.AccountApiTest
 [INFO] Running com.ae.specs.SmokeSanityTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.805 s -- in com.ae.specs.SmokeSanityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.851 s -- in com.ae.specs.SmokeSanityTest
 [INFO] 
 [INFO] Results:
 [INFO] 
 [ERROR] Failures: 
+[ERROR]   CartTest.tcCart09b_quantityNegative:260 Locator expected to have count: 0
+Received: 1
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("#cart_info_table tbody tr").locator(".cart_quantity").filter(new Locator.FilterOptions().setHasText(Pattern.compile("-")))
+    9 × locator resolved to 1 element
+      - unexpected value "1"
+[ERROR]   CartTest.tcCart09c_quantityNonNumeric:278 
+Expecting actual:
+  500
+to be less than:
+  500 
 [ERROR]   LogoutTest.tcLogout08_logoutWhileLoggedOut:148 
 Expecting actual:
   "KeyError at /logout"
 not to contain:
   "KeyError"
 
+[ERROR]   ProductsTest.tcProducts10_nonNumericId:209 
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /product_details/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/product_details/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>product_details/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+[ERROR]   SearchTest.tcSearch07_ampersand:198 Page URL expected to match regex: ^.*/products\?search=%26$
+Received: https://www.automationexercise.com/products?search=&
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/products?search=&"
 [INFO] 
-[ERROR] Tests run: 56, Failures: 1, Errors: 0, Skipped: 0
+[ERROR] Tests run: 93, Failures: 5, Errors: 0, Skipped: 0
 [INFO] 
-[WARNING] Corrupted channel by directly writing to native stream in forked JVM 1. See FAQ web page and the dump file /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire-reports/2026-09-29T15-40-40_735-jvmRun1.dumpstream
 [ERROR] There are test failures.
 
 See /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire-reports for the individual test results.
@@ -190,6 +793,6 @@ See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dump
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  05:14 min
-[INFO] Finished at: 2026-09-29T15:45:52Z
+[INFO] Total time:  04:34 min
+[INFO] Finished at: 2026-09-29T16:31:30Z
 [INFO] ------------------------------------------------------------------------
