@@ -75,8 +75,10 @@ def main() -> int:
 
     failed = [c for c in cases if c["status"] == "failed"]
     for c in failed:
-        c["known"] = c["id"] in known
-        c["bug"] = known.get(c["id"], "")
+        # an entry may be a TC id or a method name (when one TC id spans several methods)
+        key = c["method"] if c["method"] in known else c["id"]
+        c["known"] = key in known
+        c["bug"] = known.get(key, "")
     new_failures = [c for c in failed if not c["known"]]
 
     per_class = {}
