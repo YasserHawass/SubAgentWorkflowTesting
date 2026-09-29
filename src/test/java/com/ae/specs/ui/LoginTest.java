@@ -200,15 +200,15 @@ class LoginTest extends BaseUiTest {
     @DisplayName("TC-LOGIN-10 email letter case and surrounding spaces")
     void tcLogin10_emailCaseAndSpaces() {
         TestUser user = registeredUser();
-        // Either outcome is accepted per step (site behaviour is not specified); neither may be a server error page.
+        // Observed on live site: upper-cased email is rejected (case-sensitive match).
         loginPage.open().submit(user.email().toUpperCase(), user.password());
-        assertThat(header.loggedInAs.or(loginPage.errorMessage())).isVisible();
-        assertThat(page.locator("body")).not().containsText("Internal Server Error");
+        assertThat(loginPage.errorMessage()).isVisible();
+        assertNotLoggedIn();
 
+        // Observed on live site: leading/trailing spaces are trimmed and login succeeds.
         context.clearCookies();
         loginPage.open().submit("  " + user.email() + "  ", user.password());
-        assertThat(header.loggedInAs.or(loginPage.errorMessage())).isVisible();
-        assertThat(page.locator("body")).not().containsText("Internal Server Error");
+        assertLoggedIn(user);
     }
 
     @Test

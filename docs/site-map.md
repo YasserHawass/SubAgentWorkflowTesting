@@ -77,4 +77,4 @@ TC1 Register User · TC2 Login correct · TC3 Login incorrect · TC4 Logout · T
 - **Logged-in user opening `/login` is redirected to `/`** (home page). The header still shows `Logged in as <name>` and the "Login to your account" heading is absent. This was confirmed by `hasURL(baseUrl + "/")` passing twice (TC-LOGIN-11).
 - **Product cards have no stable hook for the name.** On `/products` the name is a bare `<p>` inside `.productinfo`. There is no `data-qa` and no role. The card's first heading (`<h2>`) is the **price** ("Rs. 500"), not the name, so `getByRole(HEADING).first()` returns the price. The accepted locator is `card.locator("p")`, with a tier-5 justification comment.
 - The cart table on `/view_cart` is `#cart_info_table`. It's the only stable hook (tier 5, needs a comment).
-- Open: the email case and leading/trailing-space behaviour on login is still not recorded. TC-LOGIN-10 currently accepts either outcome.
+- **Login email handling (TC-LOGIN-10):** an upper-cased email is rejected with "Your email or password is incorrect!" (case-sensitive match); an email with leading/trailing spaces is trimmed and logs in successfully.

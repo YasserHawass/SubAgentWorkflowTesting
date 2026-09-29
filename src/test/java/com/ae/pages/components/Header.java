@@ -19,7 +19,7 @@ public class Header {
 
     public Header(Page page) {
         this.page = page;
-        this.root = page.locator("header");
+        this.root = page.getByRole(AriaRole.BANNER);
         signupLoginLink = root.getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Signup / Login"));
         logoutLink = root.getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Logout"));
         deleteAccountLink = root.getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Delete Account"));

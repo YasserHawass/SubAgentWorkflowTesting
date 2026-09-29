@@ -19,6 +19,7 @@ public class CartPage {
     }
 
     public Locator productLink(String name) {
+        // Tier 5: verified live, the table has no role/data-qa hook (role=table absent), #cart_info_table is the only stable id.
         return page.locator("#cart_info_table").getByRole(AriaRole.LINK,
                 new Locator.GetByRoleOptions().setName(name).setExact(true));
     }

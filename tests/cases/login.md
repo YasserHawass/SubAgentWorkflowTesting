@@ -120,7 +120,8 @@ Steps:
 1. Open /login; enter the registered email upper-cased with the correct password; click Login; observe outcome
 2. Log out state reset (use a fresh context or open /login after clearing cookies); enter the email wrapped in leading and trailing spaces with the correct password; click Login; observe outcome
 Expected:
-- Test asserts the behaviour observed on the live site for each step (either "Logged in as <name>" or "Your email or password is incorrect!"); the automation writer records the observed result in a comment and asserts it. Neither outcome may show a server error page.
+- Step 1 (upper-cased email): login is rejected; "Your email or password is incorrect!" is shown, URL stays /login, header shows "Signup / Login".
+- Step 2 (email with leading/trailing spaces): spaces are trimmed; login succeeds, header shows "Logged in as <name>" and "Signup / Login" is gone.
 Data: TestUsers.newUser()
 Cleanup: delete account via API
 
