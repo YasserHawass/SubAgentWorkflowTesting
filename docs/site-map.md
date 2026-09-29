@@ -71,3 +71,10 @@ Use these names so file paths stay consistent:
 ## Site's own manual test cases (`/test_cases`)
 
 TC1 Register User · TC2 Login correct · TC3 Login incorrect · TC4 Logout · TC5 Register existing email · TC6 Contact Us · TC7 Test Cases page · TC8 All products + detail · TC9 Search · TC10 Subscription home · TC11 Subscription cart · TC12 Add to cart · TC13 Quantity in cart · TC14 Order: register while checkout · TC15 Order: register before checkout · TC16 Order: login before checkout · TC17 Remove from cart · TC18 Category products · TC19 Brand products · TC20 Search + cart after login · TC21 Add review · TC22 Recommended items to cart · TC23 Address in checkout · TC24 Download invoice · TC25 Scroll with arrow · TC26 Scroll without arrow
+
+## Discovered during `login` (2026-09-29)
+
+- **Logged-in user opening `/login` is redirected to `/`** (home page). The header still shows `Logged in as <name>` and the "Login to your account" heading is absent. This was confirmed by `hasURL(baseUrl + "/")` passing twice (TC-LOGIN-11).
+- **Product cards have no stable hook for the name.** On `/products` the name is a bare `<p>` inside `.productinfo`. There is no `data-qa` and no role. The card's first heading (`<h2>`) is the **price** ("Rs. 500"), not the name, so `getByRole(HEADING).first()` returns the price. The accepted locator is `card.locator("p")`, with a tier-5 justification comment.
+- The cart table on `/view_cart` is `#cart_info_table`. It's the only stable hook (tier 5, needs a comment).
+- Open: the email case and leading/trailing-space behaviour on login is still not recorded. TC-LOGIN-10 currently accepts either outcome.
