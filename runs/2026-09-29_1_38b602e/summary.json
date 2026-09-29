@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-09-29T15:45:52+00:00",
+  "commit": "38b602e5707ed05cd310c9f4e628105a275f3b22",
+  "runUrl": "https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/36591906330",
+  "result": "green-with-known-bugs",
+  "totals": {
+    "passed": 55,
+    "failed": 1,
+    "skipped": 0
+  },
+  "perClass": {
+    "SmokeSanityTest": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "AccountApiTest": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "AuthApiTest": {
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0
+    },
+    "LoginTest": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "LogoutTest": {
+      "passed": 7,
+      "failed": 1,
+      "skipped": 0
+    },
+    "RegisterTest": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "failures": [
+    {
+      "id": "TC-LOGOUT-08",
+      "class": "LogoutTest",
+      "method": "tcLogout08_logoutWhileLoggedOut",
+      "status": "failed",
+      "timeSec": 1.48,
+      "message": "Expecting actual: \"KeyError at /logout\" not to contain: \"KeyError\"",
+      "known": true,
+      "bug": "tests/reports/bugs/logout-1.md"
+    }
+  ],
+  "newFailures": []
+}
