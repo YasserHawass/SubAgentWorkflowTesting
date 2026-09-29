@@ -16,7 +16,7 @@ import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
-METHOD_ID = re.compile(r"^tc([A-Za-z]+?)(\d+)_")
+METHOD_ID = re.compile(r"^tc([A-Za-z]+?)(\d+)[a-z]?_")  # tcCart09b_x -> TC-CART-09
 
 
 def tc_id(name: str) -> str:
