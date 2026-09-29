@@ -15,6 +15,11 @@ public class LoginPage {
     private final Locator passwordInput;
     private final Locator loginButton;
     private final Locator errorMessage;
+    private final Locator signupHeading;
+    private final Locator signupName;
+    private final Locator signupEmail;
+    private final Locator signupButton;
+    private final Locator signupError;
 
     public LoginPage(Page page) {
         this.page = page;
@@ -23,6 +28,11 @@ public class LoginPage {
         passwordInput = page.locator("[data-qa='login-password']");
         loginButton = page.locator("[data-qa='login-button']");
         errorMessage = page.getByText("Your email or password is incorrect!");
+        signupHeading = page.getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("New User Signup!"));
+        signupName = page.locator("[data-qa='signup-name']");
+        signupEmail = page.locator("[data-qa='signup-email']");
+        signupButton = page.locator("[data-qa='signup-button']");
+        signupError = page.getByText("Email Address already exist!");
     }
 
     public LoginPage open() {
@@ -42,6 +52,18 @@ public class LoginPage {
     public LoginPage loginAs(TestUser user) {
         return submit(user.email(), user.password());
     }
+
+    /** Fills and submits the Signup form. */
+    public LoginPage submitSignup(String name, String email) {
+        Ads.dismissIfPresent(page);
+        signupName.fill(name);
+        signupEmail.fill(email);
+        signupButton.click();
+        return this;
+    }
+
+    public Locator signupHeading() { return signupHeading; }
+    public Locator signupError() { return signupError; }
 
     public Locator heading() { return heading; }
     public Locator emailInput() { return emailInput; }

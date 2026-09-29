@@ -31,6 +31,12 @@ public final class AccountApi {
                 FormData.create().set("email", email).set("password", password));
     }
 
+    /** GET /api/getUserDetailByEmail?email= */
+    public static JsonObject getByEmail(String email) {
+        return call("get", "getUserDetailByEmail?email="
+                + java.net.URLEncoder.encode(email, java.nio.charset.StandardCharsets.UTF_8), null);
+    }
+
     private static FormData form(TestUser u) {
         return FormData.create()
                 .set("name", u.name()).set("email", u.email()).set("password", u.password())
@@ -48,8 +54,10 @@ public final class AccountApi {
         try (Playwright pw = Playwright.create()) {
             APIRequestContext api = pw.request().newContext();
             String url = Config.apiBaseUrl() + "/" + path;
-            RequestOptions opts = RequestOptions.create().setForm(body);
+            RequestOptions opts = RequestOptions.create();
+            if (body != null) opts.setForm(body);
             APIResponse res = switch (method) {
+                case "get" -> api.get(url);
                 case "post" -> api.post(url, opts);
                 case "put" -> api.put(url, opts);
                 case "delete" -> api.delete(url, opts);

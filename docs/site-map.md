@@ -78,3 +78,15 @@ TC1 Register User · TC2 Login correct · TC3 Login incorrect · TC4 Logout · T
 - **Product cards have no stable hook for the name.** On `/products` the name is a bare `<p>` inside `.productinfo`. There is no `data-qa` and no role. The card's first heading (`<h2>`) is the **price** ("Rs. 500"), not the name, so `getByRole(HEADING).first()` returns the price. The accepted locator is `card.locator("p")`, with a tier-5 justification comment.
 - The cart table on `/view_cart` is `#cart_info_table`. It's the only stable hook (tier 5, needs a comment).
 - **Login email handling (TC-LOGIN-10):** an upper-cased email is rejected with "Your email or password is incorrect!" (case-sensitive match); an email with leading/trailing spaces is trimmed and logs in successfully.
+
+## Discovered during `register` (2026-09-29)
+
+- **The Signup form on `/login` POSTs to `/signup`.** With an existing email, the site re-renders the login page **at URL `/signup`** and shows "Email Address already exist!". The URL does not stay `/login`.
+- **Existing-email check is case-sensitive.** An upper-cased version of an existing email passes signup and reaches the account form. Emails appear to be unique only case-sensitively. Login is case-sensitive too (see login section).
+- `/signup` `data-qa` values are `name`, `email`, `password`, `days`, `months`, `years`, `first_name`, `last_name`, `company`, `address`, `address2`, `country`, `state`, `city`, `zipcode`, `mobile_number` and `create-account`. `/account_created` has a `continue-button`.
+- The title radios `#id_gender1`/`#id_gender2` and the checkboxes `#newsletter`/`#optin` have no `data-qa`, so tier-5 ids are used with a justification comment.
+- On `/signup`, name and email are prefilled from the signup form. **Email is disabled** and name is editable.
+- Required fields are password, first name, last name, address, state, city, zipcode and mobile. Company and address2 are optional.
+- The DOB year select offers **2021 down to 1900**. There is no server-side date validation: 29 Feb 2019 and 31 Apr 2019 are both accepted.
+- Names with unicode, apostrophes, 120 characters or HTML are all accepted. HTML is escaped in the header (`&lt;b&gt;`).
+- The cart survives registration. Pressing Back after account creation shows the login page with "Email Address already exist!".
