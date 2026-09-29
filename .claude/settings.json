@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn *)",
+      "Bash(curl -s https://www.automationexercise.com/*)",
+      "Bash(ls *)",
+      "Bash(cat target/surefire-reports/*)",
+      "Bash(cp target/surefire-reports/*)",
+      "Bash(mkdir -p *)",
+      "Read",
+      "Write(tests/**)",
+      "Write(src/test/**)",
+      "Write(docs/site-map.md)",
+      "Edit(src/test/**)",
+      "Edit(docs/site-map.md)"
+    ],
+    "deny": [
+      "Edit(pom.xml)",
+      "Edit(src/test/java/com/ae/fixtures/BaseUiTest.java)",
+      "Edit(src/test/java/com/ae/fixtures/BaseApiTest.java)",
+      "Edit(src/test/java/com/ae/config/Config.java)",
+      "Edit(.claude/**)",
+      "Write(.claude/**)"
+    ]
+  }
+}

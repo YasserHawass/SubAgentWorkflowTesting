@@ -1,0 +1,12 @@
+target/
+.idea/
+*.iml
+.vscode/
+tests/reports/*.log
+tests/reports/*.json
+tests/reports/*-summary.md
+tests/reports/*-coverage.md
+tests/reports/*-selectors.md
+tests/reports/*-flake.md
+!tests/reports/SCHEMAS.md
+!tests/reports/bugs/
