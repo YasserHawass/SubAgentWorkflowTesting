@@ -23,4 +23,8 @@ public class CartPage {
         return page.locator("#cart_info_table").getByRole(AriaRole.LINK,
                 new Locator.GetByRoleOptions().setName(name).setExact(true));
     }
+
+    public Locator emptyMessage() {
+        return page.getByText("Cart is empty!");
+    }
 }

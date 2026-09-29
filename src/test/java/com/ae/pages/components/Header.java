@@ -1,5 +1,7 @@
 package com.ae.pages.components;
 
+import com.ae.pages.LoginPage;
+import com.ae.utils.Ads;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
@@ -27,5 +29,12 @@ public class Header {
         cartLink = root.getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Cart"));
         contactUsLink = root.getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Contact us"));
         loggedInAs = root.getByText("Logged in as");
+    }
+
+    /** Clicks "Logout"; the site redirects to /login. */
+    public LoginPage logout() {
+        Ads.dismissIfPresent(page);
+        logoutLink.click();
+        return new LoginPage(page);
     }
 }

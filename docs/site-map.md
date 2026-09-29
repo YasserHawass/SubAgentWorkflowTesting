@@ -90,3 +90,12 @@ TC1 Register User · TC2 Login correct · TC3 Login incorrect · TC4 Logout · T
 - The DOB year select offers **2021 down to 1900**. There is no server-side date validation: 29 Feb 2019 and 31 Apr 2019 are both accepted.
 - Names with unicode, apostrophes, 120 characters or HTML are all accepted. HTML is escaped in the header (`&lt;b&gt;`).
 - The cart survives registration. Pressing Back after account creation shows the login page with "Email Address already exist!".
+
+## Discovered during `logout` (2026-09-29)
+
+- **BUG: `GET /logout` while logged out returns HTTP 500**, a Django "KeyError at /logout" debug page with no site chrome. See `tests/reports/bugs/logout-1.md`. TC-LOGOUT-08 is expected to stay red until the site fixes it.
+- Logging out from any page (for example `/products`) lands on `/login`. After a reload the header is still logged out.
+- Pressing Back after logout returns to `/` with a **logged-out** header, so no stale session is shown.
+- **The cart is dropped on logout.** `/view_cart` then shows "Cart is empty!".
+- **`/checkout` does not redirect when logged out.** It renders an empty checkout page (Address Details, Rs. 0, Place Order) with a logged-out header. site-map's "Requires login" means the order can't be placed, not that the route is guarded.
+- The `/view_cart` page title is "Automation Exercise - Checkout".
