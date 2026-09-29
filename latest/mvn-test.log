@@ -23,7 +23,7 @@
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running com.ae.specs.ui.RegisterTest
+[INFO] Running com.ae.specs.ui.InvoiceTest
 Playwright Host validation warning: 
 ╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║ Host system is missing dependencies to run browsers.                                                 ║
@@ -51,16 +51,44 @@ Playwright Host validation warning:
 ║                                                                                                      ║
 ║ <3 Playwright Team                                                                                   ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
-    at validateDependenciesLinux (/tmp/playwright-java-5357393619521894120/package/lib/server/registry/dependencies.js:216:9)
+    at validateDependenciesLinux (/tmp/playwright-java-6145939032974071636/package/lib/server/registry/dependencies.js:216:9)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async Registry._validateHostRequirements (/tmp/playwright-java-5357393619521894120/package/lib/server/registry/index.js:753:43)
-    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-5357393619521894120/package/lib/server/registry/index.js:851:7)
-    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-5357393619521894120/package/lib/server/registry/index.js:840:43)
-    at async t.<anonymous> (/tmp/playwright-java-5357393619521894120/package/lib/cli/program.js:137:7)
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 64.90 s -- in com.ae.specs.ui.RegisterTest
+    at async Registry._validateHostRequirements (/tmp/playwright-java-6145939032974071636/package/lib/server/registry/index.js:753:43)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-6145939032974071636/package/lib/server/registry/index.js:851:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-6145939032974071636/package/lib/server/registry/index.js:840:43)
+    at async t.<anonymous> (/tmp/playwright-java-6145939032974071636/package/lib/cli/program.js:137:7)
+[ERROR] Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 81.24 s <<< FAILURE! -- in com.ae.specs.ui.InvoiceTest
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount -- Time elapsed: 5.338 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "Hi Inv125709264002x7 Payer, Your total purchase amount is 999999. Thank you"
+not to contain:
+  "purchase amount is 999999"
+
+	at com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount(InvoiceTest.java:219)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession -- Time elapsed: 7.900 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "Hi , Your total purchase amount is 500. Thank you"
+not to contain:
+  "purchase amount is 500"
+
+	at com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession(InvoiceTest.java:199)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.RegisterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 74.84 s -- in com.ae.specs.ui.RegisterTest
 [INFO] Running com.ae.specs.ui.SearchTest
-[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.72 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
-[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 8.137 s <<< FAILURE!
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 46.16 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
+[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 10.48 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Page URL expected to match regex: ^.*/products\?search=%26$
 Received: https://www.automationexercise.com/products?search=&
@@ -80,9 +108,73 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
+[INFO] Running com.ae.specs.ui.OrderTest
+[ERROR] Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 88.32 s <<< FAILURE! -- in com.ae.specs.ui.OrderTest
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart -- Time elapsed: 10.13 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected not to match regex: .*/payment_done/\d+$
+Received: https://www.automationexercise.com/payment_done/0
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/0"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:68)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:181)
+	at com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart(OrderTest.java:317)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry -- Time elapsed: 12.81 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:62)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:155)
+	at com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry(OrderTest.java:284)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard -- Time elapsed: 12.07 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:62)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:155)
+	at com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard(OrderTest.java:271)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.CheckoutTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.00 s -- in com.ae.specs.ui.CheckoutTest
 [INFO] Running com.ae.specs.ui.ProductsTest
-[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.10 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
-[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.611 s <<< FAILURE!
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.97 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
+[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.589 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -394,8 +486,8 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.LogoutTest
-[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.97 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
-[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 0.928 s <<< FAILURE!
+[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.09 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
+[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 1.129 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -409,10 +501,10 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.LoginTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.29 s -- in com.ae.specs.ui.LoginTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.17 s -- in com.ae.specs.ui.LoginTest
 [INFO] Running com.ae.specs.ui.CartTest
-[ERROR] Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 43.53 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
-[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 1.206 s <<< FAILURE!
+[ERROR] Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 47.46 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
+[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 1.237 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -424,7 +516,7 @@ to be less than:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 7.012 s <<< FAILURE!
+[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 6.456 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Locator expected to have count: 0
 Received: 1
@@ -444,11 +536,11 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.api.AuthApiTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.497 s -- in com.ae.specs.api.AuthApiTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.087 s -- in com.ae.specs.api.AuthApiTest
 [INFO] Running com.ae.specs.api.AccountApiTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.11 s -- in com.ae.specs.api.AccountApiTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.49 s -- in com.ae.specs.api.AccountApiTest
 [INFO] Running com.ae.specs.SmokeSanityTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.674 s -- in com.ae.specs.SmokeSanityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.809 s -- in com.ae.specs.SmokeSanityTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -466,12 +558,48 @@ Expecting actual:
   500
 to be less than:
   500 
+[ERROR]   InvoiceTest.tcInvoice07_noSession:199 
+Expecting actual:
+  "Hi , Your total purchase amount is 500. Thank you"
+not to contain:
+  "purchase amount is 500"
+
+[ERROR]   InvoiceTest.tcInvoice08_forgedAmount:219 
+Expecting actual:
+  "Hi Inv125709264002x7 Payer, Your total purchase amount is 999999. Thank you"
+not to contain:
+  "purchase amount is 999999"
+
 [ERROR]   LogoutTest.tcLogout08_logoutWhileLoggedOut:148 
 Expecting actual:
   "KeyError at /logout"
 not to contain:
   "KeyError"
 
+[ERROR]   OrderTest.tcOrder06_nonNumericCard:271 Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+[ERROR]   OrderTest.tcOrder07_pastExpiry:284 Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+[ERROR]   OrderTest.tcOrder09_paymentEmptyCart:317 Page URL expected not to match regex: .*/payment_done/\d+$
+Received: https://www.automationexercise.com/payment_done/0
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/0"
 [ERROR]   ProductsTest.tcProducts10_nonNumericId:209 
 Expecting actual:
   "<!DOCTYPE html><html lang="en"><head>
@@ -785,7 +913,7 @@ Call log:
     9 × locator resolved to <html lang="en">…</html>
       - unexpected value "https://www.automationexercise.com/products?search=&"
 [INFO] 
-[ERROR] Tests run: 93, Failures: 5, Errors: 0, Skipped: 0
+[ERROR] Tests run: 121, Failures: 10, Errors: 0, Skipped: 0
 [INFO] 
 [ERROR] There are test failures.
 
@@ -794,6 +922,6 @@ See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dump
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  04:43 min
-[INFO] Finished at: 2026-09-29T16:38:11Z
+[INFO] Total time:  08:55 min
+[INFO] Finished at: 2026-09-29T20:05:37Z
 [INFO] ------------------------------------------------------------------------
