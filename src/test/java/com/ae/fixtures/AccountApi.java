@@ -21,6 +21,11 @@ public final class AccountApi {
         return call("post", "createAccount", form(u));
     }
 
+    /** PUT /api/updateAccount with the full field set (the site requires the account's current password). */
+    public static JsonObject update(TestUser u) {
+        return call("put", "updateAccount", form(u));
+    }
+
     public static JsonObject delete(TestUser u) {
         return call("delete", "deleteAccount",
                 FormData.create().set("email", u.email()).set("password", u.password()));

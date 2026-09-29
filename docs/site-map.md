@@ -109,3 +109,15 @@ TC1 Register User · TC2 Login correct · TC3 Login incorrect · TC4 Logout · T
 - The email is **case-sensitive**. An upper-cased email returns 404, consistent with UI login and signup.
 - Deleting an already-deleted account (`DELETE /deleteAccount`) returns 404 "Account not found!".
 - Cloudflare occasionally returns **HTTP 520 with a non-JSON body** ("error code: 520"). It's transient. Treat it as `env` or `flake`, never as a product bug.
+
+## Discovered during `api-account` (2026-09-29)
+
+- A **duplicate create** returns 400 "Email already exists!", and the first account stays intact.
+- **Create with a missing `email`, `password` or `name`** returns 400 "Bad request, <field> parameter is missing in POST request.". `company` is optional.
+- `getUserDetailByEmail` with an unknown or deleted email returns 404 "Account not found with this email, try another email!". With no `email` param it returns 400 "Bad request, email parameter is missing in GET request."
+- **Delete with a wrong password** returns 404 "Account not found!". **Update with an unknown email or a wrong password** also returns 404 "Account not found!". Neither changes the account.
+- **You can't change a password through the API.** `updateAccount` authenticates with the `password` field, so sending a new one gets 404 and the old password keeps working.
+- **Wrong methods don't share one error format.** `createAccount`, `deleteAccount` and `updateAccount` return a *real* HTTP 405 with a DRF body `{"detail":"Method \"X\" not allowed."}` and no `responseCode`. `getUserDetailByEmail` (like `verifyLogin`) returns HTTP 200 with body 405 "This request method is not supported."
+- The `user` object's keys differ from the create form's: `birth_day`, `first_name` and `last_name` (not `birth_date`, `firstname`, `lastname`), plus `id`. `password` and `mobile_number` are not returned.
+- In a form body a raw `+` decodes to a space. For `curl -d`, URL-encode `+` as `%2B`. Playwright `FormData` encodes it correctly.
+- A transient **HTTP 503 HTML "heavy load"** page is possible, like the Cloudflare 520. Treat both as `env` or `flake`.
