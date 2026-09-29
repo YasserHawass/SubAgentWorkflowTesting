@@ -1,0 +1,167 @@
+name: tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: "0 3 * * *"   # nightly, catches site-side regressions
+  workflow_dispatch:
+    inputs:
+      groups:
+        description: "JUnit tags to run (blank = full suite, e.g. smoke or api)"
+        required: false
+        default: ""
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: read
+    outputs:
+      result: ${{ steps.summary.outputs.result }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('pom.xml') }}
+
+      - name: Compile tests
+        run: mvn -B -q test-compile
+
+      - name: Install Chromium
+        run: >
+          mvn -B -q exec:java -e
+          -Dexec.mainClass=com.microsoft.playwright.CLI
+          -Dexec.args="install --with-deps chromium"
+
+      - name: Run tests
+        env:
+          GROUPS: ${{ github.event.inputs.groups }}
+        run: |
+          set -o pipefail
+          ARGS=""
+          if [ -n "$GROUPS" ]; then ARGS="-Dgroups=$GROUPS"; fi
+          # Failures don't stop the build here; the summary step decides red/green
+          # against tests/known-failures.txt so reports are always produced.
+          mvn -B test -Dmaven.test.failure.ignore=true $ARGS 2>&1 | tee mvn-test.log
+
+      - name: Build report
+        id: summary
+        if: always()
+        run: |
+          mkdir -p report
+          set +e
+          python3 .github/scripts/summarize_surefire.py target/surefire-reports report tests/known-failures.txt > /dev/null
+          code=$?
+          set -e
+          result=$(python3 -c "import json;print(json.load(open('report/summary.json'))['result'])")
+          echo "result=$result" >> "$GITHUB_OUTPUT"
+          cat report/summary.md >> "$GITHUB_STEP_SUMMARY"
+          cp mvn-test.log report/ 2>/dev/null || true
+          mkdir -p report/surefire && cp target/surefire-reports/*.xml report/surefire/ 2>/dev/null || true
+          # Screenshots only for failed tests keep the reports branch small; traces go to the artifact only.
+          mkdir -p report/screenshots
+          python3 - <<'EOF'
+          import json, os, shutil
+          s = json.load(open("report/summary.json"))
+          for f in s["failures"]:
+              png = f"target/screenshots/{f['class']}-{f['method']}.png"
+              if os.path.exists(png):
+                  shutil.copy(png, "report/screenshots/")
+          EOF
+          echo "exit=$code" > report/.exit
+          exit 0
+
+      - name: Upload artifact (incl. traces)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report-${{ github.run_number }}
+          retention-days: 14
+          path: |
+            report/
+            target/traces/
+
+      - name: Fail on new failures
+        if: always()
+        run: |
+          r="${{ steps.summary.outputs.result }}"
+          echo "Result: $r"
+          if [ "$r" = "red" ] || [ "$r" = "no-results" ]; then exit 1; fi
+
+  publish:
+    # Reports go to the orphan `reports` branch: runs/<date>_<run>_<sha>/ plus latest/ and an index.
+    needs: test
+    if: always() && needs.test.result != 'cancelled' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: publish-reports
+      cancel-in-progress: false
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: test-report-${{ github.run_number }}
+          path: artifact
+
+      - name: Check out reports branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          url="https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+          if git ls-remote --exit-code --heads "$url" reports > /dev/null; then
+            git clone --depth 1 --branch reports "$url" reports
+          else
+            mkdir reports && cd reports && git init -q -b reports && git remote add origin "$url"
+          fi
+
+      - name: Add this run
+        run: |
+          cd reports
+          run_dir="runs/$(date -u +%Y-%m-%d)_${{ github.run_number }}_${GITHUB_SHA::7}"
+          mkdir -p "$run_dir"
+          cp -r ../artifact/report/. "$run_dir/"
+          rm -rf latest && mkdir latest && cp -r ../artifact/report/. latest/
+          # keep the last 30 runs
+          ls -1d runs/*/ | sort | head -n -30 | xargs -r rm -rf
+          python3 - <<'EOF'
+          import json, os
+          rows = []
+          for d in sorted(os.listdir("runs"), reverse=True):
+              p = os.path.join("runs", d, "summary.json")
+              if not os.path.exists(p):
+                  continue
+              s = json.load(open(p))
+              t = s["totals"]
+              icon = {"green": "🟢", "green-with-known-bugs": "🟡", "red": "🔴"}.get(s["result"], "⚪")
+              new = ", ".join(s.get("newFailures", [])) or "—"
+              rows.append(f"| {icon} [{d}](runs/{d}/summary.md) | {s['commit'][:7]} | {t['passed']} | {t['failed']} | {t['skipped']} | {new} |")
+          with open("README.md", "w") as f:
+              f.write("# Test reports\n\nPublished by `.github/workflows/tests.yml`. "
+                      "Latest: [latest/summary.md](latest/summary.md). "
+                      "🟡 = only known product bugs failed (see `tests/known-failures.txt` on master).\n\n"
+                      "| Run | Commit | Passed | Failed | Skipped | New failures |\n|---|---|---|---|---|---|\n")
+              f.write("\n".join(rows) + "\n")
+          EOF
+          git add -A
+          git commit -q -m "Report ${run_dir#runs/} (${{ needs.test.outputs.result }})"
+          git push -q origin reports

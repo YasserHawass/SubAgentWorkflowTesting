@@ -1,0 +1,4 @@
+# TC ids that fail because of a filed product bug, one per line: <TC id> <bug report path>
+# CI still runs and reports these; it only turns red for failures NOT listed here.
+# Remove a line as soon as the site fixes the bug (the test will then pass).
+TC-LOGOUT-08 tests/reports/bugs/logout-1.md
