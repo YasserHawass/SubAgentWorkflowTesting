@@ -99,3 +99,13 @@ TC1 Register User · TC2 Login correct · TC3 Login incorrect · TC4 Logout · T
 - **The cart is dropped on logout.** `/view_cart` then shows "Cart is empty!".
 - **`/checkout` does not redirect when logged out.** It renders an empty checkout page (Address Details, Rs. 0, Place Order) with a logged-out header. site-map's "Requires login" means the order can't be placed, not that the route is guarded.
 - The `/view_cart` page title is "Automation Exercise - Checkout".
+
+## Discovered during `api-auth` (2026-09-29)
+
+- **HTTP status is always 200** on `/api/verifyLogin`, even for 400, 404 and 405 body `responseCode`s. Assert the body.
+- A **missing email** returns the same 400 message as a missing password: "Bad request, email or password parameter is missing in POST request."
+- **GET and PUT** on `/verifyLogin` return 405 "This request method is not supported.", the same as DELETE.
+- **Empty strings count as present**, so they get 404 "User not found!", not 400.
+- The email is **case-sensitive**. An upper-cased email returns 404, consistent with UI login and signup.
+- Deleting an already-deleted account (`DELETE /deleteAccount`) returns 404 "Account not found!".
+- Cloudflare occasionally returns **HTTP 520 with a non-JSON body** ("error code: 520"). It's transient. Treat it as `env` or `flake`, never as a product bug.
