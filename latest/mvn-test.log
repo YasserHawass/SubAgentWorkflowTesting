@@ -51,15 +51,16 @@ Playwright Host validation warning:
 ║                                                                                                      ║
 ║ <3 Playwright Team                                                                                   ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
-    at validateDependenciesLinux (/tmp/playwright-java-96425690637044202/package/lib/server/registry/dependencies.js:216:9)
-    at async Registry._validateHostRequirements (/tmp/playwright-java-96425690637044202/package/lib/server/registry/index.js:753:43)
-    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-96425690637044202/package/lib/server/registry/index.js:851:7)
-    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-96425690637044202/package/lib/server/registry/index.js:840:43)
-    at async t.<anonymous> (/tmp/playwright-java-96425690637044202/package/lib/cli/program.js:137:7)
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.71 s -- in com.ae.specs.ui.RegisterTest
+    at validateDependenciesLinux (/tmp/playwright-java-5357393619521894120/package/lib/server/registry/dependencies.js:216:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Registry._validateHostRequirements (/tmp/playwright-java-5357393619521894120/package/lib/server/registry/index.js:753:43)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-5357393619521894120/package/lib/server/registry/index.js:851:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-5357393619521894120/package/lib/server/registry/index.js:840:43)
+    at async t.<anonymous> (/tmp/playwright-java-5357393619521894120/package/lib/cli/program.js:137:7)
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 64.90 s -- in com.ae.specs.ui.RegisterTest
 [INFO] Running com.ae.specs.ui.SearchTest
-[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 37.57 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
-[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 7.814 s <<< FAILURE!
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.72 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
+[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 8.137 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Page URL expected to match regex: ^.*/products\?search=%26$
 Received: https://www.automationexercise.com/products?search=&
@@ -80,8 +81,8 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.ProductsTest
-[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.72 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
-[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.539 s <<< FAILURE!
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.10 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
+[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.611 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -393,8 +394,8 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.LogoutTest
-[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.43 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
-[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 1.058 s <<< FAILURE!
+[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.97 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
+[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 0.928 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -408,10 +409,10 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.LoginTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.70 s -- in com.ae.specs.ui.LoginTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.29 s -- in com.ae.specs.ui.LoginTest
 [INFO] Running com.ae.specs.ui.CartTest
-[ERROR] Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 46.82 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
-[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 0.961 s <<< FAILURE!
+[ERROR] Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 43.53 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
+[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 1.206 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -423,7 +424,7 @@ to be less than:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 6.122 s <<< FAILURE!
+[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 7.012 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Locator expected to have count: 0
 Received: 1
@@ -443,11 +444,11 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.api.AuthApiTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.218 s -- in com.ae.specs.api.AuthApiTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.497 s -- in com.ae.specs.api.AuthApiTest
 [INFO] Running com.ae.specs.api.AccountApiTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.48 s -- in com.ae.specs.api.AccountApiTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.11 s -- in com.ae.specs.api.AccountApiTest
 [INFO] Running com.ae.specs.SmokeSanityTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.851 s -- in com.ae.specs.SmokeSanityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.674 s -- in com.ae.specs.SmokeSanityTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -793,6 +794,6 @@ See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dump
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  04:34 min
-[INFO] Finished at: 2026-09-29T16:31:30Z
+[INFO] Total time:  04:43 min
+[INFO] Finished at: 2026-09-29T16:38:11Z
 [INFO] ------------------------------------------------------------------------
