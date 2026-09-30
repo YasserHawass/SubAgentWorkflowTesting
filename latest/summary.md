@@ -1,6 +1,6 @@
 # Test run 🟡 green-with-known-bugs
 
-Commit `62e5391` · 2026-09-29T20:05:37+00:00 · [workflow run](https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/36622724506)
+Commit `62e5391` · 2026-09-30T09:10:51+00:00 · [workflow run](https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/36693608773)
 
 **111 passed · 10 failed · 0 skipped** (0 new, 10 known product bugs)
 
@@ -25,7 +25,7 @@ Commit `62e5391` · 2026-09-29T20:05:37+00:00 · [workflow run](https://github.c
 |---|---|---|---|
 | TC-CART-09 | CartTest.tcCart09c_quantityNonNumeric | tests/reports/bugs/cart-2.md | Expecting actual: 500 to be less than: 500 |
 | TC-CART-09 | CartTest.tcCart09b_quantityNegative | tests/reports/bugs/cart-1.md | Locator expected to have count: 0 Received: 1 Call log: - Locator.expect with timeout 5000ms - waiting for locator("#cart_info_table tbody tr").locator(".cart_q |
-| TC-INVOICE-08 | InvoiceTest.tcInvoice08_forgedAmount | tests/reports/bugs/invoice-2.md | Expecting actual: "Hi Inv125709264002x7 Payer, Your total purchase amount is 999999. Thank you" not to contain: "purchase amount is 999999" |
+| TC-INVOICE-08 | InvoiceTest.tcInvoice08_forgedAmount | tests/reports/bugs/invoice-2.md | Expecting actual: "Hi Inv112266282378x7 Payer, Your total purchase amount is 999999. Thank you" not to contain: "purchase amount is 999999" |
 | TC-INVOICE-07 | InvoiceTest.tcInvoice07_noSession | tests/reports/bugs/invoice-1.md | Expecting actual: "Hi , Your total purchase amount is 500. Thank you" not to contain: "purchase amount is 500" |
 | TC-LOGOUT-08 | LogoutTest.tcLogout08_logoutWhileLoggedOut | tests/reports/bugs/logout-1.md | Expecting actual: "KeyError at /logout" not to contain: "KeyError" |
 | TC-ORDER-09 | OrderTest.tcOrder09_paymentEmptyCart | tests/reports/bugs/order-3.md | Page URL expected not to match regex: .*/payment_done/\d+$ Received: https://www.automationexercise.com/payment_done/0 Call log: - Locator.expect with timeout 5 |

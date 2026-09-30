@@ -44,25 +44,23 @@ Playwright Host validation warning:
 ║         libharfbuzz-icu0\                                                                            ║
 ║         libsecret-1-0\                                                                               ║
 ║         libhyphen0\                                                                                  ║
-║         libwayland-server0\                                                                          ║
 ║         libmanette-0.2-0\                                                                            ║
 ║         libgles2\                                                                                    ║
 ║         gstreamer1.0-libav                                                                           ║
 ║                                                                                                      ║
 ║ <3 Playwright Team                                                                                   ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
-    at validateDependenciesLinux (/tmp/playwright-java-6145939032974071636/package/lib/server/registry/dependencies.js:216:9)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async Registry._validateHostRequirements (/tmp/playwright-java-6145939032974071636/package/lib/server/registry/index.js:753:43)
-    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-6145939032974071636/package/lib/server/registry/index.js:851:7)
-    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-6145939032974071636/package/lib/server/registry/index.js:840:43)
-    at async t.<anonymous> (/tmp/playwright-java-6145939032974071636/package/lib/cli/program.js:137:7)
-[ERROR] Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 81.24 s <<< FAILURE! -- in com.ae.specs.ui.InvoiceTest
-[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount -- Time elapsed: 5.338 s <<< FAILURE!
+    at validateDependenciesLinux (/tmp/playwright-java-17780717321251815464/package/lib/server/registry/dependencies.js:216:9)
+    at async Registry._validateHostRequirements (/tmp/playwright-java-17780717321251815464/package/lib/server/registry/index.js:753:43)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-17780717321251815464/package/lib/server/registry/index.js:851:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-17780717321251815464/package/lib/server/registry/index.js:840:43)
+    at async t.<anonymous> (/tmp/playwright-java-17780717321251815464/package/lib/cli/program.js:137:7)
+[ERROR] Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 55.74 s <<< FAILURE! -- in com.ae.specs.ui.InvoiceTest
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount -- Time elapsed: 3.683 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
-  "Hi Inv125709264002x7 Payer, Your total purchase amount is 999999. Thank you"
+  "Hi Inv112266282378x7 Payer, Your total purchase amount is 999999. Thank you"
 not to contain:
   "purchase amount is 999999"
 
@@ -71,7 +69,7 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession -- Time elapsed: 7.900 s <<< FAILURE!
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession -- Time elapsed: 5.611 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -85,10 +83,10 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.RegisterTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 74.84 s -- in com.ae.specs.ui.RegisterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 52.94 s -- in com.ae.specs.ui.RegisterTest
 [INFO] Running com.ae.specs.ui.SearchTest
-[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 46.16 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
-[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 10.48 s <<< FAILURE!
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.30 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
+[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 7.379 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Page URL expected to match regex: ^.*/products\?search=%26$
 Received: https://www.automationexercise.com/products?search=&
@@ -109,8 +107,8 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.OrderTest
-[ERROR] Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 88.32 s <<< FAILURE! -- in com.ae.specs.ui.OrderTest
-[ERROR] com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart -- Time elapsed: 10.13 s <<< FAILURE!
+[ERROR] Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 67.30 s <<< FAILURE! -- in com.ae.specs.ui.OrderTest
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart -- Time elapsed: 8.930 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Page URL expected not to match regex: .*/payment_done/\d+$
 Received: https://www.automationexercise.com/payment_done/0
@@ -130,7 +128,7 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry -- Time elapsed: 12.81 s <<< FAILURE!
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry -- Time elapsed: 10.32 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Page URL expected to be: https://www.automationexercise.com/payment
 Received: https://www.automationexercise.com/payment_done/500
@@ -150,7 +148,7 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard -- Time elapsed: 12.07 s <<< FAILURE!
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard -- Time elapsed: 10.61 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Page URL expected to be: https://www.automationexercise.com/payment
 Received: https://www.automationexercise.com/payment_done/500
@@ -171,10 +169,10 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.CheckoutTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.00 s -- in com.ae.specs.ui.CheckoutTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.65 s -- in com.ae.specs.ui.CheckoutTest
 [INFO] Running com.ae.specs.ui.ProductsTest
-[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.97 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
-[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.589 s <<< FAILURE!
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.64 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
+[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.381 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -486,8 +484,8 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.LogoutTest
-[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.09 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
-[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 1.129 s <<< FAILURE!
+[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 51.55 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
+[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 0.938 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -501,10 +499,10 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.LoginTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.17 s -- in com.ae.specs.ui.LoginTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.88 s -- in com.ae.specs.ui.LoginTest
 [INFO] Running com.ae.specs.ui.CartTest
-[ERROR] Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 47.46 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
-[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 1.237 s <<< FAILURE!
+[ERROR] Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 33.12 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
+[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 0.668 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -516,7 +514,7 @@ to be less than:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 6.456 s <<< FAILURE!
+[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 5.767 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Locator expected to have count: 0
 Received: 1
@@ -536,11 +534,11 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.api.AuthApiTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.087 s -- in com.ae.specs.api.AuthApiTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.635 s -- in com.ae.specs.api.AuthApiTest
 [INFO] Running com.ae.specs.api.AccountApiTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.49 s -- in com.ae.specs.api.AccountApiTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.87 s -- in com.ae.specs.api.AccountApiTest
 [INFO] Running com.ae.specs.SmokeSanityTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.809 s -- in com.ae.specs.SmokeSanityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.294 s -- in com.ae.specs.SmokeSanityTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -566,7 +564,7 @@ not to contain:
 
 [ERROR]   InvoiceTest.tcInvoice08_forgedAmount:219 
 Expecting actual:
-  "Hi Inv125709264002x7 Payer, Your total purchase amount is 999999. Thank you"
+  "Hi Inv112266282378x7 Payer, Your total purchase amount is 999999. Thank you"
 not to contain:
   "purchase amount is 999999"
 
@@ -922,6 +920,6 @@ See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dump
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  08:55 min
-[INFO] Finished at: 2026-09-29T20:05:37Z
+[INFO] Total time:  06:52 min
+[INFO] Finished at: 2026-09-30T09:10:51Z
 [INFO] ------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-29T20:05:37+00:00",
+  "generatedAt": "2026-09-30T09:10:51+00:00",
   "commit": "62e5391b2252cdbd24229d0f5c053a5a54a98c25",
-  "runUrl": "https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/36622724506",
+  "runUrl": "https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/36693608773",
   "result": "green-with-known-bugs",
   "totals": {
     "passed": 111,
@@ -76,7 +76,7 @@
       "class": "CartTest",
       "method": "tcCart09c_quantityNonNumeric",
       "status": "failed",
-      "timeSec": 1.237,
+      "timeSec": 0.668,
       "message": "Expecting actual: 500 to be less than: 500",
       "known": true,
       "bug": "tests/reports/bugs/cart-2.md"
@@ -86,7 +86,7 @@
       "class": "CartTest",
       "method": "tcCart09b_quantityNegative",
       "status": "failed",
-      "timeSec": 6.456,
+      "timeSec": 5.767,
       "message": "Locator expected to have count: 0 Received: 1 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\"#cart_info_table tbody tr\").locator(\".cart_quantity\").filter(new Locator.FilterOptions().setHasText(Pattern.compile(\"-\"))) 9 \u00d7 locator resolved to 1 element - unexpected value \"1\"",
       "known": true,
       "bug": "tests/reports/bugs/cart-1.md"
@@ -96,8 +96,8 @@
       "class": "InvoiceTest",
       "method": "tcInvoice08_forgedAmount",
       "status": "failed",
-      "timeSec": 5.338,
-      "message": "Expecting actual: \"Hi Inv125709264002x7 Payer, Your total purchase amount is 999999. Thank you\" not to contain: \"purchase amount is 999999\"",
+      "timeSec": 3.683,
+      "message": "Expecting actual: \"Hi Inv112266282378x7 Payer, Your total purchase amount is 999999. Thank you\" not to contain: \"purchase amount is 999999\"",
       "known": true,
       "bug": "tests/reports/bugs/invoice-2.md"
     },
@@ -106,7 +106,7 @@
       "class": "InvoiceTest",
       "method": "tcInvoice07_noSession",
       "status": "failed",
-      "timeSec": 7.9,
+      "timeSec": 5.611,
       "message": "Expecting actual: \"Hi , Your total purchase amount is 500. Thank you\" not to contain: \"purchase amount is 500\"",
       "known": true,
       "bug": "tests/reports/bugs/invoice-1.md"
@@ -116,7 +116,7 @@
       "class": "LogoutTest",
       "method": "tcLogout08_logoutWhileLoggedOut",
       "status": "failed",
-      "timeSec": 1.129,
+      "timeSec": 0.938,
       "message": "Expecting actual: \"KeyError at /logout\" not to contain: \"KeyError\"",
       "known": true,
       "bug": "tests/reports/bugs/logout-1.md"
@@ -126,7 +126,7 @@
       "class": "OrderTest",
       "method": "tcOrder09_paymentEmptyCart",
       "status": "failed",
-      "timeSec": 10.131,
+      "timeSec": 8.93,
       "message": "Page URL expected not to match regex: .*/payment_done/\\d+$ Received: https://www.automationexercise.com/payment_done/0 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automationexercise.com",
       "known": true,
       "bug": "tests/reports/bugs/order-3.md"
@@ -136,7 +136,7 @@
       "class": "OrderTest",
       "method": "tcOrder07_pastExpiry",
       "status": "failed",
-      "timeSec": 12.808,
+      "timeSec": 10.318,
       "message": "Page URL expected to be: https://www.automationexercise.com/payment Received: https://www.automationexercise.com/payment_done/500 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automatione",
       "known": true,
       "bug": "tests/reports/bugs/order-2.md"
@@ -146,7 +146,7 @@
       "class": "OrderTest",
       "method": "tcOrder06_nonNumericCard",
       "status": "failed",
-      "timeSec": 12.073,
+      "timeSec": 10.606,
       "message": "Page URL expected to be: https://www.automationexercise.com/payment Received: https://www.automationexercise.com/payment_done/500 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automatione",
       "known": true,
       "bug": "tests/reports/bugs/order-1.md"
@@ -156,7 +156,7 @@
       "class": "ProductsTest",
       "method": "tcProducts10_nonNumericId",
       "status": "failed",
-      "timeSec": 0.589,
+      "timeSec": 0.381,
       "message": "Expecting actual: \"<!DOCTYPE html><html lang=\"en\"><head> <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"> <title>Page not found at /product_details/abc</title> <meta name=\"robots\" content=\"NONE,NOARCHIVE\"> <style type=\"text/css\"> html * { padding:0; margin:0; } body * { padding:10",
       "known": true,
       "bug": "tests/reports/bugs/products-1.md"
@@ -166,7 +166,7 @@
       "class": "SearchTest",
       "method": "tcSearch07_ampersand",
       "status": "failed",
-      "timeSec": 10.48,
+      "timeSec": 7.379,
       "message": "Page URL expected to match regex: ^.*/products\\?search=%26$ Received: https://www.automationexercise.com/products?search=& Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automationexercise",
       "known": true,
       "bug": "tests/reports/bugs/search-1.md"
