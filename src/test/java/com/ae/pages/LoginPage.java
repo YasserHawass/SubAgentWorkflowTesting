@@ -5,6 +5,7 @@ import com.ae.fixtures.TestUser;
 import com.ae.utils.Ads;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.AriaRole;
 
 /** /login: Login and Signup forms. Only the Login form is modelled here. */
@@ -46,6 +47,8 @@ public class LoginPage {
         emailInput.fill(email);
         passwordInput.fill(password);
         loginButton.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return this;
     }
 
@@ -59,6 +62,8 @@ public class LoginPage {
         signupName.fill(name);
         signupEmail.fill(email);
         signupButton.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return this;
     }
 

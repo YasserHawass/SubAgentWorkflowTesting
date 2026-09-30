@@ -5,6 +5,7 @@ import com.ae.pages.components.ProductCard;
 import com.ae.utils.Ads;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.AriaRole;
 
 import java.util.List;
@@ -93,6 +94,8 @@ public class ProductsPage {
         Ads.dismissIfPresent(page);
         searchBox().fill(term);
         searchButton().click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return this;
     }
 

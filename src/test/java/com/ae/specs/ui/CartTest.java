@@ -14,6 +14,7 @@ import com.ae.pages.components.CartModal;
 import com.ae.pages.components.Header;
 import com.google.gson.JsonObject;
 import com.microsoft.playwright.Locator;
+import com.microsoft.playwright.assertions.LocatorAssertions;
 import com.microsoft.playwright.Response;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -60,7 +61,8 @@ class CartTest extends BaseUiTest {
     /** Adds the named product from the grid and waits for "Added!". Returns the modal. */
     private CartModal addFromGrid(String name) {
         CartModal modal = productsPage.card(name).addToCart();
-        assertThat(modal.heading()).isVisible();
+        // /add_to_cart/ is sometimes slow (~900ms vs ~300ms, see tests/reports/cart-flake.md), so allow 15s.
+        assertThat(modal.heading()).isVisible(new LocatorAssertions.IsVisibleOptions().setTimeout(15000));
         return modal;
     }
 

@@ -3,6 +3,7 @@ package com.ae.pages.components;
 import com.ae.pages.CartPage;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.AriaRole;
 
 /** The "Added!" modal shown after "Add to cart" (products grid, detail page, home). */
@@ -28,6 +29,8 @@ public class CartModal {
     /** Clicks "View Cart" in the modal; the site opens /view_cart. */
     public CartPage viewCart() {
         viewCartLink.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return new CartPage(page);
     }
 

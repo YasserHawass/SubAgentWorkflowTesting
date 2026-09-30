@@ -73,6 +73,7 @@ Never chain more than two levels of structural CSS (`div > div > ul li:nth-child
 
 - Never `page.waitForTimeout()` or `Thread.sleep()`. Use `assertThat(locator).isVisible()` (auto-waits), `page.waitForURL`, `page.waitForResponse`.
 - Timeouts: leave defaults. Raise per-call only with a comment explaining why.
+- **Late-bound handlers (this site):** click handlers for add-to-cart, Proceed To Checkout, the category accordion and form resets are bound by scripts that run at `load`. A click right after a *click-driven* navigation can be a silent no-op, which looks like a product bug but isn't. Page-object methods that navigate by click must end with `page.waitForLoadState(LoadState.LOAD)`, and actions that fire an ajax request should wrap the click in `page.waitForResponse(...)` so a dropped click fails with a clear message. (`page.navigate()` already waits for load.)
 
 ## Dealing with ads
 

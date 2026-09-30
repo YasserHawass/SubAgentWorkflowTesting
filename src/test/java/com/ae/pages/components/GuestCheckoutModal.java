@@ -3,6 +3,7 @@ package com.ae.pages.components;
 import com.ae.pages.LoginPage;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.AriaRole;
 
 /**
@@ -35,6 +36,8 @@ public class GuestCheckoutModal {
     /** Clicks "Register / Login"; the site opens /login. */
     public LoginPage registerLogin() {
         registerLoginLink.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return new LoginPage(page);
     }
 

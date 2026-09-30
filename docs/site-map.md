@@ -180,3 +180,39 @@ TC1 Register User · TC2 Login correct · TC3 Login incorrect · TC4 Logout · T
 - Download Invoice gives `invoice.txt` (`text/plain`, HTTP 200). The content is `Hi <first_name> <last_name>, Your total purchase amount is <N>. Thank you`, with no "Rs.". The name is the account's first and last name, not the signup name or the card name.
 - **The invoice is built from the session name plus the amount in the URL.** User B fetching A's `/download_invoice/500` gets B's own name, so there's no cross-user leak. But **any amount can be forged** (`/download_invoice/<any N>`), and **with no session** it returns HTTP 200 "Hi , Your total purchase amount is 500. Thank you" (BUG: no auth guard).
 - Tip: `TestUsers.newUser()` always uses "Auto Tester", so give users a unique first name when a test asserts on the invoice name.
+
+## Discovered during `reviews` (2026-09-30)
+
+- The review form `#review-form` is on every `/product_details/<id>`. Its fields have placeholders "Your Name", "Email Address" and "Add Review Here!" and no labels. The submit button is `#button-review`, and the tab text is "Write Your Review".
+- All three fields are `required` and the email is `type=email`, so an invalid email is blocked by the browser.
+- **Reviews are client-side only.** Submitting shows "Thank you for your review." in `#review-section` for about 2s, then clears the fields. **No request is sent, nothing is stored, and there is no review list anywhere.** A logged-in user's name and email are not prefilled.
+- Every page POSTs a Cloudflare beacon to `/cdn-cgi/rum`. Exclude `/cdn-cgi/` when asserting "no requests".
+
+## Discovered during `api-products` / `api-brands` / `api-search` (2026-09-30)
+
+- Catalogue endpoints return a JSON body with **`Content-Type: text/html`**. Parse the text, don't rely on the content type.
+- `productsList` has 34 products with usertypes {Women, Men, Kids}. **Ids are not contiguous**: 1-8, 11-16, 18-24, 28-31, 33, 35, 37-43.
+- `brandsList` has **34 rows but only 8 distinct brand names** (e.g. Madame ×5). It's effectively one row per product. The ids are unique but not contiguous. Every product brand appears in the list, and there are no orphans.
+- Wrong methods on `productsList`, `brandsList` and `searchProduct` return **HTTP 200 with body 405** "This request method is not supported.", the same as `verifyLogin`. Only create, delete and update account use a real HTTP 405 with a DRF body.
+- `searchProduct`: "top" gives 14 (the same for TOP/Top) and "Dress" gives 9. No match gives `products: []`. An **empty `search_product=` returns all 34**. A JSON body gives 400 "Bad request, search_product parameter is missing in POST request.", because the endpoint only reads form data.
+
+## Discovered during `contact-us` / `subscription` / `scroll` (2026-09-30)
+
+- **Contact:** the confirm dialog text is "Press OK to proceed!" (shown once). Register `page.onDialog` *before* Submit. Dismissing it keeps the form values and shows no success text. "Home" after success is a **link**, not a button.
+- Contact validation: **only Email is required** (HTML5). An empty name, subject or message, no file, a 3 MB file and a no-extension file are all accepted.
+- **Strict-mode gotcha:** "Success! Your details have been submitted successfully." also exists **hidden in the footer subscribe box**, so scope the contact success to `#contact-page`.
+- Timing gotcha: typing into the contact form before the `load` event can get wiped. Wait for LOAD first.
+- The footer is `role=contentinfo` and is the same on `/` and `/view_cart`. The subscribe input is `getByPlaceholder("Your email address")`, and the icon-only button is `#subscribe`.
+- Subscription: an empty or invalid email is blocked by browser validation with no site message. A repeat subscribe shows the same success again. The input is **not cleared**. The success text **auto-hides** after about 6s.
+- Scroll: `#scrollUp` is in the DOM but hidden at the top, visible after scrolling down, and hidden again after clicking. It's also on `/products`. The home hero carousel has 3 slides with the same h2 "Full-Fledged practice website for Automation Engineers" and rotates about every 5–6s. Assert with `isInViewport()`, never pixel offsets.
+
+## Discovered during `categories` / `brands` (2026-09-30)
+
+- Category ids: Women → Dress **1**, Tops **2**, Saree **7**. Men → Tshirts **3**, Jeans **6**. Kids → Dress **4**, Tops & Shirts **5**. The per-subcategory counts add up to 34, matching the API.
+- The listing heading DOM text is mixed case ("Women - Dress Products", "Brand - Polo Products"). Opening one accordion (Men) collapses the other (Women).
+- **Accordion gotcha:** the toggle's accessible name is the glyph U+F067 plus the text, so `getByRole(LINK, "Men")` misses it. A non-anchored "Kids" also matches the brand link "Kookie Kids", so anchor your regex. Toggling before the `load` event does nothing.
+- `/category_products/9999` and `/0` return HTTP 200 with the heading " -  Products" and 0 cards. **BUG: `/category_products/abc` and `/-1` return 404 with the Django DEBUG page**, the same root cause as products-1.
+- The brand sidebar lists 8 brands, with link text "(N)Name". Hrefs are **not percent-encoded** (`/brand_products/H&M`, `/brand_products/Mast & Harbour`) but they resolve. Sidebar counts = card counts = API counts for all 8.
+- Brand URLs are **case-sensitive**: `polo` and `NoSuchBrand` return 200, echo the name in the heading, and show 0 cards (no 404).
+- Listing pages also show both sidebars.
+- Playwright Java passes a `Pattern` to JS regex, so `Pattern.quote()` (`\Q..\E`) breaks. Use `ProductListingPage.esc`.

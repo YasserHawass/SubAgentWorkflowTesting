@@ -5,6 +5,7 @@ import com.ae.fixtures.TestUser;
 import com.ae.utils.Ads;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.AriaRole;
 
 /** /signup account-information form, plus the /account_created and /delete_account confirmations. */
@@ -96,12 +97,16 @@ public class SignupPage {
     public void submit() {
         Ads.dismissIfPresent(page);
         createAccount.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
     }
 
     /** Clicks Continue on /account_created or /delete_account. */
     public void continueAfter() {
         Ads.dismissIfPresent(page);
         continueButton.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
     }
 
     public Locator heading() { return heading; }

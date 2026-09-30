@@ -6,6 +6,7 @@ import com.ae.pages.ProductsPage;
 import com.ae.utils.Ads;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.AriaRole;
 
 /** Site header nav, present on every page. Extend here; don't duplicate header locators in page objects. */
@@ -37,6 +38,8 @@ public class Header {
     public ProductsPage openProducts() {
         Ads.dismissIfPresent(page);
         productsLink.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return new ProductsPage(page);
     }
 
@@ -44,6 +47,8 @@ public class Header {
     public CartPage openCart() {
         Ads.dismissIfPresent(page);
         cartLink.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return new CartPage(page);
     }
 
@@ -51,6 +56,8 @@ public class Header {
     public LoginPage openLogin() {
         Ads.dismissIfPresent(page);
         signupLoginLink.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return new LoginPage(page);
     }
 
@@ -58,6 +65,8 @@ public class Header {
     public LoginPage logout() {
         Ads.dismissIfPresent(page);
         logoutLink.click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return new LoginPage(page);
     }
 }

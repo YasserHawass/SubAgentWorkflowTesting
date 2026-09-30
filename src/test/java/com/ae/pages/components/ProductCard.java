@@ -4,6 +4,7 @@ import com.ae.pages.ProductDetailsPage;
 import com.ae.utils.Ads;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.AriaRole;
 
 /**
@@ -49,7 +50,7 @@ public class ProductCard {
     /** Clicks "Add to cart" and returns the "Added!" modal. */
     public CartModal addToCart() {
         Ads.dismissIfPresent(page);
-        addToCartButton().click();
+        page.waitForResponse(r -> r.url().contains("/add_to_cart/"), () -> addToCartButton().click());
         return new CartModal(page);
     }
 
@@ -57,6 +58,8 @@ public class ProductCard {
     public ProductDetailsPage viewProduct() {
         Ads.dismissIfPresent(page);
         viewProductLink().click();
+        // Click handlers on the next page bind at load; wait for it (see CONVENTIONS: Late-bound handlers).
+        page.waitForLoadState(LoadState.LOAD);
         return new ProductDetailsPage(page);
     }
 }

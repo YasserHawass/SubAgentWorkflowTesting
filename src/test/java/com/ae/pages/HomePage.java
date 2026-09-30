@@ -61,4 +61,17 @@ public class HomePage {
     public List<ProductCard> visibleRecommended() {
         return visibleRecommendedCards().all().stream().map(c -> new ProductCard(page, c)).collect(Collectors.toList());
     }
+
+    /** The hero heading of the carousel slide that is currently shown. */
+    public Locator heroHeading() {
+        // CSS: verified live, all 3 slides carry the same h2 text; #slider-carousel .item.active is the shown slide (bootstrap carousel, last resort).
+        return page.locator("#slider-carousel .item.active").getByRole(AriaRole.HEADING,
+                new Locator.GetByRoleOptions().setName("Full-Fledged practice website for Automation Engineers"));
+    }
+
+    /** The first hero slide in DOM order (it is the one shown on load). "First" is the definition, so .first() is the anchor. */
+    public Locator firstHeroSlide() {
+        // CSS: verified live, slides are .item under #slider-carousel (last resort).
+        return page.locator("#slider-carousel .item").first();
+    }
 }

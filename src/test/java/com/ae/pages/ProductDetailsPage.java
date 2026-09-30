@@ -23,6 +23,12 @@ public class ProductDetailsPage {
     private final Locator quantity;
     private final Locator addToCart;
     private Response lastResponse;
+    private final Locator reviewTab;
+    private final Locator reviewName;
+    private final Locator reviewEmail;
+    private final Locator reviewText;
+    private final Locator reviewSubmit;
+    private final Locator reviewSuccess;
 
     public ProductDetailsPage(Page page) {
         this.page = page;
@@ -39,6 +45,14 @@ public class ProductDetailsPage {
         // CSS: the number input has no accessible name (its <label> is not linked); #quantity is its stable id (last resort).
         quantity = info.locator("#quantity");
         addToCart = info.getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName("Add to cart"));
+        reviewTab = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Write Your Review"));
+        // CSS: #review-form is the form's only handle (no role name/data-qa); it scopes the fields away from the footer subscribe form (last resort).
+        Locator form = page.locator("#review-form");
+        reviewName = form.getByPlaceholder("Your Name");
+        reviewEmail = form.getByPlaceholder("Email Address");
+        reviewText = form.getByPlaceholder("Add Review Here!");
+        reviewSubmit = form.getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName("Submit"));
+        reviewSuccess = form.getByText("Thank you for your review.");
     }
 
     public ProductDetailsPage open(int id) {
@@ -82,5 +96,23 @@ public class ProductDetailsPage {
     public void typeQuantity(String text) {
         quantity.clear();
         quantity.pressSequentially(text);
+    }
+
+    // ---- review form ----
+    public Locator reviewHeading() { return reviewTab; }
+    public Locator reviewNameInput() { return reviewName; }
+    public Locator reviewEmailInput() { return reviewEmail; }
+    public Locator reviewTextInput() { return reviewText; }
+    public Locator reviewSubmitButton() { return reviewSubmit; }
+    /** Success alert; the site shows it for about 2 seconds after a valid submit. */
+    public Locator reviewSuccess() { return reviewSuccess; }
+
+    /** Fills the given values (null skips a field) and clicks Submit. */
+    public void submitReview(String name, String email, String text) {
+        Ads.dismissIfPresent(page);
+        if (name != null) reviewName.fill(name);
+        if (email != null) reviewEmail.fill(email);
+        if (text != null) reviewText.fill(text);
+        reviewSubmit.click();
     }
 }

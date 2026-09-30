@@ -11,3 +11,5 @@ TC-ORDER-07 tests/reports/bugs/order-2.md
 TC-ORDER-09 tests/reports/bugs/order-3.md
 TC-INVOICE-07 tests/reports/bugs/invoice-1.md
 TC-INVOICE-08 tests/reports/bugs/invoice-2.md
+tcCategories07a_malformedIdAbc tests/reports/bugs/categories-1.md
+tcCategories07c_malformedIdMinusOne tests/reports/bugs/categories-1.md
