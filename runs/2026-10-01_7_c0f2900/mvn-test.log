@@ -1,0 +1,2178 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.ae:automationexercise-tests >-------------------
+[INFO] Building automationexercise-tests 0.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ automationexercise-tests ---
+[INFO] skip non existing resourceDirectory /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ automationexercise-tests ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ automationexercise-tests ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ automationexercise-tests ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ automationexercise-tests ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.ae.specs.ui.InvoiceTest
+Playwright Host validation warning: 
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers.                                                 ║
+║ Please install them with the following command:                                                      ║
+║                                                                                                      ║
+║     sudo mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install-deps" ║
+║                                                                                                      ║
+║ Alternatively, use apt:                                                                              ║
+║     sudo apt-get install libwoff1\                                                                   ║
+║         libvpx9\                                                                                     ║
+║         libevent-2.1-7t64\                                                                           ║
+║         libopus0\                                                                                    ║
+║         libgstreamer-plugins-base1.0-0\                                                              ║
+║         libgstreamer-gl1.0-0\                                                                        ║
+║         libgstreamer-plugins-bad1.0-0\                                                               ║
+║         libflite1\                                                                                   ║
+║         libavif16\                                                                                   ║
+║         libharfbuzz-icu0\                                                                            ║
+║         libsecret-1-0\                                                                               ║
+║         libhyphen0\                                                                                  ║
+║         libmanette-0.2-0\                                                                            ║
+║         libgles2\                                                                                    ║
+║         gstreamer1.0-libav                                                                           ║
+║                                                                                                      ║
+║ <3 Playwright Team                                                                                   ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
+    at validateDependenciesLinux (/tmp/playwright-java-10157669186704111367/package/lib/server/registry/dependencies.js:216:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Registry._validateHostRequirements (/tmp/playwright-java-10157669186704111367/package/lib/server/registry/index.js:753:43)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-10157669186704111367/package/lib/server/registry/index.js:851:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-10157669186704111367/package/lib/server/registry/index.js:840:43)
+    at async t.<anonymous> (/tmp/playwright-java-10157669186704111367/package/lib/cli/program.js:137:7)
+[ERROR] Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 77.57 s <<< FAILURE! -- in com.ae.specs.ui.InvoiceTest
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount -- Time elapsed: 4.520 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "Hi Inv166071419220x7 Payer, Your total purchase amount is 999999. Thank you"
+not to contain:
+  "purchase amount is 999999"
+
+	at com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount(InvoiceTest.java:219)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession -- Time elapsed: 7.400 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "Hi , Your total purchase amount is 500. Thank you"
+not to contain:
+  "purchase amount is 500"
+
+	at com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession(InvoiceTest.java:199)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.BrandsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.79 s -- in com.ae.specs.ui.BrandsTest
+[INFO] Running com.ae.specs.ui.RegisterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 71.35 s -- in com.ae.specs.ui.RegisterTest
+[INFO] Running com.ae.specs.ui.SearchTest
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 48.25 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
+[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 9.727 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to match regex: ^.*/products\?search=%26$
+Received: https://www.automationexercise.com/products?search=&
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/products?search=&"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:68)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:181)
+	at com.ae.specs.ui.SearchTest.tcSearch07_ampersand(SearchTest.java:198)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.OrderTest
+[ERROR] Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 91.41 s <<< FAILURE! -- in com.ae.specs.ui.OrderTest
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart -- Time elapsed: 12.09 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected not to match regex: .*/payment_done/\d+$
+Received: https://www.automationexercise.com/payment_done/0
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/0"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:68)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:181)
+	at com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart(OrderTest.java:317)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry -- Time elapsed: 12.62 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:62)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:155)
+	at com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry(OrderTest.java:284)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard -- Time elapsed: 13.25 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:62)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:155)
+	at com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard(OrderTest.java:271)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.ReviewsTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.92 s -- in com.ae.specs.ui.ReviewsTest
+[INFO] Running com.ae.specs.ui.CheckoutTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.86 s -- in com.ae.specs.ui.CheckoutTest
+[INFO] Running com.ae.specs.ui.ContactUsTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.08 s -- in com.ae.specs.ui.ContactUsTest
+[INFO] Running com.ae.specs.ui.ProductsTest
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.93 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
+[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.329 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /product_details/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/product_details/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>product_details/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+	at com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId(ProductsTest.java:209)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.LogoutTest
+[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 38.61 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
+[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 1.082 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "KeyError at /logout"
+not to contain:
+  "KeyError"
+
+	at com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut(LogoutTest.java:148)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.CategoriesTest
+[ERROR] Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 20.91 s <<< FAILURE! -- in com.ae.specs.ui.CategoriesTest
+[ERROR] com.ae.specs.ui.CategoriesTest.tcCategories07a_malformedIdAbc -- Time elapsed: 0.428 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /category_products/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/category_products/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>category_products/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+	at com.ae.specs.ui.CategoriesTest.assertCleanPage(CategoriesTest.java:71)
+	at com.ae.specs.ui.CategoriesTest.assertMalformedIdIsClean(CategoriesTest.java:221)
+	at com.ae.specs.ui.CategoriesTest.tcCategories07a_malformedIdAbc(CategoriesTest.java:200)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.CategoriesTest.tcCategories07c_malformedIdMinusOne -- Time elapsed: 0.471 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /category_products/-1</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/category_products/-1</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>category_products/-1</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+	at com.ae.specs.ui.CategoriesTest.assertCleanPage(CategoriesTest.java:71)
+	at com.ae.specs.ui.CategoriesTest.assertMalformedIdIsClean(CategoriesTest.java:221)
+	at com.ae.specs.ui.CategoriesTest.tcCategories07c_malformedIdMinusOne(CategoriesTest.java:216)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.LoginTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.49 s -- in com.ae.specs.ui.LoginTest
+[INFO] Running com.ae.specs.ui.ScrollTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.94 s -- in com.ae.specs.ui.ScrollTest
+[INFO] Running com.ae.specs.ui.CartTest
+[ERROR] Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 42.37 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
+[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 1.270 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  500
+to be less than:
+  500 
+	at com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric(CartTest.java:280)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 6.056 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Locator expected to have count: 0
+Received: 1
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("#cart_info_table tbody tr").locator(".cart_quantity").filter(new Locator.FilterOptions().setHasText(Pattern.compile("-")))
+    9 × locator resolved to 1 element
+      - unexpected value "1"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.hasCount(LocatorAssertionsImpl.java:186)
+	at com.microsoft.playwright.assertions.LocatorAssertions.hasCount(LocatorAssertions.java:1510)
+	at com.ae.specs.ui.CartTest.tcCart09b_quantityNegative(CartTest.java:262)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.SubscriptionTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.32 s -- in com.ae.specs.ui.SubscriptionTest
+[INFO] Running com.ae.specs.api.BrandsApiTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.008 s -- in com.ae.specs.api.BrandsApiTest
+[INFO] Running com.ae.specs.api.AuthApiTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.397 s -- in com.ae.specs.api.AuthApiTest
+[INFO] Running com.ae.specs.api.AccountApiTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.13 s -- in com.ae.specs.api.AccountApiTest
+[INFO] Running com.ae.specs.api.SearchApiTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.665 s -- in com.ae.specs.api.SearchApiTest
+[INFO] Running com.ae.specs.api.ProductsApiTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.402 s -- in com.ae.specs.api.ProductsApiTest
+[INFO] Running com.ae.specs.SmokeSanityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.780 s -- in com.ae.specs.SmokeSanityTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CartTest.tcCart09b_quantityNegative:262 Locator expected to have count: 0
+Received: 1
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("#cart_info_table tbody tr").locator(".cart_quantity").filter(new Locator.FilterOptions().setHasText(Pattern.compile("-")))
+    9 × locator resolved to 1 element
+      - unexpected value "1"
+[ERROR]   CartTest.tcCart09c_quantityNonNumeric:280 
+Expecting actual:
+  500
+to be less than:
+  500 
+[ERROR]   CategoriesTest.tcCategories07a_malformedIdAbc:200->assertMalformedIdIsClean:221->assertCleanPage:71 
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /category_products/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/category_products/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>category_products/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+[ERROR]   CategoriesTest.tcCategories07c_malformedIdMinusOne:216->assertMalformedIdIsClean:221->assertCleanPage:71 
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /category_products/-1</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/category_products/-1</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>category_products/-1</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+[ERROR]   InvoiceTest.tcInvoice07_noSession:199 
+Expecting actual:
+  "Hi , Your total purchase amount is 500. Thank you"
+not to contain:
+  "purchase amount is 500"
+
+[ERROR]   InvoiceTest.tcInvoice08_forgedAmount:219 
+Expecting actual:
+  "Hi Inv166071419220x7 Payer, Your total purchase amount is 999999. Thank you"
+not to contain:
+  "purchase amount is 999999"
+
+[ERROR]   LogoutTest.tcLogout08_logoutWhileLoggedOut:148 
+Expecting actual:
+  "KeyError at /logout"
+not to contain:
+  "KeyError"
+
+[ERROR]   OrderTest.tcOrder06_nonNumericCard:271 Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+[ERROR]   OrderTest.tcOrder07_pastExpiry:284 Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+[ERROR]   OrderTest.tcOrder09_paymentEmptyCart:317 Page URL expected not to match regex: .*/payment_done/\d+$
+Received: https://www.automationexercise.com/payment_done/0
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/0"
+[ERROR]   ProductsTest.tcProducts10_nonNumericId:209 
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /product_details/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/product_details/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>product_details/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+[ERROR]   SearchTest.tcSearch07_ampersand:198 Page URL expected to match regex: ^.*/products\?search=%26$
+Received: https://www.automationexercise.com/products?search=&
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/products?search=&"
+[INFO] 
+[ERROR] Tests run: 194, Failures: 12, Errors: 0, Skipped: 0
+[INFO] 
+[ERROR] There are test failures.
+
+See /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire-reports for the individual test results.
+See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11:05 min
+[INFO] Finished at: 2026-10-01T09:40:34Z
+[INFO] ------------------------------------------------------------------------
