@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.ui.ScrollTest" time="82.91" tests="6" errors="2" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.ui.ScrollTest" time="18.459" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="base.url" value="https://www.automationexercise.com"/>
     <property name="java.specification.version" value="17"/>
@@ -13,7 +13,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261003083718357_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-10-03T08-37-18_250-jvmRun1 surefire-20261003083718357_1tmp surefire_0-20261003083718357_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261004085353244_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-10-04T08-53-53_165-jvmRun1 surefire-20261004085353244_1tmp surefire_0-20261004085353244_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/test-classes:/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/classes:/home/runner/.m2/repository/com/microsoft/playwright/playwright/1.49.0/playwright-1.49.0.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver/1.49.0/driver-1.49.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/runner/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/runner/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261003083718357_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261004085353244_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.20.1+1"/>
     <property name="user.name" value="runner"/>
@@ -56,183 +56,10 @@
     <property name="java.class.version" value="61.0"/>
     <property name="maven.test.failure.ignore" value="true"/>
   </properties>
-  <testcase name="tcScroll04_arrowHidesAfterUse" classname="com.ae.specs.ui.ScrollTest" time="30.497">
-    <error message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-10259278827503387914/package/lib/server/progress.js:75:26)&#10;    at Frame.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/frames.js:629:23)&#10;    at FrameDispatcher.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/frameDispatcher.js:106:103)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;-   - waiting for getByRole(AriaRole.CONTENTINFO)&#10;" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
-Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-10259278827503387914/package/lib/server/progress.js:75:26)
-    at Frame.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/frames.js:629:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/frameDispatcher.js:106:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
--   - waiting for getByRole(AriaRole.CONTENTINFO)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1050)
-	at com.microsoft.playwright.impl.FrameImpl.lambda$waitForSelector$46(FrameImpl.java:1046)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelector(FrameImpl.java:1046)
-	at com.microsoft.playwright.impl.LocatorImpl.elementHandle(LocatorImpl.java:217)
-	at com.microsoft.playwright.impl.LocatorImpl.withElement(LocatorImpl.java:84)
-	at com.microsoft.playwright.impl.LocatorImpl.scrollIntoViewIfNeeded(LocatorImpl.java:491)
-	at com.microsoft.playwright.Locator.scrollIntoViewIfNeeded(Locator.java:4402)
-	at com.ae.pages.components.Footer.scrollIntoView(Footer.java:20)
-	at com.ae.specs.ui.ScrollTest.tcScroll04_arrowHidesAfterUse(ScrollTest.java:71)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-10259278827503387914/package/lib/server/progress.js:75:26)
-    at Frame.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/frames.js:629:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/frameDispatcher.js:106:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
--   - waiting for getByRole(AriaRole.CONTENTINFO)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-	... 17 more
-]]></error>
-  </testcase>
-  <testcase name="tcScroll01_withArrow" classname="com.ae.specs.ui.ScrollTest" time="5.433">
-    <failure message="Locator expected to be in viewport&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for locator(&quot;#slider-carousel .item.active&quot;).getByRole(AriaRole.HEADING, new Locator.GetByRoleOptions().setName(&quot;Full-Fledged practice website for Automation Engineers&quot;))" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to be in viewport
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator("#slider-carousel .item.active").getByRole(AriaRole.HEADING, new Locator.GetByRoleOptions().setName("Full-Fledged practice website for Automation Engineers"))
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isInViewport(LocatorAssertionsImpl.java:389)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isInViewport(LocatorAssertions.java:736)
-	at com.ae.specs.ui.ScrollTest.openAndScrollToBottom(ScrollTest.java:30)
-	at com.ae.specs.ui.ScrollTest.tcScroll01_withArrow(ScrollTest.java:39)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcScroll06_arrowOnProducts" classname="com.ae.specs.ui.ScrollTest" time="30.391">
-    <error message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-10259278827503387914/package/lib/server/progress.js:75:26)&#10;    at Frame.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/frames.js:629:23)&#10;    at FrameDispatcher.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/frameDispatcher.js:106:103)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;-   - waiting for getByRole(AriaRole.CONTENTINFO)&#10;" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
-Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-10259278827503387914/package/lib/server/progress.js:75:26)
-    at Frame.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/frames.js:629:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/frameDispatcher.js:106:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
--   - waiting for getByRole(AriaRole.CONTENTINFO)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1050)
-	at com.microsoft.playwright.impl.FrameImpl.lambda$waitForSelector$46(FrameImpl.java:1046)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelector(FrameImpl.java:1046)
-	at com.microsoft.playwright.impl.LocatorImpl.elementHandle(LocatorImpl.java:217)
-	at com.microsoft.playwright.impl.LocatorImpl.withElement(LocatorImpl.java:84)
-	at com.microsoft.playwright.impl.LocatorImpl.scrollIntoViewIfNeeded(LocatorImpl.java:491)
-	at com.microsoft.playwright.Locator.scrollIntoViewIfNeeded(Locator.java:4402)
-	at com.ae.pages.components.Footer.scrollIntoView(Footer.java:20)
-	at com.ae.specs.ui.ScrollTest.tcScroll06_arrowOnProducts(ScrollTest.java:96)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-10259278827503387914/package/lib/server/progress.js:75:26)
-    at Frame.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/frames.js:629:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/frameDispatcher.js:106:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-10259278827503387914/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
--   - waiting for getByRole(AriaRole.CONTENTINFO)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-	... 17 more
-]]></error>
-  </testcase>
-  <testcase name="tcScroll05_carouselSlides" classname="com.ae.specs.ui.ScrollTest" time="5.441">
-    <failure message="Locator expected to be in viewport&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for locator(&quot;#slider-carousel .item.active&quot;).getByRole(AriaRole.HEADING, new Locator.GetByRoleOptions().setName(&quot;Full-Fledged practice website for Automation Engineers&quot;))" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to be in viewport
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator("#slider-carousel .item.active").getByRole(AriaRole.HEADING, new Locator.GetByRoleOptions().setName("Full-Fledged practice website for Automation Engineers"))
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isInViewport(LocatorAssertionsImpl.java:389)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isInViewport(LocatorAssertions.java:736)
-	at com.ae.specs.ui.ScrollTest.tcScroll05_carouselSlides(ScrollTest.java:84)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcScroll02_withoutArrow" classname="com.ae.specs.ui.ScrollTest" time="5.424">
-    <failure message="Locator expected to be in viewport&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for locator(&quot;#slider-carousel .item.active&quot;).getByRole(AriaRole.HEADING, new Locator.GetByRoleOptions().setName(&quot;Full-Fledged practice website for Automation Engineers&quot;))" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to be in viewport
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator("#slider-carousel .item.active").getByRole(AriaRole.HEADING, new Locator.GetByRoleOptions().setName("Full-Fledged practice website for Automation Engineers"))
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isInViewport(LocatorAssertionsImpl.java:389)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isInViewport(LocatorAssertions.java:736)
-	at com.ae.specs.ui.ScrollTest.openAndScrollToBottom(ScrollTest.java:30)
-	at com.ae.specs.ui.ScrollTest.tcScroll02_withoutArrow(ScrollTest.java:49)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcScroll03_arrowAppearsAfterScroll" classname="com.ae.specs.ui.ScrollTest" time="5.313">
-    <failure message="Locator expected to have count: 1&#10;Received: 0&#10;&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for locator(&quot;#scrollUp&quot;)&#10;    9 × locator resolved to 0 elements&#10;      - unexpected value &quot;0&quot;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to have count: 1
-Received: 0
-
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator("#scrollUp")
-    9 × locator resolved to 0 elements
-      - unexpected value "0"
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.hasCount(LocatorAssertionsImpl.java:186)
-	at com.microsoft.playwright.assertions.LocatorAssertions.hasCount(LocatorAssertions.java:1510)
-	at com.ae.specs.ui.ScrollTest.tcScroll03_arrowAppearsAfterScroll(ScrollTest.java:60)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
+  <testcase name="tcScroll04_arrowHidesAfterUse" classname="com.ae.specs.ui.ScrollTest" time="2.533"/>
+  <testcase name="tcScroll01_withArrow" classname="com.ae.specs.ui.ScrollTest" time="2.235"/>
+  <testcase name="tcScroll06_arrowOnProducts" classname="com.ae.specs.ui.ScrollTest" time="1.638"/>
+  <testcase name="tcScroll05_carouselSlides" classname="com.ae.specs.ui.ScrollTest" time="7.708"/>
+  <testcase name="tcScroll02_withoutArrow" classname="com.ae.specs.ui.ScrollTest" time="2.018"/>
+  <testcase name="tcScroll03_arrowAppearsAfterScroll" classname="com.ae.specs.ui.ScrollTest" time="2.039"/>
 </testsuite>
