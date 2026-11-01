@@ -1,8 +1,8 @@
-# Test run 🟡 green-with-known-bugs
+# Test run 🔴 red
 
-Commit `c0f2900` · 2026-10-31T09:10:44+00:00 · [workflow run](https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/41186772711)
+Commit `c0f2900` · 2026-11-01T09:59:41+00:00 · [workflow run](https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/41294737300)
 
-**182 passed · 12 failed · 0 skipped** (0 new, 12 known product bugs)
+**181 passed · 13 failed · 0 skipped** (1 new, 12 known product bugs)
 
 | Class | Passed | Failed | Skipped |
 |---|---|---|---|
@@ -12,7 +12,7 @@ Commit `c0f2900` · 2026-10-31T09:10:44+00:00 · [workflow run](https://github.c
 | BrandsTest | 9 | 0 | 0 |
 | CartTest | 13 | 2 | 0 |
 | CategoriesTest | 8 | 2 | 0 |
-| CheckoutTest | 10 | 0 | 0 |
+| CheckoutTest | 9 | 1 | 0 |
 | ContactUsTest | 11 | 0 | 0 |
 | InvoiceTest | 6 | 2 | 0 |
 | LoginTest | 12 | 0 | 0 |
@@ -36,7 +36,8 @@ Commit `c0f2900` · 2026-10-31T09:10:44+00:00 · [workflow run](https://github.c
 | TC-CART-09 | CartTest.tcCart09b_quantityNegative | tests/reports/bugs/cart-1.md | Locator expected to have count: 0 Received: 1 Call log: - Locator.expect with timeout 5000ms - waiting for locator("#cart_info_table tbody tr").locator(".cart_q |
 | TC-CATEGORIES-07 | CategoriesTest.tcCategories07a_malformedIdAbc | tests/reports/bugs/categories-1.md | Expecting actual: "<!DOCTYPE html><html lang="en"><head> <meta http-equiv="content-type" content="text/html; charset=utf-8"> <title>Page not found at /category_ |
 | TC-CATEGORIES-07 | CategoriesTest.tcCategories07c_malformedIdMinusOne | tests/reports/bugs/categories-1.md | Expecting actual: "<!DOCTYPE html><html lang="en"><head> <meta http-equiv="content-type" content="text/html; charset=utf-8"> <title>Page not found at /category_ |
-| TC-INVOICE-08 | InvoiceTest.tcInvoice08_forgedAmount | tests/reports/bugs/invoice-2.md | Expecting actual: "Hi Inv167604143455x7 Payer, Your total purchase amount is 999999. Thank you" not to contain: "purchase amount is 999999" |
+| TC-CHECKOUT-03 | CheckoutTest.tcCheckout03_continueOnCart | **NEW** | Locator expected to be visible Call log: - Locator.expect with timeout 5000ms - waiting for getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Add |
+| TC-INVOICE-08 | InvoiceTest.tcInvoice08_forgedAmount | tests/reports/bugs/invoice-2.md | Expecting actual: "Hi Inv138252531380x7 Payer, Your total purchase amount is 999999. Thank you" not to contain: "purchase amount is 999999" |
 | TC-INVOICE-07 | InvoiceTest.tcInvoice07_noSession | tests/reports/bugs/invoice-1.md | Expecting actual: "Hi , Your total purchase amount is 500. Thank you" not to contain: "purchase amount is 500" |
 | TC-LOGOUT-08 | LogoutTest.tcLogout08_logoutWhileLoggedOut | tests/reports/bugs/logout-1.md | Expecting actual: "KeyError at /logout" not to contain: "KeyError" |
 | TC-ORDER-09 | OrderTest.tcOrder09_paymentEmptyCart | tests/reports/bugs/order-3.md | Page URL expected not to match regex: .*/payment_done/\d+$ Received: https://www.automationexercise.com/payment_done/0 Call log: - Locator.expect with timeout 5 |
