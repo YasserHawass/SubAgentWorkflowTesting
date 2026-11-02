@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.api.AccountApiTest" time="14.888" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.api.AccountApiTest" time="15.064" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="base.url" value="https://www.automationexercise.com"/>
     <property name="java.specification.version" value="17"/>
@@ -13,7 +13,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261101094934061_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-11-01T09-49-33_956-jvmRun1 surefire-20261101094934061_1tmp surefire_0-20261101094934061_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261102100901114_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-11-02T10-09-01_013-jvmRun1 surefire-20261102100901114_1tmp surefire_0-20261102100901114_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/test-classes:/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/classes:/home/runner/.m2/repository/com/microsoft/playwright/playwright/1.49.0/playwright-1.49.0.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver/1.49.0/driver-1.49.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/runner/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/runner/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261101094934061_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261102100901114_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.21+9"/>
     <property name="user.name" value="runner"/>
@@ -56,16 +56,16 @@
     <property name="java.class.version" value="61.0"/>
     <property name="maven.test.failure.ignore" value="true"/>
   </properties>
-  <testcase name="tcApiAccount10_wrongHttpMethods" classname="com.ae.specs.api.AccountApiTest" time="1.507"/>
-  <testcase name="tcApiAccount07_createWithMissingField" classname="com.ae.specs.api.AccountApiTest" time="1.985"/>
-  <testcase name="tcApiAccount12_passwordChangeViaUpdate" classname="com.ae.specs.api.AccountApiTest" time="1.111"/>
-  <testcase name="tcApiAccount05_deleteWithCorrectCredentials" classname="com.ae.specs.api.AccountApiTest" time="1.13"/>
-  <testcase name="tcApiAccount09_getDetailUnknownAndMissingEmail" classname="com.ae.specs.api.AccountApiTest" time="0.247"/>
-  <testcase name="tcApiAccount01_createAccountWithAllFields" classname="com.ae.specs.api.AccountApiTest" time="0.746"/>
-  <testcase name="tcApiAccount02_getUserDetailReturnsSentFields" classname="com.ae.specs.api.AccountApiTest" time="1.006"/>
-  <testcase name="tcApiAccount11_updateUnknownEmailAndWrongPassword" classname="com.ae.specs.api.AccountApiTest" time="1.938"/>
-  <testcase name="tcApiAccount03_updateChangesNameCityAddress" classname="com.ae.specs.api.AccountApiTest" time="1.424"/>
-  <testcase name="tcApiAccount04_lifecycle" classname="com.ae.specs.api.AccountApiTest" time="1.256"/>
-  <testcase name="tcApiAccount08_deleteWithWrongPassword" classname="com.ae.specs.api.AccountApiTest" time="1.287"/>
-  <testcase name="tcApiAccount06_duplicateCreateRejected" classname="com.ae.specs.api.AccountApiTest" time="0.982"/>
+  <testcase name="tcApiAccount10_wrongHttpMethods" classname="com.ae.specs.api.AccountApiTest" time="1.005"/>
+  <testcase name="tcApiAccount07_createWithMissingField" classname="com.ae.specs.api.AccountApiTest" time="2.007"/>
+  <testcase name="tcApiAccount12_passwordChangeViaUpdate" classname="com.ae.specs.api.AccountApiTest" time="0.905"/>
+  <testcase name="tcApiAccount05_deleteWithCorrectCredentials" classname="com.ae.specs.api.AccountApiTest" time="1.481"/>
+  <testcase name="tcApiAccount09_getDetailUnknownAndMissingEmail" classname="com.ae.specs.api.AccountApiTest" time="0.188"/>
+  <testcase name="tcApiAccount01_createAccountWithAllFields" classname="com.ae.specs.api.AccountApiTest" time="1.471"/>
+  <testcase name="tcApiAccount02_getUserDetailReturnsSentFields" classname="com.ae.specs.api.AccountApiTest" time="0.958"/>
+  <testcase name="tcApiAccount11_updateUnknownEmailAndWrongPassword" classname="com.ae.specs.api.AccountApiTest" time="1.873"/>
+  <testcase name="tcApiAccount03_updateChangesNameCityAddress" classname="com.ae.specs.api.AccountApiTest" time="1.679"/>
+  <testcase name="tcApiAccount04_lifecycle" classname="com.ae.specs.api.AccountApiTest" time="1.002"/>
+  <testcase name="tcApiAccount08_deleteWithWrongPassword" classname="com.ae.specs.api.AccountApiTest" time="1.22"/>
+  <testcase name="tcApiAccount06_duplicateCreateRejected" classname="com.ae.specs.api.AccountApiTest" time="0.995"/>
 </testsuite>
