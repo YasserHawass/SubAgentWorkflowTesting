@@ -1,6 +1,6 @@
 # Test run 🔴 red
 
-Commit `c0f2900` · 2026-11-05T10:08:24+00:00 · [workflow run](https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/42006691738)
+Commit `c0f2900` · 2026-11-06T10:15:06+00:00 · [workflow run](https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/42199127509)
 
 **181 passed · 13 failed · 0 skipped** (1 new, 12 known product bugs)
 
@@ -15,11 +15,11 @@ Commit `c0f2900` · 2026-11-05T10:08:24+00:00 · [workflow run](https://github.c
 | CheckoutTest | 10 | 0 | 0 |
 | ContactUsTest | 11 | 0 | 0 |
 | InvoiceTest | 6 | 2 | 0 |
-| LoginTest | 12 | 0 | 0 |
+| LoginTest | 11 | 1 | 0 |
 | LogoutTest | 7 | 1 | 0 |
 | OrderTest | 7 | 3 | 0 |
 | ProductsApiTest | 6 | 0 | 0 |
-| ProductsTest | 9 | 2 | 0 |
+| ProductsTest | 10 | 1 | 0 |
 | RegisterTest | 12 | 0 | 0 |
 | ReviewsTest | 12 | 0 | 0 |
 | ScrollTest | 6 | 0 | 0 |
@@ -36,12 +36,12 @@ Commit `c0f2900` · 2026-11-05T10:08:24+00:00 · [workflow run](https://github.c
 | TC-CART-09 | CartTest.tcCart09b_quantityNegative | tests/reports/bugs/cart-1.md | Locator expected to have count: 0 Received: 1 Call log: - Locator.expect with timeout 5000ms - waiting for locator("#cart_info_table tbody tr").locator(".cart_q |
 | TC-CATEGORIES-07 | CategoriesTest.tcCategories07a_malformedIdAbc | tests/reports/bugs/categories-1.md | Expecting actual: "<!DOCTYPE html><html lang="en"><head> <meta http-equiv="content-type" content="text/html; charset=utf-8"> <title>Page not found at /category_ |
 | TC-CATEGORIES-07 | CategoriesTest.tcCategories07c_malformedIdMinusOne | tests/reports/bugs/categories-1.md | Expecting actual: "<!DOCTYPE html><html lang="en"><head> <meta http-equiv="content-type" content="text/html; charset=utf-8"> <title>Page not found at /category_ |
-| TC-INVOICE-08 | InvoiceTest.tcInvoice08_forgedAmount | tests/reports/bugs/invoice-2.md | Expecting actual: "Hi Inv587570298614x7 Payer, Your total purchase amount is 999999. Thank you" not to contain: "purchase amount is 999999" |
+| TC-INVOICE-08 | InvoiceTest.tcInvoice08_forgedAmount | tests/reports/bugs/invoice-2.md | Expecting actual: "Hi Inv1137235678742x7 Payer, Your total purchase amount is 999999. Thank you" not to contain: "purchase amount is 999999" |
 | TC-INVOICE-07 | InvoiceTest.tcInvoice07_noSession | tests/reports/bugs/invoice-1.md | Expecting actual: "Hi , Your total purchase amount is 500. Thank you" not to contain: "purchase amount is 500" |
+| TC-LOGIN-06 | LoginTest.tcLogin06_sessionPersists | **NEW** | Locator expected to contain text: Logged in as AE Tester 1793959287838-2 Received: <element(s) not found> Call log: - Locator.expect with timeout 5000ms - waiti |
 | TC-LOGOUT-08 | LogoutTest.tcLogout08_logoutWhileLoggedOut | tests/reports/bugs/logout-1.md | Expecting actual: "KeyError at /logout" not to contain: "KeyError" |
 | TC-ORDER-09 | OrderTest.tcOrder09_paymentEmptyCart | tests/reports/bugs/order-3.md | Page URL expected not to match regex: .*/payment_done/\d+$ Received: https://www.automationexercise.com/payment_done/0 Call log: - Locator.expect with timeout 5 |
 | TC-ORDER-07 | OrderTest.tcOrder07_pastExpiry | tests/reports/bugs/order-2.md | Page URL expected to be: https://www.automationexercise.com/payment Received: https://www.automationexercise.com/payment_done/500 Call log: - Locator.expect wit |
 | TC-ORDER-06 | OrderTest.tcOrder06_nonNumericCard | tests/reports/bugs/order-1.md | Page URL expected to be: https://www.automationexercise.com/payment Received: https://www.automationexercise.com/payment_done/500 Call log: - Locator.expect wit |
-| TC-PRODUCTS-08 | ProductsTest.tcProducts08_everyIdOpens | **NEW** | [status for id 15] expected: 200 but was: 503 |
 | TC-PRODUCTS-10 | ProductsTest.tcProducts10_nonNumericId | tests/reports/bugs/products-1.md | Expecting actual: "<!DOCTYPE html><html lang="en"><head> <meta http-equiv="content-type" content="text/html; charset=utf-8"> <title>Page not found at /product_d |
 | TC-SEARCH-07 | SearchTest.tcSearch07_ampersand | tests/reports/bugs/search-1.md | Page URL expected to match regex: ^.*/products\?search=%26$ Received: https://www.automationexercise.com/products?search=& Call log: - Locator.expect with timeo |
