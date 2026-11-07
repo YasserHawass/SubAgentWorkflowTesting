@@ -4,6 +4,7 @@ Published by `.github/workflows/tests.yml`. Latest: [latest/summary.md](latest/s
 
 | Run | Commit | Passed | Failed | Skipped | New failures |
 |---|---|---|---|---|---|
+| 🟡 [2026-11-07_44_c0f2900](runs/2026-11-07_44_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
 | 🔴 [2026-11-06_43_c0f2900](runs/2026-11-06_43_c0f2900/summary.md) | c0f2900 | 181 | 13 | 0 | TC-LOGIN-06 |
 | 🔴 [2026-11-05_42_c0f2900](runs/2026-11-05_42_c0f2900/summary.md) | c0f2900 | 181 | 13 | 0 | TC-PRODUCTS-08 |
 | 🟡 [2026-11-03_40_c0f2900](runs/2026-11-03_40_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
