@@ -1,0 +1,241 @@
+{
+  "generatedAt": "2026-11-08T09:47:45+00:00",
+  "commit": "c0f2900e967e536d8d484490977ed7f870408511",
+  "runUrl": "https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/42467949841",
+  "result": "green-with-known-bugs",
+  "totals": {
+    "passed": 182,
+    "failed": 12,
+    "skipped": 0
+  },
+  "perClass": {
+    "SmokeSanityTest": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    "AccountApiTest": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "AuthApiTest": {
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0
+    },
+    "BrandsApiTest": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    },
+    "ProductsApiTest": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    },
+    "SearchApiTest": {
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    },
+    "BrandsTest": {
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0
+    },
+    "CartTest": {
+      "passed": 13,
+      "failed": 2,
+      "skipped": 0
+    },
+    "CategoriesTest": {
+      "passed": 8,
+      "failed": 2,
+      "skipped": 0
+    },
+    "CheckoutTest": {
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0
+    },
+    "ContactUsTest": {
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0
+    },
+    "InvoiceTest": {
+      "passed": 6,
+      "failed": 2,
+      "skipped": 0
+    },
+    "LoginTest": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "LogoutTest": {
+      "passed": 7,
+      "failed": 1,
+      "skipped": 0
+    },
+    "OrderTest": {
+      "passed": 7,
+      "failed": 3,
+      "skipped": 0
+    },
+    "ProductsTest": {
+      "passed": 10,
+      "failed": 1,
+      "skipped": 0
+    },
+    "RegisterTest": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "ReviewsTest": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "ScrollTest": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    },
+    "SearchTest": {
+      "passed": 10,
+      "failed": 1,
+      "skipped": 0
+    },
+    "SubscriptionTest": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "failures": [
+    {
+      "id": "TC-CART-09",
+      "class": "CartTest",
+      "method": "tcCart09c_quantityNonNumeric",
+      "status": "failed",
+      "timeSec": 1.163,
+      "message": "Expecting actual: 500 to be less than: 500",
+      "known": true,
+      "bug": "tests/reports/bugs/cart-2.md"
+    },
+    {
+      "id": "TC-CART-09",
+      "class": "CartTest",
+      "method": "tcCart09b_quantityNegative",
+      "status": "failed",
+      "timeSec": 5.923,
+      "message": "Locator expected to have count: 0 Received: 1 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\"#cart_info_table tbody tr\").locator(\".cart_quantity\").filter(new Locator.FilterOptions().setHasText(Pattern.compile(\"-\"))) 9 \u00d7 locator resolved to 1 element - unexpected value \"1\"",
+      "known": true,
+      "bug": "tests/reports/bugs/cart-1.md"
+    },
+    {
+      "id": "TC-CATEGORIES-07",
+      "class": "CategoriesTest",
+      "method": "tcCategories07a_malformedIdAbc",
+      "status": "failed",
+      "timeSec": 0.55,
+      "message": "Expecting actual: \"<!DOCTYPE html><html lang=\"en\"><head> <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"> <title>Page not found at /category_products/abc</title> <meta name=\"robots\" content=\"NONE,NOARCHIVE\"> <style type=\"text/css\"> html * { padding:0; margin:0; } body * { padding:",
+      "known": true,
+      "bug": "tests/reports/bugs/categories-1.md"
+    },
+    {
+      "id": "TC-CATEGORIES-07",
+      "class": "CategoriesTest",
+      "method": "tcCategories07c_malformedIdMinusOne",
+      "status": "failed",
+      "timeSec": 0.344,
+      "message": "Expecting actual: \"<!DOCTYPE html><html lang=\"en\"><head> <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"> <title>Page not found at /category_products/-1</title> <meta name=\"robots\" content=\"NONE,NOARCHIVE\"> <style type=\"text/css\"> html * { padding:0; margin:0; } body * { padding:1",
+      "known": true,
+      "bug": "tests/reports/bugs/categories-1.md"
+    },
+    {
+      "id": "TC-INVOICE-08",
+      "class": "InvoiceTest",
+      "method": "tcInvoice08_forgedAmount",
+      "status": "failed",
+      "timeSec": 3.751,
+      "message": "Expecting actual: \"Hi Inv560892518728x7 Payer, Your total purchase amount is 999999. Thank you\" not to contain: \"purchase amount is 999999\"",
+      "known": true,
+      "bug": "tests/reports/bugs/invoice-2.md"
+    },
+    {
+      "id": "TC-INVOICE-07",
+      "class": "InvoiceTest",
+      "method": "tcInvoice07_noSession",
+      "status": "failed",
+      "timeSec": 8.388,
+      "message": "Expecting actual: \"Hi , Your total purchase amount is 500. Thank you\" not to contain: \"purchase amount is 500\"",
+      "known": true,
+      "bug": "tests/reports/bugs/invoice-1.md"
+    },
+    {
+      "id": "TC-LOGOUT-08",
+      "class": "LogoutTest",
+      "method": "tcLogout08_logoutWhileLoggedOut",
+      "status": "failed",
+      "timeSec": 1.129,
+      "message": "Expecting actual: \"KeyError at /logout\" not to contain: \"KeyError\"",
+      "known": true,
+      "bug": "tests/reports/bugs/logout-1.md"
+    },
+    {
+      "id": "TC-ORDER-09",
+      "class": "OrderTest",
+      "method": "tcOrder09_paymentEmptyCart",
+      "status": "failed",
+      "timeSec": 9.87,
+      "message": "Page URL expected not to match regex: .*/payment_done/\\d+$ Received: https://www.automationexercise.com/payment_done/0 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automationexercise.com",
+      "known": true,
+      "bug": "tests/reports/bugs/order-3.md"
+    },
+    {
+      "id": "TC-ORDER-07",
+      "class": "OrderTest",
+      "method": "tcOrder07_pastExpiry",
+      "status": "failed",
+      "timeSec": 10.862,
+      "message": "Page URL expected to be: https://www.automationexercise.com/payment Received: https://www.automationexercise.com/payment_done/500 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automatione",
+      "known": true,
+      "bug": "tests/reports/bugs/order-2.md"
+    },
+    {
+      "id": "TC-ORDER-06",
+      "class": "OrderTest",
+      "method": "tcOrder06_nonNumericCard",
+      "status": "failed",
+      "timeSec": 11.154,
+      "message": "Page URL expected to be: https://www.automationexercise.com/payment Received: https://www.automationexercise.com/payment_done/500 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automatione",
+      "known": true,
+      "bug": "tests/reports/bugs/order-1.md"
+    },
+    {
+      "id": "TC-PRODUCTS-10",
+      "class": "ProductsTest",
+      "method": "tcProducts10_nonNumericId",
+      "status": "failed",
+      "timeSec": 0.366,
+      "message": "Expecting actual: \"<!DOCTYPE html><html lang=\"en\"><head> <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"> <title>Page not found at /product_details/abc</title> <meta name=\"robots\" content=\"NONE,NOARCHIVE\"> <style type=\"text/css\"> html * { padding:0; margin:0; } body * { padding:10",
+      "known": true,
+      "bug": "tests/reports/bugs/products-1.md"
+    },
+    {
+      "id": "TC-SEARCH-07",
+      "class": "SearchTest",
+      "method": "tcSearch07_ampersand",
+      "status": "failed",
+      "timeSec": 9.285,
+      "message": "Page URL expected to match regex: ^.*/products\\?search=%26$ Received: https://www.automationexercise.com/products?search=& Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automationexercise",
+      "known": true,
+      "bug": "tests/reports/bugs/search-1.md"
+    }
+  ],
+  "newFailures": []
+}
