@@ -4,6 +4,7 @@ Published by `.github/workflows/tests.yml`. Latest: [latest/summary.md](latest/s
 
 | Run | Commit | Passed | Failed | Skipped | New failures |
 |---|---|---|---|---|---|
+| 🟡 [2026-11-10_47_c0f2900](runs/2026-11-10_47_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
 | 🟡 [2026-11-09_46_c0f2900](runs/2026-11-09_46_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
 | 🟡 [2026-11-08_45_c0f2900](runs/2026-11-08_45_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
 | 🟡 [2026-11-07_44_c0f2900](runs/2026-11-07_44_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
