@@ -4,6 +4,7 @@ Published by `.github/workflows/tests.yml`. Latest: [latest/summary.md](latest/s
 
 | Run | Commit | Passed | Failed | Skipped | New failures |
 |---|---|---|---|---|---|
+| 🔴 [2026-11-11_48_c0f2900](runs/2026-11-11_48_c0f2900/summary.md) | c0f2900 | 165 | 29 | 0 | TC-APIACCOUNT-06, TC-APIAUTH-09, TC-APIAUTH-02, TC-APIBRANDS-03, TC-APIBRANDS-04, TC-APIPRODUCTS-02, TC-APIPRODUCTS-01, TC-APIPRODUCTS-06, TC-APISEARCH-04, TC-APISEARCH-06, TC-CART-09, TC-INVOICE-06, TC-INVOICE-03, TC-LOGOUT-06, TC-ORDER-04, TC-REGISTER-07, TC-SEARCH-07 |
 | 🟡 [2026-11-10_47_c0f2900](runs/2026-11-10_47_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
 | 🟡 [2026-11-09_46_c0f2900](runs/2026-11-09_46_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
 | 🟡 [2026-11-08_45_c0f2900](runs/2026-11-08_45_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |

@@ -1,0 +1,2741 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.ae:automationexercise-tests >-------------------
+[INFO] Building automationexercise-tests 0.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Artifact org.apache.maven.plugins:maven-surefire-plugin:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.plugins:maven-surefire-plugin:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:surefire:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:surefire:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.plugins:maven-surefire-plugin:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.plugins:maven-surefire-plugin:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ automationexercise-tests ---
+[INFO] skip non existing resourceDirectory /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ automationexercise-tests ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ automationexercise-tests ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ automationexercise-tests ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ automationexercise-tests ---
+[INFO] Artifact org.apache.maven.surefire:surefire-api:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-api:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-logger-api:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-logger-api:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-shared-utils:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-shared-utils:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-extensions-api:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-extensions-api:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:maven-surefire-common:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:maven-surefire-common:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-booter:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-booter:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-extensions-spi:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-extensions-spi:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.shared:maven-common-artifact-filters:pom:3.4.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.shared:maven-common-artifact-filters:pom:3.4.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.shared:maven-shared-components:pom:42 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.shared:maven-shared-components:pom:42 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven:maven-parent:pom:42 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven:maven-parent:pom:42 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache:apache:pom:32 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache:apache:pom:32 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.codehaus.plexus:plexus-java:pom:1.3.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.codehaus.plexus:plexus-java:pom:1.3.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.ow2.asm:asm:pom:9.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.ow2.asm:asm:pom:9.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact com.thoughtworks.qdox:qdox:pom:2.1.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact com.thoughtworks.qdox:qdox:pom:2.1.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-api:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-logger-api:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-shared-utils:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-extensions-api:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:maven-surefire-common:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-booter:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-extensions-spi:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.shared:maven-common-artifact-filters:jar:3.4.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.codehaus.plexus:plexus-java:jar:1.3.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.ow2.asm:asm:jar:9.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact com.thoughtworks.qdox:qdox:jar:2.1.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-api:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-logger-api:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-shared-utils:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-extensions-api:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:maven-surefire-common:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-booter:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-extensions-spi:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.shared:maven-common-artifact-filters:jar:3.4.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.codehaus.plexus:plexus-java:jar:1.3.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.ow2.asm:asm:jar:9.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact com.thoughtworks.qdox:qdox:jar:2.1.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] Artifact org.apache.maven.surefire:surefire-junit-platform:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:surefire-junit-platform:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:surefire-providers:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:surefire-providers:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:common-java5:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:common-java5:pom:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-engine:pom:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-engine:pom:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit:junit-bom:pom:5.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit:junit-bom:pom:5.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.opentest4j:opentest4j:pom:1.2.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.opentest4j:opentest4j:pom:1.2.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-commons:pom:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-commons:pom:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:pom:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:pom:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-junit-platform:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:common-java5:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-engine:jar:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.opentest4j:opentest4j:jar:1.2.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-commons:jar:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:jar:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.apache.maven.surefire:surefire-junit-platform:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:common-java5:jar:3.5.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-engine:jar:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.opentest4j:opentest4j:jar:1.2.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-commons:jar:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:jar:1.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases), apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:pom:1.11.4 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:pom:1.11.4 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:jar:1.11.4 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:jar:1.11.4 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.ae.specs.ui.ProductsTest
+Playwright Host validation warning: 
+╔══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Host system is missing dependencies to run browsers.                                                 ║
+║ Please install them with the following command:                                                      ║
+║                                                                                                      ║
+║     sudo mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install-deps" ║
+║                                                                                                      ║
+║ Alternatively, use apt:                                                                              ║
+║     sudo apt-get install libicu74\                                                                   ║
+║         libxml2\                                                                                     ║
+║         libwoff1\                                                                                    ║
+║         libvpx9\                                                                                     ║
+║         libevent-2.1-7t64\                                                                           ║
+║         libopus0\                                                                                    ║
+║         libgstreamer-plugins-base1.0-0\                                                              ║
+║         libgstreamer-gl1.0-0\                                                                        ║
+║         libgstreamer-plugins-bad1.0-0\                                                               ║
+║         libflite1\                                                                                   ║
+║         libavif16\                                                                                   ║
+║         libharfbuzz-icu0\                                                                            ║
+║         libsecret-1-0\                                                                               ║
+║         libhyphen0\                                                                                  ║
+║         libwayland-server0\                                                                          ║
+║         libmanette-0.2-0\                                                                            ║
+║         libgles2\                                                                                    ║
+║         gstreamer1.0-libav                                                                           ║
+║                                                                                                      ║
+║ <3 Playwright Team                                                                                   ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
+    at validateDependenciesLinux (/tmp/playwright-java-7817437750049160225/package/lib/server/registry/dependencies.js:216:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Registry._validateHostRequirements (/tmp/playwright-java-7817437750049160225/package/lib/server/registry/index.js:753:43)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-7817437750049160225/package/lib/server/registry/index.js:851:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-7817437750049160225/package/lib/server/registry/index.js:840:43)
+    at async t.<anonymous> (/tmp/playwright-java-7817437750049160225/package/lib/cli/program.js:137:7)
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 46.95 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
+[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.838 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /product_details/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/product_details/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>product_details/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+	at com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId(ProductsTest.java:209)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.CategoriesTest
+[ERROR] Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 25.62 s <<< FAILURE! -- in com.ae.specs.ui.CategoriesTest
+[ERROR] com.ae.specs.ui.CategoriesTest.tcCategories07a_malformedIdAbc -- Time elapsed: 0.573 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /category_products/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/category_products/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>category_products/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+	at com.ae.specs.ui.CategoriesTest.assertCleanPage(CategoriesTest.java:71)
+	at com.ae.specs.ui.CategoriesTest.assertMalformedIdIsClean(CategoriesTest.java:221)
+	at com.ae.specs.ui.CategoriesTest.tcCategories07a_malformedIdAbc(CategoriesTest.java:200)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.CategoriesTest.tcCategories07c_malformedIdMinusOne -- Time elapsed: 0.448 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /category_products/-1</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/category_products/-1</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>category_products/-1</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+	at com.ae.specs.ui.CategoriesTest.assertCleanPage(CategoriesTest.java:71)
+	at com.ae.specs.ui.CategoriesTest.assertMalformedIdIsClean(CategoriesTest.java:221)
+	at com.ae.specs.ui.CategoriesTest.tcCategories07c_malformedIdMinusOne(CategoriesTest.java:216)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.LoginTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 77.08 s -- in com.ae.specs.ui.LoginTest
+[INFO] Running com.ae.specs.ui.SearchTest
+[ERROR] Tests run: 11, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 105.5 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
+[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 11.49 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to match regex: ^.*/products\?search=%26$
+Received: https://www.automationexercise.com/products?search=&
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/products?search=&"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:68)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:181)
+	at com.ae.specs.ui.SearchTest.tcSearch07_ampersand(SearchTest.java:198)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_specialCharacters -- Time elapsed: 37.24 s <<< ERROR!
+com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-7817437750049160225/package/lib/server/progress.js:75:26)
+    at Frame.fill (/tmp/playwright-java-7817437750049160225/package/lib/server/frames.js:1072:23)
+    at FrameDispatcher.fill (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/frameDispatcher.js:170:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByPlaceholder("Search Product")
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$fill$14(FrameImpl.java:325)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:325)
+	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:250)
+	at com.microsoft.playwright.Locator.fill(Locator.java:3075)
+	at com.ae.pages.ProductsPage.search(ProductsPage.java:95)
+	at com.ae.specs.ui.SearchTest.tcSearch07_specialCharacters(SearchTest.java:180)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-7817437750049160225/package/lib/server/progress.js:75:26)
+    at Frame.fill (/tmp/playwright-java-7817437750049160225/package/lib/server/frames.js:1072:23)
+    at FrameDispatcher.fill (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/frameDispatcher.js:170:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByPlaceholder("Search Product")
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 16 more
+
+[INFO] Running com.ae.specs.ui.LogoutTest
+[ERROR] Tests run: 8, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 93.06 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
+[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 1.333 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "KeyError at /logout"
+not to contain:
+  "KeyError"
+
+	at com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut(LogoutTest.java:148)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.LogoutTest.tcLogout06_loginAgain -- Time elapsed: 32.08 s <<< ERROR!
+com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-7817437750049160225/package/lib/server/progress.js:75:26)
+    at Frame.click (/tmp/playwright-java-7817437750049160225/package/lib/server/frames.js:1022:23)
+    at FrameDispatcher.click (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BANNER).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Signup / Login"))
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
+	at com.microsoft.playwright.Locator.click(Locator.java:2493)
+	at com.ae.specs.ui.LogoutTest.loggedInUser(LogoutTest.java:40)
+	at com.ae.specs.ui.LogoutTest.tcLogout06_loginAgain(LogoutTest.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-7817437750049160225/package/lib/server/progress.js:75:26)
+    at Frame.click (/tmp/playwright-java-7817437750049160225/package/lib/server/frames.js:1022:23)
+    at FrameDispatcher.click (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BANNER).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Signup / Login"))
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 16 more
+
+[INFO] Running com.ae.specs.ui.OrderTest
+[ERROR] Tests run: 10, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 145.9 s <<< FAILURE! -- in com.ae.specs.ui.OrderTest
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart -- Time elapsed: 11.39 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected not to match regex: .*/payment_done/\d+$
+Received: https://www.automationexercise.com/payment_done/0
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/0"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:68)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:181)
+	at com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart(OrderTest.java:317)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder04_continueAfterOrder -- Time elapsed: 41.60 s <<< ERROR!
+com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.PageImpl.waitForEventWithTimeout(PageImpl.java:535)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponseImpl(PageImpl.java:1584)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForResponse$94(PageImpl.java:1576)
+	at com.microsoft.playwright.impl.WaitForEventLogger.lambda$get$0(WaitForEventLogger.java:50)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:41)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1570)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1566)
+	at com.microsoft.playwright.Page.waitForResponse(Page.java:8224)
+	at com.ae.specs.ui.OrderTest.payAndSettle(OrderTest.java:125)
+	at com.ae.specs.ui.OrderTest.tcOrder04_continueAfterOrder(OrderTest.java:238)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry -- Time elapsed: 13.41 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:62)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:155)
+	at com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry(OrderTest.java:284)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard -- Time elapsed: 16.73 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:62)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:155)
+	at com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard(OrderTest.java:271)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.BrandsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.46 s -- in com.ae.specs.ui.BrandsTest
+[INFO] Running com.ae.specs.ui.RegisterTest
+[ERROR] Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 111.9 s <<< FAILURE! -- in com.ae.specs.ui.RegisterTest
+[ERROR] com.ae.specs.ui.RegisterTest.tcRegister07_specialNames -- Time elapsed: 15.60 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for getByText("Enter Account Information")
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
+	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
+	at com.ae.specs.ui.RegisterTest.reachSignupForm(RegisterTest.java:71)
+	at com.ae.specs.ui.RegisterTest.signUpToAccountCreated(RegisterTest.java:76)
+	at com.ae.specs.ui.RegisterTest.signUpAndContinue(RegisterTest.java:83)
+	at com.ae.specs.ui.RegisterTest.tcRegister07_specialNames(RegisterTest.java:214)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.CheckoutTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 77.11 s -- in com.ae.specs.ui.CheckoutTest
+[INFO] Running com.ae.specs.ui.ScrollTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.58 s -- in com.ae.specs.ui.ScrollTest
+[INFO] Running com.ae.specs.ui.ReviewsTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 75.12 s -- in com.ae.specs.ui.ReviewsTest
+[INFO] Running com.ae.specs.ui.SubscriptionTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.57 s -- in com.ae.specs.ui.SubscriptionTest
+[INFO] Running com.ae.specs.ui.ContactUsTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.01 s -- in com.ae.specs.ui.ContactUsTest
+[INFO] Running com.ae.specs.ui.InvoiceTest
+[ERROR] Tests run: 8, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 197.5 s <<< FAILURE! -- in com.ae.specs.ui.InvoiceTest
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice06_otherUsersInvoice -- Time elapsed: 36.39 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-qa='pay-button']")
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
+	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
+	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:65)
+	at com.ae.specs.ui.InvoiceTest.tcInvoice06_otherUsersInvoice(InvoiceTest.java:171)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount -- Time elapsed: 10.24 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "Hi Inv1059646882515x7 Payer, Your total purchase amount is 999999. Thank you"
+not to contain:
+  "purchase amount is 999999"
+
+	at com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount(InvoiceTest.java:219)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession -- Time elapsed: 25.79 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "Hi , Your total purchase amount is 500. Thank you"
+not to contain:
+  "purchase amount is 500"
+
+	at com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession(InvoiceTest.java:199)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice03_twiceIdentical -- Time elapsed: 43.63 s <<< ERROR!
+com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.PageImpl.waitForEventWithTimeout(PageImpl.java:535)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponseImpl(PageImpl.java:1584)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForResponse$94(PageImpl.java:1576)
+	at com.microsoft.playwright.impl.WaitForEventLogger.lambda$get$0(WaitForEventLogger.java:50)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:41)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1570)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1566)
+	at com.microsoft.playwright.Page.waitForResponse(Page.java:8224)
+	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:67)
+	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
+	at com.ae.specs.ui.InvoiceTest.tcInvoice03_twiceIdentical(InvoiceTest.java:115)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.ui.CartTest
+[ERROR] Tests run: 15, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 120.5 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
+[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 2.522 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  500
+to be less than:
+  500 
+	at com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric(CartTest.java:280)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.CartTest.tcCart09a_quantityZero -- Time elapsed: 5.463 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(".product-information").getByRole(AriaRole.HEADING)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
+	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
+	at com.ae.specs.ui.CartTest.openProductOne(CartTest.java:231)
+	at com.ae.specs.ui.CartTest.tcCart09a_quantityZero(CartTest.java:239)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 10.29 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Locator expected to have count: 0
+Received: 1
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("#cart_info_table tbody tr").locator(".cart_quantity").filter(new Locator.FilterOptions().setHasText(Pattern.compile("-")))
+    9 × locator resolved to 1 element
+      - unexpected value "1"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.hasCount(LocatorAssertionsImpl.java:186)
+	at com.microsoft.playwright.assertions.LocatorAssertions.hasCount(LocatorAssertions.java:1510)
+	at com.ae.specs.ui.CartTest.tcCart09b_quantityNegative(CartTest.java:262)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running com.ae.specs.SmokeSanityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.200 s -- in com.ae.specs.SmokeSanityTest
+[INFO] Running com.ae.specs.api.AuthApiTest
+[ERROR] Tests run: 11, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 22.33 s <<< FAILURE! -- in com.ae.specs.api.AuthApiTest
+[ERROR] com.ae.specs.api.AuthApiTest.tcApiAuth09_emptyStringsReturnUserNotFound -- Time elapsed: 3.908 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.specs.api.AuthApiTest.assertBody(AuthApiTest.java:60)
+	at com.ae.specs.api.AuthApiTest.tcApiAuth09_emptyStringsReturnUserNotFound(AuthApiTest.java:139)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 6 more
+
+[ERROR] com.ae.specs.api.AuthApiTest.tcApiAuth02_wrongPasswordReturnsUserNotFound -- Time elapsed: 1.505 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
+	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
+	at com.ae.specs.api.AuthApiTest.registeredUser(AuthApiTest.java:42)
+	at com.ae.specs.api.AuthApiTest.tcApiAuth02_wrongPasswordReturnsUserNotFound(AuthApiTest.java:82)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 8 more
+
+[INFO] Running com.ae.specs.api.BrandsApiTest
+[ERROR] Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.197 s <<< FAILURE! -- in com.ae.specs.api.BrandsApiTest
+[ERROR] com.ae.specs.api.BrandsApiTest.tcApiBrands03_productBrandsAreListed -- Time elapsed: 0.246 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.fixtures.CatalogApi.json(CatalogApi.java:22)
+	at com.ae.fixtures.CatalogApi.listOf(CatalogApi.java:35)
+	at com.ae.fixtures.CatalogApi.products(CatalogApi.java:43)
+	at com.ae.specs.api.BrandsApiTest.tcApiBrands03_productBrandsAreListed(BrandsApiTest.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 8 more
+
+[ERROR] com.ae.specs.api.BrandsApiTest.tcApiBrands04_putRejected -- Time elapsed: 0.109 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.fixtures.CatalogApi.json(CatalogApi.java:22)
+	at com.ae.fixtures.CatalogApi.assertBody(CatalogApi.java:27)
+	at com.ae.specs.api.BrandsApiTest.tcApiBrands04_putRejected(BrandsApiTest.java:85)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 7 more
+
+[INFO] Running com.ae.specs.api.AccountApiTest
+[ERROR] Tests run: 12, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 48.71 s <<< FAILURE! -- in com.ae.specs.api.AccountApiTest
+[ERROR] com.ae.specs.api.AccountApiTest.tcApiAccount06_duplicateCreateRejected -- Time elapsed: 2.788 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.specs.api.AccountApiTest.json(AccountApiTest.java:85)
+	at com.ae.specs.api.AccountApiTest.userOf(AccountApiTest.java:96)
+	at com.ae.specs.api.AccountApiTest.tcApiAccount06_duplicateCreateRejected(AccountApiTest.java:205)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 7 more
+
+[INFO] Running com.ae.specs.api.ProductsApiTest
+[ERROR] Tests run: 6, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.160 s <<< FAILURE! -- in com.ae.specs.api.ProductsApiTest
+[ERROR] com.ae.specs.api.ProductsApiTest.tcApiProducts02_everyProductHasShape -- Time elapsed: 0.251 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.fixtures.CatalogApi.json(CatalogApi.java:22)
+	at com.ae.fixtures.CatalogApi.listOf(CatalogApi.java:35)
+	at com.ae.fixtures.CatalogApi.products(CatalogApi.java:43)
+	at com.ae.specs.api.ProductsApiTest.tcApiProducts02_everyProductHasShape(ProductsApiTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 8 more
+
+[ERROR] com.ae.specs.api.ProductsApiTest.tcApiProducts01_getReturnsProductsArray -- Time elapsed: 0.066 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.fixtures.CatalogApi.json(CatalogApi.java:22)
+	at com.ae.specs.api.ProductsApiTest.tcApiProducts01_getReturnsProductsArray(ProductsApiTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 6 more
+
+[ERROR] com.ae.specs.api.ProductsApiTest.tcApiProducts06_categoryAndBrandWellFormed -- Time elapsed: 0.076 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.fixtures.CatalogApi.json(CatalogApi.java:22)
+	at com.ae.fixtures.CatalogApi.listOf(CatalogApi.java:35)
+	at com.ae.fixtures.CatalogApi.products(CatalogApi.java:43)
+	at com.ae.specs.api.ProductsApiTest.tcApiProducts06_categoryAndBrandWellFormed(ProductsApiTest.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 8 more
+
+[INFO] Running com.ae.specs.api.SearchApiTest
+[ERROR] Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 11.30 s <<< FAILURE! -- in com.ae.specs.api.SearchApiTest
+[ERROR] com.ae.specs.api.SearchApiTest.tcApiSearch04_noMatchAndSpecialCharacters -- Time elapsed: 0.067 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.fixtures.CatalogApi.json(CatalogApi.java:22)
+	at com.ae.specs.api.SearchApiTest.tcApiSearch04_noMatchAndSpecialCharacters(SearchApiTest.java:107)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 6 more
+
+[ERROR] com.ae.specs.api.SearchApiTest.tcApiSearch06_wrongMethods -- Time elapsed: 0.095 s <<< ERROR!
+com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.fixtures.CatalogApi.json(CatalogApi.java:22)
+	at com.ae.fixtures.CatalogApi.assertBody(CatalogApi.java:27)
+	at com.ae.specs.api.SearchApiTest.tcApiSearch06_wrongMethods(SearchApiTest.java:132)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 7 more
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CartTest.tcCart09a_quantityZero:239->openProductOne:231 Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(".product-information").getByRole(AriaRole.HEADING)
+[ERROR]   CartTest.tcCart09b_quantityNegative:262 Locator expected to have count: 0
+Received: 1
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("#cart_info_table tbody tr").locator(".cart_quantity").filter(new Locator.FilterOptions().setHasText(Pattern.compile("-")))
+    9 × locator resolved to 1 element
+      - unexpected value "1"
+[ERROR]   CartTest.tcCart09c_quantityNonNumeric:280 
+Expecting actual:
+  500
+to be less than:
+  500 
+[ERROR]   CategoriesTest.tcCategories07a_malformedIdAbc:200->assertMalformedIdIsClean:221->assertCleanPage:71 
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /category_products/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/category_products/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>category_products/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+[ERROR]   CategoriesTest.tcCategories07c_malformedIdMinusOne:216->assertMalformedIdIsClean:221->assertCleanPage:71 
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /category_products/-1</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/category_products/-1</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>category_products/-1</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+[ERROR]   InvoiceTest.tcInvoice06_otherUsersInvoice:171 Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-qa='pay-button']")
+[ERROR]   InvoiceTest.tcInvoice07_noSession:199 
+Expecting actual:
+  "Hi , Your total purchase amount is 500. Thank you"
+not to contain:
+  "purchase amount is 500"
+
+[ERROR]   InvoiceTest.tcInvoice08_forgedAmount:219 
+Expecting actual:
+  "Hi Inv1059646882515x7 Payer, Your total purchase amount is 999999. Thank you"
+not to contain:
+  "purchase amount is 999999"
+
+[ERROR]   LogoutTest.tcLogout08_logoutWhileLoggedOut:148 
+Expecting actual:
+  "KeyError at /logout"
+not to contain:
+  "KeyError"
+
+[ERROR]   OrderTest.tcOrder06_nonNumericCard:271 Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+[ERROR]   OrderTest.tcOrder07_pastExpiry:284 Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+[ERROR]   OrderTest.tcOrder09_paymentEmptyCart:317 Page URL expected not to match regex: .*/payment_done/\d+$
+Received: https://www.automationexercise.com/payment_done/0
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/0"
+[ERROR]   ProductsTest.tcProducts10_nonNumericId:209 
+Expecting actual:
+  "<!DOCTYPE html><html lang="en"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /product_details/abc</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    
+    <table class="meta">
+      <tbody><tr>
+        <th>Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>https://www.automationexercise.com/product_details/abc</td>
+      </tr>
+      
+    </tbody></table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>automation_exercise.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                
+                
+            
+          </li>
+        
+          <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                products
+                
+            
+          </li>
+        
+          <li>
+            
+                contact_us
+                
+            
+          </li>
+        
+          <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                view_cart
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                login
+                
+            
+          </li>
+        
+          <li>
+            
+                signup
+                
+            
+          </li>
+        
+          <li>
+            
+                account_created
+                
+            
+          </li>
+        
+          <li>
+            
+                logout
+                
+            
+          </li>
+        
+          <li>
+            
+                checkout
+                
+            
+          </li>
+        
+          <li>
+            
+                payment
+                
+            
+          </li>
+        
+          <li>
+            
+                delete_account
+                
+            
+          </li>
+        
+          <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                test_cases
+                
+            
+          </li>
+        
+          <li>
+            
+                api_list
+                
+            
+          </li>
+        
+          <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        
+          <li>
+            
+                api/productsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        
+          <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        
+          <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        
+          <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        
+          <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        
+          <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        
+          <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>product_details/abc</code>,
+        
+        didn’t match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cd4e8a3390ec4a29b8f61484a473eff3&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+</body></html>"
+not to contain:
+  "DEBUG = True"
+
+[ERROR]   RegisterTest.tcRegister07_specialNames:214->signUpAndContinue:83->signUpToAccountCreated:76->reachSignupForm:71 Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for getByText("Enter Account Information")
+[ERROR]   SearchTest.tcSearch07_ampersand:198 Page URL expected to match regex: ^.*/products\?search=%26$
+Received: https://www.automationexercise.com/products?search=&
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/products?search=&"
+[ERROR] Errors: 
+[ERROR]   AccountApiTest.tcApiAccount06_duplicateCreateRejected:205->userOf:96->json:85 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   AuthApiTest.tcApiAuth02_wrongPasswordReturnsUserNotFound:82->registeredUser:42 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   AuthApiTest.tcApiAuth09_emptyStringsReturnUserNotFound:139->assertBody:60 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   BrandsApiTest.tcApiBrands03_productBrandsAreListed:73 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   BrandsApiTest.tcApiBrands04_putRejected:85 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   ProductsApiTest.tcApiProducts01_getReturnsProductsArray:29 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   ProductsApiTest.tcApiProducts02_everyProductHasShape:39 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   ProductsApiTest.tcApiProducts06_categoryAndBrandWellFormed:93 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   SearchApiTest.tcApiSearch04_noMatchAndSpecialCharacters:107 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   SearchApiTest.tcApiSearch06_wrongMethods:132 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+[ERROR]   InvoiceTest.tcInvoice03_twiceIdentical:115->orderAs:70 » Timeout Timeout 30000ms exceeded
+[ERROR]   LogoutTest.tcLogout06_loginAgain:118->loggedInUser:40 » Timeout Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-7817437750049160225/package/lib/server/progress.js:75:26)
+    at Frame.click (/tmp/playwright-java-7817437750049160225/package/lib/server/frames.js:1022:23)
+    at FrameDispatcher.click (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BANNER).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Signup / Login"))
+
+[ERROR]   OrderTest.tcOrder04_continueAfterOrder:238->payAndSettle:125 » Timeout Timeout 30000ms exceeded
+[ERROR]   SearchTest.tcSearch07_specialCharacters:180 » Timeout Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-7817437750049160225/package/lib/server/progress.js:75:26)
+    at Frame.fill (/tmp/playwright-java-7817437750049160225/package/lib/server/frames.js:1072:23)
+    at FrameDispatcher.fill (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/frameDispatcher.js:170:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-7817437750049160225/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByPlaceholder("Search Product")
+
+[INFO] 
+[ERROR] Tests run: 194, Failures: 15, Errors: 14, Skipped: 0
+[INFO] 
+[ERROR] There are test failures.
+
+See /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire-reports for the individual test results.
+See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  21:38 min
+[INFO] Finished at: 2026-11-11T10:17:52Z
+[INFO] ------------------------------------------------------------------------
