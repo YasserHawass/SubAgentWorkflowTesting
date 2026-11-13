@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.ui.CheckoutTest" time="172.635" tests="10" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.ui.CheckoutTest" time="77.552" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="base.url" value="https://www.automationexercise.com"/>
     <property name="java.specification.version" value="17"/>
@@ -13,7 +13,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261112102447372_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-11-12T10-24-46_876-jvmRun1 surefire-20261112102447372_1tmp surefire_0-20261112102447372_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261113101012736_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-11-13T10-10-12_391-jvmRun1 surefire-20261113101012736_1tmp surefire_0-20261113101012736_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/test-classes:/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/classes:/home/runner/.m2/repository/com/microsoft/playwright/playwright/1.49.0/playwright-1.49.0.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver/1.49.0/driver-1.49.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/runner/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/runner/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261112102447372_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261113101012736_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.21+9"/>
     <property name="user.name" value="runner"/>
@@ -56,85 +56,14 @@
     <property name="java.class.version" value="61.0"/>
     <property name="maven.test.failure.ignore" value="true"/>
   </properties>
-  <testcase name="tcCheckout04_deliveryAddress" classname="com.ae.specs.ui.CheckoutTest" time="19.786">
-    <failure message="Locator expected to be visible&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for locator(&quot;.features_items .product-image-wrapper&quot;).first().locator(&quot;.productinfo&quot;).locator(&quot;p&quot;)" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator(".features_items .product-image-wrapper").first().locator(".productinfo").locator("p")
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
-	at com.ae.specs.ui.CheckoutTest.addFirstProductAndOpenCart(CheckoutTest.java:70)
-	at com.ae.specs.ui.CheckoutTest.loggedInUserOnCheckout(CheckoutTest.java:84)
-	at com.ae.specs.ui.CheckoutTest.tcCheckout04_deliveryAddress(CheckoutTest.java:167)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcCheckout09_guestDirect" classname="com.ae.specs.ui.CheckoutTest" time="3.959"/>
-  <testcase name="tcCheckout02_promptLeadsToLoginCartKept" classname="com.ae.specs.ui.CheckoutTest" time="25.605">
-    <failure message="Locator expected to contain text: Logged in as AE Tester 1794480185236-42&#10;Received: &lt;element(s) not found&gt;&#10;&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for getByRole(AriaRole.BANNER).getByText(&quot;Logged in as&quot;)" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to contain text: Logged in as AE Tester 1794480185236-42
-Received: <element(s) not found>
-
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for getByRole(AriaRole.BANNER).getByText("Logged in as")
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:47)
-	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:853)
-	at com.ae.specs.ui.CheckoutTest.tcCheckout02_promptLeadsToLoginCartKept(CheckoutTest.java:137)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcCheckout08_emptyCartLoggedIn" classname="com.ae.specs.ui.CheckoutTest" time="13.887"/>
-  <testcase name="tcCheckout07_comment" classname="com.ae.specs.ui.CheckoutTest" time="22.924"/>
-  <testcase name="tcCheckout05_billingAddress" classname="com.ae.specs.ui.CheckoutTest" time="9.281">
-    <failure message="Locator expected to be visible&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName(&quot;Login to your account&quot;))" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Login to your account"))
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
-	at com.ae.specs.ui.CheckoutTest.loginByUi(CheckoutTest.java:62)
-	at com.ae.specs.ui.CheckoutTest.loggedInUserOnCheckout(CheckoutTest.java:83)
-	at com.ae.specs.ui.CheckoutTest.tcCheckout05_billingAddress(CheckoutTest.java:178)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcCheckout10_reloadAndBack" classname="com.ae.specs.ui.CheckoutTest" time="28.896"/>
-  <testcase name="tcCheckout01_guestPrompt" classname="com.ae.specs.ui.CheckoutTest" time="5.558">
-    <failure message="Locator expected to be visible&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for locator(&quot;.features_items .product-image-wrapper&quot;).first().locator(&quot;.productinfo&quot;).locator(&quot;p&quot;)" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator(".features_items .product-image-wrapper").first().locator(".productinfo").locator("p")
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
-	at com.ae.specs.ui.CheckoutTest.addFirstProductAndOpenCart(CheckoutTest.java:70)
-	at com.ae.specs.ui.CheckoutTest.tcCheckout01_guestPrompt(CheckoutTest.java:112)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcCheckout06_reviewRows" classname="com.ae.specs.ui.CheckoutTest" time="33.339"/>
-  <testcase name="tcCheckout03_continueOnCart" classname="com.ae.specs.ui.CheckoutTest" time="9.02"/>
+  <testcase name="tcCheckout04_deliveryAddress" classname="com.ae.specs.ui.CheckoutTest" time="8.259"/>
+  <testcase name="tcCheckout09_guestDirect" classname="com.ae.specs.ui.CheckoutTest" time="0.76"/>
+  <testcase name="tcCheckout02_promptLeadsToLoginCartKept" classname="com.ae.specs.ui.CheckoutTest" time="9.846"/>
+  <testcase name="tcCheckout08_emptyCartLoggedIn" classname="com.ae.specs.ui.CheckoutTest" time="9.097"/>
+  <testcase name="tcCheckout07_comment" classname="com.ae.specs.ui.CheckoutTest" time="13.034"/>
+  <testcase name="tcCheckout05_billingAddress" classname="com.ae.specs.ui.CheckoutTest" time="8.247"/>
+  <testcase name="tcCheckout10_reloadAndBack" classname="com.ae.specs.ui.CheckoutTest" time="8.51"/>
+  <testcase name="tcCheckout01_guestPrompt" classname="com.ae.specs.ui.CheckoutTest" time="2.879"/>
+  <testcase name="tcCheckout06_reviewRows" classname="com.ae.specs.ui.CheckoutTest" time="14.124"/>
+  <testcase name="tcCheckout03_continueOnCart" classname="com.ae.specs.ui.CheckoutTest" time="2.423"/>
 </testsuite>

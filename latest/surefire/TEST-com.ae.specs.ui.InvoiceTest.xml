@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.ui.InvoiceTest" time="178.08" tests="8" errors="1" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.ui.InvoiceTest" time="117.283" tests="8" errors="1" skipped="0" failures="1">
   <properties>
     <property name="base.url" value="https://www.automationexercise.com"/>
     <property name="java.specification.version" value="17"/>
@@ -13,7 +13,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261112102447372_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-11-12T10-24-46_876-jvmRun1 surefire-20261112102447372_1tmp surefire_0-20261112102447372_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261113101012736_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-11-13T10-10-12_391-jvmRun1 surefire-20261113101012736_1tmp surefire_0-20261113101012736_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/test-classes:/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/classes:/home/runner/.m2/repository/com/microsoft/playwright/playwright/1.49.0/playwright-1.49.0.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver/1.49.0/driver-1.49.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/runner/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/runner/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261112102447372_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261113101012736_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.21+9"/>
     <property name="user.name" value="runner"/>
@@ -56,93 +56,16 @@
     <property name="java.class.version" value="61.0"/>
     <property name="maven.test.failure.ignore" value="true"/>
   </properties>
-  <testcase name="tcInvoice06_otherUsersInvoice" classname="com.ae.specs.ui.InvoiceTest" time="12.943">
-    <failure message="Locator expected to be visible&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName(&quot;Login to your account&quot;))" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Login to your account"))
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
-	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:44)
-	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice06_otherUsersInvoice(InvoiceTest.java:168)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcInvoice05_directFetchSameSession" classname="com.ae.specs.ui.InvoiceTest" time="24.256"/>
-  <testcase name="tcInvoice04_continueAfterDownload" classname="com.ae.specs.ui.InvoiceTest" time="22.976">
-    <failure message="Locator expected to be visible&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for locator(&quot;[data-qa=&apos;pay-button&apos;]&quot;)" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator("[data-qa='pay-button']")
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
-	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:65)
-	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice04_continueAfterDownload(InvoiceTest.java:133)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcInvoice01_downloadIsTxt" classname="com.ae.specs.ui.InvoiceTest" time="43.695">
-    <error message="Timeout 30000ms exceeded" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
-	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
-	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-	at com.microsoft.playwright.impl.PageImpl.waitForEventWithTimeout(PageImpl.java:535)
-	at com.microsoft.playwright.impl.PageImpl.waitForResponseImpl(PageImpl.java:1584)
-	at com.microsoft.playwright.impl.PageImpl.lambda$waitForResponse$94(PageImpl.java:1576)
-	at com.microsoft.playwright.impl.WaitForEventLogger.lambda$get$0(WaitForEventLogger.java:50)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:41)
-	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:87)
-	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1570)
-	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1566)
-	at com.microsoft.playwright.Page.waitForResponse(Page.java:8224)
-	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:67)
-	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice01_downloadIsTxt(InvoiceTest.java:88)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="tcInvoice02_contentHasNameAndTotal" classname="com.ae.specs.ui.InvoiceTest" time="20.08">
-    <failure message="Locator expected to be visible&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for locator(&quot;#cart_info_table&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Blue Top&quot;).setExact(true))" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator("#cart_info_table").getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Blue Top").setExact(true))
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
-	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:54)
-	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice02_contentHasNameAndTotal(InvoiceTest.java:102)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="tcInvoice08_forgedAmount" classname="com.ae.specs.ui.InvoiceTest" time="10.517">
-    <failure message="&#10;Expecting actual:&#10;  &quot;Hi Inv1715844266835x7 Payer, Your total purchase amount is 999999. Thank you&quot;&#10;not to contain:&#10;  &quot;purchase amount is 999999&quot;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+  <testcase name="tcInvoice06_otherUsersInvoice" classname="com.ae.specs.ui.InvoiceTest" time="24.635"/>
+  <testcase name="tcInvoice05_directFetchSameSession" classname="com.ae.specs.ui.InvoiceTest" time="10.474"/>
+  <testcase name="tcInvoice04_continueAfterDownload" classname="com.ae.specs.ui.InvoiceTest" time="19.707"/>
+  <testcase name="tcInvoice01_downloadIsTxt" classname="com.ae.specs.ui.InvoiceTest" time="15.79"/>
+  <testcase name="tcInvoice02_contentHasNameAndTotal" classname="com.ae.specs.ui.InvoiceTest" time="17.929"/>
+  <testcase name="tcInvoice08_forgedAmount" classname="com.ae.specs.ui.InvoiceTest" time="9.28">
+    <failure message="&#10;Expecting actual:&#10;  &quot;Hi Inv1220889305764x7 Payer, Your total purchase amount is 999999. Thank you&quot;&#10;not to contain:&#10;  &quot;purchase amount is 999999&quot;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 
 Expecting actual:
-  "Hi Inv1715844266835x7 Payer, Your total purchase amount is 999999. Thank you"
+  "Hi Inv1220889305764x7 Payer, Your total purchase amount is 999999. Thank you"
 not to contain:
   "purchase amount is 999999"
 
@@ -152,19 +75,29 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></failure>
   </testcase>
-  <testcase name="tcInvoice07_noSession" classname="com.ae.specs.ui.InvoiceTest" time="23.286">
-    <failure message="&#10;Expecting actual:&#10;  &quot;Hi , Your total purchase amount is 500. Thank you&quot;&#10;not to contain:&#10;  &quot;purchase amount is 500&quot;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-
-Expecting actual:
-  "Hi , Your total purchase amount is 500. Thank you"
-not to contain:
-  "purchase amount is 500"
-
-	at com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession(InvoiceTest.java:199)
+  <testcase name="tcInvoice07_noSession" classname="com.ae.specs.ui.InvoiceTest" time="17.308"/>
+  <testcase name="tcInvoice03_twiceIdentical" classname="com.ae.specs.ui.InvoiceTest" time="1.773">
+    <error message="com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $&#10;See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json" type="com.google.gson.JsonSyntaxException"><![CDATA[com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
+	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
+	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
+	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
+	at com.ae.specs.ui.InvoiceTest.newInvoiceUser(InvoiceTest.java:50)
+	at com.ae.specs.ui.InvoiceTest.tcInvoice03_twiceIdentical(InvoiceTest.java:115)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 9 more
+]]></error>
   </testcase>
-  <testcase name="tcInvoice03_twiceIdentical" classname="com.ae.specs.ui.InvoiceTest" time="19.95"/>
 </testsuite>
