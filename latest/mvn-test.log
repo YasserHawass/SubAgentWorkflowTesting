@@ -141,14 +141,14 @@ Playwright Host validation warning:
 ║                                                                                                      ║
 ║ <3 Playwright Team                                                                                   ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝
-    at validateDependenciesLinux (/tmp/playwright-java-7868762272093408447/package/lib/server/registry/dependencies.js:216:9)
+    at validateDependenciesLinux (/tmp/playwright-java-14335674280402067231/package/lib/server/registry/dependencies.js:216:9)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async Registry._validateHostRequirements (/tmp/playwright-java-7868762272093408447/package/lib/server/registry/index.js:753:43)
-    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-7868762272093408447/package/lib/server/registry/index.js:851:7)
-    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-7868762272093408447/package/lib/server/registry/index.js:840:43)
-    at async t.<anonymous> (/tmp/playwright-java-7868762272093408447/package/lib/cli/program.js:137:7)
-[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.81 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
-[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.922 s <<< FAILURE!
+    at async Registry._validateHostRequirements (/tmp/playwright-java-14335674280402067231/package/lib/server/registry/index.js:753:43)
+    at async Registry._validateHostRequirementsForExecutableIfNeeded (/tmp/playwright-java-14335674280402067231/package/lib/server/registry/index.js:851:7)
+    at async Registry.validateHostRequirementsForExecutablesIfNeeded (/tmp/playwright-java-14335674280402067231/package/lib/server/registry/index.js:840:43)
+    at async t.<anonymous> (/tmp/playwright-java-14335674280402067231/package/lib/cli/program.js:137:7)
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.79 s <<< FAILURE! -- in com.ae.specs.ui.ProductsTest
+[ERROR] com.ae.specs.ui.ProductsTest.tcProducts10_nonNumericId -- Time elapsed: 0.606 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -460,8 +460,8 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.CategoriesTest
-[ERROR] Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 44.29 s <<< FAILURE! -- in com.ae.specs.ui.CategoriesTest
-[ERROR] com.ae.specs.ui.CategoriesTest.tcCategories07a_malformedIdAbc -- Time elapsed: 1.200 s <<< FAILURE!
+[ERROR] Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 22.38 s <<< FAILURE! -- in com.ae.specs.ui.CategoriesTest
+[ERROR] com.ae.specs.ui.CategoriesTest.tcCategories07a_malformedIdAbc -- Time elapsed: 0.690 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -774,7 +774,7 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.CategoriesTest.tcCategories07c_malformedIdMinusOne -- Time elapsed: 1.312 s <<< FAILURE!
+[ERROR] com.ae.specs.ui.CategoriesTest.tcCategories07c_malformedIdMinusOne -- Time elapsed: 0.519 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -1088,61 +1088,10 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.LoginTest
-[ERROR] Tests run: 12, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 100.7 s <<< FAILURE! -- in com.ae.specs.ui.LoginTest
-[ERROR] com.ae.specs.ui.LoginTest.tcLogin04_validationBlocksSubmit -- Time elapsed: 31.46 s <<< ERROR!
-com.microsoft.playwright.TimeoutError: 
-Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-7868762272093408447/package/lib/server/progress.js:75:26)
-    at Frame.fill (/tmp/playwright-java-7868762272093408447/package/lib/server/frames.js:1072:23)
-    at FrameDispatcher.fill (/tmp/playwright-java-7868762272093408447/package/lib/server/dispatchers/frameDispatcher.js:170:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-7868762272093408447/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-7868762272093408447/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
--   - waiting for locator("[data-qa='login-email']")
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
-	at com.microsoft.playwright.impl.FrameImpl.lambda$fill$14(FrameImpl.java:325)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:325)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:250)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3075)
-	at com.ae.pages.LoginPage.submit(LoginPage.java:47)
-	at com.ae.specs.ui.LoginTest.tcLogin04_validationBlocksSubmit(LoginTest.java:117)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-7868762272093408447/package/lib/server/progress.js:75:26)
-    at Frame.fill (/tmp/playwright-java-7868762272093408447/package/lib/server/frames.js:1072:23)
-    at FrameDispatcher.fill (/tmp/playwright-java-7868762272093408447/package/lib/server/dispatchers/frameDispatcher.js:170:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-7868762272093408447/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-7868762272093408447/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
--   - waiting for locator("[data-qa='login-email']")
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-	... 16 more
-
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.12 s -- in com.ae.specs.ui.LoginTest
 [INFO] Running com.ae.specs.ui.SearchTest
-[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 89.52 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
-[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 11.54 s <<< FAILURE!
+[ERROR] Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.58 s <<< FAILURE! -- in com.ae.specs.ui.SearchTest
+[ERROR] com.ae.specs.ui.SearchTest.tcSearch07_ampersand -- Time elapsed: 8.137 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Page URL expected to match regex: ^.*/products\?search=%26$
 Received: https://www.automationexercise.com/products?search=&
@@ -1163,8 +1112,8 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.LogoutTest
-[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 100.1 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
-[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 1.612 s <<< FAILURE!
+[ERROR] Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.14 s <<< FAILURE! -- in com.ae.specs.ui.LogoutTest
+[ERROR] com.ae.specs.ui.LogoutTest.tcLogout08_logoutWhileLoggedOut -- Time elapsed: 0.964 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -1178,8 +1127,8 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.OrderTest
-[ERROR] Tests run: 10, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 162.3 s <<< FAILURE! -- in com.ae.specs.ui.OrderTest
-[ERROR] com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart -- Time elapsed: 13.69 s <<< FAILURE!
+[ERROR] Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 76.55 s <<< FAILURE! -- in com.ae.specs.ui.OrderTest
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder09_paymentEmptyCart -- Time elapsed: 10.28 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Page URL expected not to match regex: .*/payment_done/\d+$
 Received: https://www.automationexercise.com/payment_done/0
@@ -1199,7 +1148,7 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry -- Time elapsed: 21.59 s <<< FAILURE!
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder07_pastExpiry -- Time elapsed: 10.35 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Page URL expected to be: https://www.automationexercise.com/payment
 Received: https://www.automationexercise.com/payment_done/500
@@ -1219,67 +1168,47 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard -- Time elapsed: 39.42 s <<< ERROR!
-com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
-	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
-	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-	at com.microsoft.playwright.impl.PageImpl.waitForEventWithTimeout(PageImpl.java:535)
-	at com.microsoft.playwright.impl.PageImpl.waitForResponseImpl(PageImpl.java:1584)
-	at com.microsoft.playwright.impl.PageImpl.lambda$waitForResponse$94(PageImpl.java:1576)
-	at com.microsoft.playwright.impl.WaitForEventLogger.lambda$get$0(WaitForEventLogger.java:50)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:41)
-	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:87)
-	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1570)
-	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1566)
-	at com.microsoft.playwright.Page.waitForResponse(Page.java:8224)
-	at com.ae.specs.ui.OrderTest.payAndSettle(OrderTest.java:125)
-	at com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard(OrderTest.java:268)
+[ERROR] com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard -- Time elapsed: 12.08 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.PageAssertionsImpl.hasURL(PageAssertionsImpl.java:62)
+	at com.microsoft.playwright.assertions.PageAssertions.hasURL(PageAssertions.java:155)
+	at com.ae.specs.ui.OrderTest.tcOrder06_nonNumericCard(OrderTest.java:271)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.ui.BrandsTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.65 s -- in com.ae.specs.ui.BrandsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.92 s -- in com.ae.specs.ui.BrandsTest
 [INFO] Running com.ae.specs.ui.RegisterTest
-[ERROR] Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 114.9 s <<< FAILURE! -- in com.ae.specs.ui.RegisterTest
-[ERROR] com.ae.specs.ui.RegisterTest.tcRegister12_uiSignupDetailsStored -- Time elapsed: 7.976 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for getByText("Enter Account Information")
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
-	at com.ae.specs.ui.RegisterTest.reachSignupForm(RegisterTest.java:71)
-	at com.ae.specs.ui.RegisterTest.signUpToAccountCreated(RegisterTest.java:76)
-	at com.ae.specs.ui.RegisterTest.tcRegister12_uiSignupDetailsStored(RegisterTest.java:307)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.65 s -- in com.ae.specs.ui.RegisterTest
 [INFO] Running com.ae.specs.ui.CheckoutTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 77.55 s -- in com.ae.specs.ui.CheckoutTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.80 s -- in com.ae.specs.ui.CheckoutTest
 [INFO] Running com.ae.specs.ui.ScrollTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.85 s -- in com.ae.specs.ui.ScrollTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.36 s -- in com.ae.specs.ui.ScrollTest
 [INFO] Running com.ae.specs.ui.ReviewsTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 68.89 s -- in com.ae.specs.ui.ReviewsTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.43 s -- in com.ae.specs.ui.ReviewsTest
 [INFO] Running com.ae.specs.ui.SubscriptionTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.36 s -- in com.ae.specs.ui.SubscriptionTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.10 s -- in com.ae.specs.ui.SubscriptionTest
 [INFO] Running com.ae.specs.ui.ContactUsTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.49 s -- in com.ae.specs.ui.ContactUsTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.46 s -- in com.ae.specs.ui.ContactUsTest
 [INFO] Running com.ae.specs.ui.InvoiceTest
-[ERROR] Tests run: 8, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 117.3 s <<< FAILURE! -- in com.ae.specs.ui.InvoiceTest
-[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount -- Time elapsed: 9.280 s <<< FAILURE!
+[ERROR] Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 55.96 s <<< FAILURE! -- in com.ae.specs.ui.InvoiceTest
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount -- Time elapsed: 3.664 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
-  "Hi Inv1220889305764x7 Payer, Your total purchase amount is 999999. Thank you"
+  "Hi Inv528139302875x7 Payer, Your total purchase amount is 999999. Thank you"
 not to contain:
   "purchase amount is 999999"
 
@@ -1288,32 +1217,22 @@ not to contain:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice03_twiceIdentical -- Time elapsed: 1.773 s <<< ERROR!
-com.google.gson.JsonSyntaxException: 
-com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
-	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
-	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
-	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
-	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
-	at com.ae.specs.ui.InvoiceTest.newInvoiceUser(InvoiceTest.java:50)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice03_twiceIdentical(InvoiceTest.java:115)
+[ERROR] com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession -- Time elapsed: 5.902 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  "Hi , Your total purchase amount is 500. Thank you"
+not to contain:
+  "purchase amount is 500"
+
+	at com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession(InvoiceTest.java:199)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
-	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
-	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
-	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
-	... 9 more
 
 [INFO] Running com.ae.specs.ui.CartTest
-[ERROR] Tests run: 15, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 112.7 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
-[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 2.748 s <<< FAILURE!
+[ERROR] Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 38.74 s <<< FAILURE! -- in com.ae.specs.ui.CartTest
+[ERROR] com.ae.specs.ui.CartTest.tcCart09c_quantityNonNumeric -- Time elapsed: 0.888 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
@@ -1325,24 +1244,7 @@ to be less than:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-[ERROR] com.ae.specs.ui.CartTest.tcCart10_guestCartSurvivesLogin -- Time elapsed: 22.05 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 15000ms
-  - waiting for getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Added!"))
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
-	at com.ae.specs.ui.CartTest.addFromGrid(CartTest.java:65)
-	at com.ae.specs.ui.CartTest.addFromGridAndContinue(CartTest.java:70)
-	at com.ae.specs.ui.CartTest.tcCart10_guestCartSurvivesLogin(CartTest.java:324)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 9.913 s <<< FAILURE!
+[ERROR] com.ae.specs.ui.CartTest.tcCart09b_quantityNegative -- Time elapsed: 6.374 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 Locator expected to have count: 0
 Received: 1
@@ -1362,133 +1264,21 @@ Call log:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 [INFO] Running com.ae.specs.SmokeSanityTest
-[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.841 s <<< FAILURE! -- in com.ae.specs.SmokeSanityTest
-[ERROR] com.ae.specs.SmokeSanityTest.sanity01_homeLoads -- Time elapsed: 5.507 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-Page title expected to be: Automation Exercise
-Received: 
-
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator(":root")
-    9 × locator resolved to <html>…</html>
-      - unexpected value ""
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
-	at com.microsoft.playwright.impl.PageAssertionsImpl.hasTitle(PageAssertionsImpl.java:45)
-	at com.microsoft.playwright.assertions.PageAssertions.hasTitle(PageAssertions.java:103)
-	at com.ae.specs.SmokeSanityTest.sanity01_homeLoads(SmokeSanityTest.java:22)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.021 s -- in com.ae.specs.SmokeSanityTest
 [INFO] Running com.ae.specs.api.AuthApiTest
-[ERROR] Tests run: 11, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 21.18 s <<< FAILURE! -- in com.ae.specs.api.AuthApiTest
-[ERROR] com.ae.specs.api.AuthApiTest.tcApiAuth11_deletedAccountCannotVerify -- Time elapsed: 1.846 s <<< ERROR!
-com.google.gson.JsonSyntaxException: 
-com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
-	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
-	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
-	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
-	at com.ae.specs.api.AuthApiTest.registeredUser(AuthApiTest.java:42)
-	at com.ae.specs.api.AuthApiTest.tcApiAuth11_deletedAccountCannotVerify(AuthApiTest.java:157)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
-	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
-	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
-	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
-	... 8 more
-
-[ERROR] com.ae.specs.api.AuthApiTest.tcApiAuth09_emptyStringsReturnUserNotFound -- Time elapsed: 3.695 s <<< ERROR!
-com.google.gson.JsonSyntaxException: 
-com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
-	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
-	at com.ae.specs.api.AuthApiTest.assertBody(AuthApiTest.java:60)
-	at com.ae.specs.api.AuthApiTest.tcApiAuth09_emptyStringsReturnUserNotFound(AuthApiTest.java:140)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
-	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
-	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
-	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
-	... 6 more
-
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.352 s -- in com.ae.specs.api.AuthApiTest
 [INFO] Running com.ae.specs.api.BrandsApiTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.493 s -- in com.ae.specs.api.BrandsApiTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.149 s -- in com.ae.specs.api.BrandsApiTest
 [INFO] Running com.ae.specs.api.AccountApiTest
-[ERROR] Tests run: 12, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 48.06 s <<< FAILURE! -- in com.ae.specs.api.AccountApiTest
-[ERROR] com.ae.specs.api.AccountApiTest.tcApiAccount07_createWithMissingField -- Time elapsed: 2.510 s <<< ERROR!
-com.google.gson.JsonSyntaxException: 
-com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
-	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
-	at com.ae.specs.api.AccountApiTest.json(AccountApiTest.java:85)
-	at com.ae.specs.api.AccountApiTest.assertBody(AccountApiTest.java:89)
-	at com.ae.specs.api.AccountApiTest.tcApiAccount07_createWithMissingField(AccountApiTest.java:219)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
-	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
-	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
-	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
-	... 7 more
-
-[ERROR] com.ae.specs.api.AccountApiTest.tcApiAccount11_updateUnknownEmailAndWrongPassword -- Time elapsed: 5.080 s <<< ERROR!
-com.google.gson.JsonSyntaxException: 
-com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
-	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
-	at com.ae.specs.api.AccountApiTest.json(AccountApiTest.java:85)
-	at com.ae.specs.api.AccountApiTest.assertBody(AccountApiTest.java:89)
-	at com.ae.specs.api.AccountApiTest.tcApiAccount11_updateUnknownEmailAndWrongPassword(AccountApiTest.java:292)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
-	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
-	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
-	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
-	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
-	... 7 more
-
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.86 s -- in com.ae.specs.api.AccountApiTest
 [INFO] Running com.ae.specs.api.ProductsApiTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.938 s -- in com.ae.specs.api.ProductsApiTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.231 s -- in com.ae.specs.api.ProductsApiTest
 [INFO] Running com.ae.specs.api.SearchApiTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.32 s -- in com.ae.specs.api.SearchApiTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.235 s -- in com.ae.specs.api.SearchApiTest
 [INFO] 
 [INFO] Results:
 [INFO] 
 [ERROR] Failures: 
-[ERROR]   SmokeSanityTest.sanity01_homeLoads:22 Page title expected to be: Automation Exercise
-Received: 
-
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for locator(":root")
-    9 × locator resolved to <html>…</html>
-      - unexpected value ""
 [ERROR]   CartTest.tcCart09b_quantityNegative:262 Locator expected to have count: 0
 Received: 1
 
@@ -1502,10 +1292,6 @@ Expecting actual:
   500
 to be less than:
   500 
-[ERROR]   CartTest.tcCart10_guestCartSurvivesLogin:324->addFromGridAndContinue:70->addFromGrid:65 Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 15000ms
-  - waiting for getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Added!"))
 [ERROR]   CategoriesTest.tcCategories07a_malformedIdAbc:200->assertMalformedIdIsClean:221->assertCleanPage:71 
 Expecting actual:
   "<!DOCTYPE html><html lang="en"><head>
@@ -2114,9 +1900,15 @@ Expecting actual:
 not to contain:
   "DEBUG = True"
 
+[ERROR]   InvoiceTest.tcInvoice07_noSession:199 
+Expecting actual:
+  "Hi , Your total purchase amount is 500. Thank you"
+not to contain:
+  "purchase amount is 500"
+
 [ERROR]   InvoiceTest.tcInvoice08_forgedAmount:219 
 Expecting actual:
-  "Hi Inv1220889305764x7 Payer, Your total purchase amount is 999999. Thank you"
+  "Hi Inv528139302875x7 Payer, Your total purchase amount is 999999. Thank you"
 not to contain:
   "purchase amount is 999999"
 
@@ -2126,6 +1918,14 @@ Expecting actual:
 not to contain:
   "KeyError"
 
+[ERROR]   OrderTest.tcOrder06_nonNumericCard:271 Page URL expected to be: https://www.automationexercise.com/payment
+Received: https://www.automationexercise.com/payment_done/500
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator(":root")
+    9 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.automationexercise.com/payment_done/500"
 [ERROR]   OrderTest.tcOrder07_pastExpiry:284 Page URL expected to be: https://www.automationexercise.com/payment
 Received: https://www.automationexercise.com/payment_done/500
 
@@ -2446,10 +2246,6 @@ Expecting actual:
 not to contain:
   "DEBUG = True"
 
-[ERROR]   RegisterTest.tcRegister12_uiSignupDetailsStored:307->signUpToAccountCreated:76->reachSignupForm:71 Locator expected to be visible
-Call log:
-  - Locator.expect with timeout 5000ms
-  - waiting for getByText("Enter Account Information")
 [ERROR]   SearchTest.tcSearch07_ampersand:198 Page URL expected to match regex: ^.*/products\?search=%26$
 Received: https://www.automationexercise.com/products?search=&
 
@@ -2458,33 +2254,8 @@ Call log:
   - waiting for locator(":root")
     9 × locator resolved to <html lang="en">…</html>
       - unexpected value "https://www.automationexercise.com/products?search=&"
-[ERROR] Errors: 
-[ERROR]   AccountApiTest.tcApiAccount07_createWithMissingField:219->assertBody:89->json:85 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-[ERROR]   AccountApiTest.tcApiAccount11_updateUnknownEmailAndWrongPassword:292->assertBody:89->json:85 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-[ERROR]   AuthApiTest.tcApiAuth09_emptyStringsReturnUserNotFound:140->assertBody:60 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-[ERROR]   AuthApiTest.tcApiAuth11_deletedAccountCannotVerify:157->registeredUser:42 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-[ERROR]   InvoiceTest.tcInvoice03_twiceIdentical:115->newInvoiceUser:50 » JsonSyntax com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
-[ERROR]   LoginTest.tcLogin04_validationBlocksSubmit:117 » Timeout Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-7868762272093408447/package/lib/server/progress.js:75:26)
-    at Frame.fill (/tmp/playwright-java-7868762272093408447/package/lib/server/frames.js:1072:23)
-    at FrameDispatcher.fill (/tmp/playwright-java-7868762272093408447/package/lib/server/dispatchers/frameDispatcher.js:170:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-7868762272093408447/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-7868762272093408447/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
--   - waiting for locator("[data-qa='login-email']")
-
-[ERROR]   OrderTest.tcOrder06_nonNumericCard:268->payAndSettle:125 » Timeout Timeout 30000ms exceeded
 [INFO] 
-[ERROR] Tests run: 194, Failures: 13, Errors: 7, Skipped: 0
+[ERROR] Tests run: 194, Failures: 12, Errors: 0, Skipped: 0
 [INFO] 
 [ERROR] There are test failures.
 
@@ -2493,6 +2264,6 @@ See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dump
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  21:09 min
-[INFO] Finished at: 2026-11-13T10:31:19Z
+[INFO] Total time:  09:18 min
+[INFO] Finished at: 2026-11-14T09:43:13Z
 [INFO] ------------------------------------------------------------------------
