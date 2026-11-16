@@ -4,6 +4,7 @@ Published by `.github/workflows/tests.yml`. Latest: [latest/summary.md](latest/s
 
 | Run | Commit | Passed | Failed | Skipped | New failures |
 |---|---|---|---|---|---|
+| 🔴 [2026-11-16_53_c0f2900](runs/2026-11-16_53_c0f2900/summary.md) | c0f2900 | 161 | 33 | 0 | TC-APISEARCH-06, TC-BRANDS-03, TC-BRANDS-02, TC-CART-12, TC-CART-02, TC-CART-05, TC-CATEGORIES-01, TC-CHECKOUT-10, TC-INVOICE-06, TC-INVOICE-01, TC-INVOICE-02, TC-LOGIN-03, TC-LOGIN-12, TC-LOGOUT-07, TC-ORDER-04, TC-ORDER-02, TC-ORDER-03, TC-ORDER-10, TC-ORDER-01, TC-REVIEWS-03, TC-REVIEWS-01 |
 | 🟡 [2026-11-15_52_c0f2900](runs/2026-11-15_52_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
 | 🟡 [2026-11-14_51_c0f2900](runs/2026-11-14_51_c0f2900/summary.md) | c0f2900 | 182 | 12 | 0 | — |
 | 🔴 [2026-11-13_50_c0f2900](runs/2026-11-13_50_c0f2900/summary.md) | c0f2900 | 174 | 20 | 0 | sanity01_homeLoads, TC-APIACCOUNT-07, TC-APIACCOUNT-11, TC-APIAUTH-11, TC-APIAUTH-09, TC-CART-10, TC-INVOICE-03, TC-LOGIN-04, TC-REGISTER-12 |
