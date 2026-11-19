@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.ui.InvoiceTest" time="8.038" tests="8" errors="8" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ae.specs.ui.InvoiceTest" time="173.841" tests="8" errors="3" skipped="0" failures="5">
   <properties>
     <property name="base.url" value="https://www.automationexercise.com"/>
     <property name="java.specification.version" value="17"/>
@@ -13,7 +13,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261118105019303_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-11-18T10-50-18_964-jvmRun1 surefire-20261118105019303_1tmp surefire_0-20261118105019303_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261119104926445_3.jar /home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire 2026-11-19T10-49-26_122-jvmRun1 surefire-20261119104926445_1tmp surefire_0-20261119104926445_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/test-classes:/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/classes:/home/runner/.m2/repository/com/microsoft/playwright/playwright/1.49.0/playwright-1.49.0.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver/1.49.0/driver-1.49.0.jar:/home/runner/.m2/repository/com/microsoft/playwright/driver-bundle/1.49.0/driver-bundle-1.49.0.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/runner/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/runner/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,12 +28,12 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261118105019303_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/SubAgentWorkflowTesting/SubAgentWorkflowTesting/target/surefire/surefirebooter-20261119104926445_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.21+9"/>
     <property name="user.name" value="runner"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="7.0.0-1016-aws"/>
+    <property name="os.version" value="7.0.0-1019-azure"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -56,61 +56,145 @@
     <property name="java.class.version" value="61.0"/>
     <property name="maven.test.failure.ignore" value="true"/>
   </properties>
-  <testcase name="tcInvoice06_otherUsersInvoice" classname="com.ae.specs.ui.InvoiceTest" time="1.319">
-    <error message="Not a JSON Object: null" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Not a JSON Object: null
-	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:165)
-	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
-	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
-	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
-	at com.ae.specs.ui.InvoiceTest.newInvoiceUser(InvoiceTest.java:50)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice06_otherUsersInvoice(InvoiceTest.java:163)
+  <testcase name="tcInvoice06_otherUsersInvoice" classname="com.ae.specs.ui.InvoiceTest" time="18.739">
+    <failure message="Locator expected to contain text: Logged in as AE Tester 1795087061032-52&#10;Received: &lt;element(s) not found&gt;&#10;&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for getByRole(AriaRole.BANNER).getByText(&quot;Logged in as&quot;)" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+Locator expected to contain text: Logged in as AE Tester 1795087061032-52
+Received: <element(s) not found>
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for getByRole(AriaRole.BANNER).getByText("Logged in as")
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:47)
+	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:853)
+	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:46)
+	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
+	at com.ae.specs.ui.InvoiceTest.tcInvoice06_otherUsersInvoice(InvoiceTest.java:168)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+  </testcase>
+  <testcase name="tcInvoice05_directFetchSameSession" classname="com.ae.specs.ui.InvoiceTest" time="54.0">
+    <error message="Timeout 30000ms exceeded" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:44)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.PageImpl.waitForEventWithTimeout(PageImpl.java:535)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponseImpl(PageImpl.java:1584)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForResponse$94(PageImpl.java:1576)
+	at com.microsoft.playwright.impl.WaitForEventLogger.lambda$get$0(WaitForEventLogger.java:50)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:41)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1570)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1566)
+	at com.microsoft.playwright.Page.waitForResponse(Page.java:8224)
+	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:67)
+	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
+	at com.ae.specs.ui.InvoiceTest.tcInvoice05_directFetchSameSession(InvoiceTest.java:148)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></error>
   </testcase>
-  <testcase name="tcInvoice05_directFetchSameSession" classname="com.ae.specs.ui.InvoiceTest" time="1.114">
-    <error message="Not a JSON Object: null" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Not a JSON Object: null
-	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:165)
-	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
-	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
-	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
-	at com.ae.specs.ui.InvoiceTest.newInvoiceUser(InvoiceTest.java:50)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice05_directFetchSameSession(InvoiceTest.java:147)
+  <testcase name="tcInvoice04_continueAfterDownload" classname="com.ae.specs.ui.InvoiceTest" time="43.949">
+    <error message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (/tmp/playwright-java-7650368595944322231/package/lib/server/progress.js:75:26)&#10;    at Frame.click (/tmp/playwright-java-7650368595944322231/package/lib/server/frames.js:1022:23)&#10;    at FrameDispatcher.click (/tmp/playwright-java-7650368595944322231/package/lib/server/dispatchers/frameDispatcher.js:158:30)&#10;    at FrameDispatcher._handleCommand (/tmp/playwright-java-7650368595944322231/package/lib/server/dispatchers/dispatcher.js:94:40)&#10;    at DispatcherConnection.dispatch (/tmp/playwright-java-7650368595944322231/package/lib/server/dispatchers/dispatcher.js:361:39)&#10;}&#10;Call log:&#10;-   - waiting for locator(&quot;.features_items .product-image-wrapper&quot;).filter(new Locator.FilterOptions().setHas(locator(&quot;.productinfo p&quot;).getByText(&quot;Blue Top&quot;, new Locator.GetByTextOptions().setExact(true)))).locator(&quot;.productinfo&quot;).getByText(&quot;Add to cart&quot;)&#10;" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-7650368595944322231/package/lib/server/progress.js:75:26)
+    at Frame.click (/tmp/playwright-java-7650368595944322231/package/lib/server/frames.js:1022:23)
+    at FrameDispatcher.click (/tmp/playwright-java-7650368595944322231/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-7650368595944322231/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-7650368595944322231/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for locator(".features_items .product-image-wrapper").filter(new Locator.FilterOptions().setHas(locator(".productinfo p").getByText("Blue Top", new Locator.GetByTextOptions().setExact(true)))).locator(".productinfo").getByText("Add to cart")
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
+	at com.microsoft.playwright.Locator.click(Locator.java:2493)
+	at com.ae.pages.components.ProductCard.lambda$addToCart$1(ProductCard.java:53)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:128)
+	at com.microsoft.playwright.impl.PageImpl.waitForEventWithTimeout(PageImpl.java:535)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponseImpl(PageImpl.java:1584)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForResponse$94(PageImpl.java:1576)
+	at com.microsoft.playwright.impl.WaitForEventLogger.lambda$get$0(WaitForEventLogger.java:50)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:41)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1570)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1566)
+	at com.microsoft.playwright.Page.waitForResponse(Page.java:8224)
+	at com.ae.pages.components.ProductCard.addToCart(ProductCard.java:53)
+	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:49)
+	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
+	at com.ae.specs.ui.InvoiceTest.tcInvoice04_continueAfterDownload(InvoiceTest.java:133)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-7650368595944322231/package/lib/server/progress.js:75:26)
+    at Frame.click (/tmp/playwright-java-7650368595944322231/package/lib/server/frames.js:1022:23)
+    at FrameDispatcher.click (/tmp/playwright-java-7650368595944322231/package/lib/server/dispatchers/frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-7650368595944322231/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-7650368595944322231/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for locator(".features_items .product-image-wrapper").filter(new Locator.FilterOptions().setHas(locator(".productinfo p").getByText("Blue Top", new Locator.GetByTextOptions().setExact(true)))).locator(".productinfo").getByText("Add to cart")
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 31 more
 ]]></error>
   </testcase>
-  <testcase name="tcInvoice04_continueAfterDownload" classname="com.ae.specs.ui.InvoiceTest" time="1.22">
-    <error message="Not a JSON Object: null" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Not a JSON Object: null
-	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:165)
-	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
-	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
-	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
-	at com.ae.specs.ui.InvoiceTest.newInvoiceUser(InvoiceTest.java:50)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice04_continueAfterDownload(InvoiceTest.java:132)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="tcInvoice01_downloadIsTxt" classname="com.ae.specs.ui.InvoiceTest" time="0.826">
-    <error message="Not a JSON Object: null" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Not a JSON Object: null
-	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:165)
-	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
-	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
-	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
-	at com.ae.specs.ui.InvoiceTest.newInvoiceUser(InvoiceTest.java:50)
+  <testcase name="tcInvoice01_downloadIsTxt" classname="com.ae.specs.ui.InvoiceTest" time="14.047">
+    <failure message="Locator expected to contain text: Logged in as AE Tester 1795087177703-56&#10;Received: &lt;element(s) not found&gt;&#10;&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for getByRole(AriaRole.BANNER).getByText(&quot;Logged in as&quot;)" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+Locator expected to contain text: Logged in as AE Tester 1795087177703-56
+Received: <element(s) not found>
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for getByRole(AriaRole.BANNER).getByText("Logged in as")
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:47)
+	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:853)
+	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:46)
+	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
 	at com.ae.specs.ui.InvoiceTest.tcInvoice01_downloadIsTxt(InvoiceTest.java:88)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
+]]></failure>
   </testcase>
-  <testcase name="tcInvoice02_contentHasNameAndTotal" classname="com.ae.specs.ui.InvoiceTest" time="1.065">
-    <error message="Not a JSON Object: null" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Not a JSON Object: null
-	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:165)
+  <testcase name="tcInvoice02_contentHasNameAndTotal" classname="com.ae.specs.ui.InvoiceTest" time="2.873">
+    <error message="com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $&#10;See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json" type="com.google.gson.JsonSyntaxException"><![CDATA[com.google.gson.JsonSyntaxException: 
+com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:116)
+	at com.google.gson.JsonParser.parseString(JsonParser.java:92)
 	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
 	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
 	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
@@ -119,45 +203,70 @@
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $
+See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1754)
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1550)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:625)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:507)
+	at com.google.gson.JsonParser.parseReader(JsonParser.java:111)
+	... 9 more
 ]]></error>
   </testcase>
-  <testcase name="tcInvoice08_forgedAmount" classname="com.ae.specs.ui.InvoiceTest" time="0.764">
-    <error message="Not a JSON Object: null" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Not a JSON Object: null
-	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:165)
-	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
-	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
-	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
-	at com.ae.specs.ui.InvoiceTest.newInvoiceUser(InvoiceTest.java:50)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount(InvoiceTest.java:209)
+  <testcase name="tcInvoice08_forgedAmount" classname="com.ae.specs.ui.InvoiceTest" time="15.559">
+    <failure message="&#10;Expecting actual:&#10;  &quot;Hi Inv1899138414204x7 Payer, Your total purchase amount is 999999. Thank you&quot;&#10;not to contain:&#10;  &quot;purchase amount is 999999&quot;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expecting actual:
+  "Hi Inv1899138414204x7 Payer, Your total purchase amount is 999999. Thank you"
+not to contain:
+  "purchase amount is 999999"
+
+	at com.ae.specs.ui.InvoiceTest.tcInvoice08_forgedAmount(InvoiceTest.java:219)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
+]]></failure>
   </testcase>
-  <testcase name="tcInvoice07_noSession" classname="com.ae.specs.ui.InvoiceTest" time="0.749">
-    <error message="Not a JSON Object: null" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Not a JSON Object: null
-	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:165)
-	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
-	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
-	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
-	at com.ae.specs.ui.InvoiceTest.newInvoiceUser(InvoiceTest.java:50)
-	at com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession(InvoiceTest.java:187)
+  <testcase name="tcInvoice07_noSession" classname="com.ae.specs.ui.InvoiceTest" time="12.309">
+    <failure message="Locator expected to contain text: Logged in as AE Tester 1795087210184-59&#10;Received: &lt;element(s) not found&gt;&#10;&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for getByRole(AriaRole.BANNER).getByText(&quot;Logged in as&quot;)" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+Locator expected to contain text: Logged in as AE Tester 1795087210184-59
+Received: <element(s) not found>
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for getByRole(AriaRole.BANNER).getByText("Logged in as")
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:47)
+	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:853)
+	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:46)
+	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
+	at com.ae.specs.ui.InvoiceTest.tcInvoice07_noSession(InvoiceTest.java:188)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
+]]></failure>
   </testcase>
-  <testcase name="tcInvoice03_twiceIdentical" classname="com.ae.specs.ui.InvoiceTest" time="0.768">
-    <error message="Not a JSON Object: null" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Not a JSON Object: null
-	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:165)
-	at com.ae.fixtures.AccountApi.call(AccountApi.java:73)
-	at com.ae.fixtures.AccountApi.create(AccountApi.java:21)
-	at com.ae.fixtures.OrderFlow.createAccount(OrderFlow.java:34)
-	at com.ae.specs.ui.InvoiceTest.newInvoiceUser(InvoiceTest.java:50)
+  <testcase name="tcInvoice03_twiceIdentical" classname="com.ae.specs.ui.InvoiceTest" time="12.01">
+    <failure message="Locator expected to contain text: Logged in as AE Tester 1795087222505-60&#10;Received: &lt;element(s) not found&gt;&#10;&#10;Call log:&#10;  - Locator.expect with timeout 5000ms&#10;  - waiting for getByRole(AriaRole.BANNER).getByText(&quot;Logged in as&quot;)" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+Locator expected to contain text: Logged in as AE Tester 1795087222505-60
+Received: <element(s) not found>
+
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for getByRole(AriaRole.BANNER).getByText("Logged in as")
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:42)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.containsText(LocatorAssertionsImpl.java:47)
+	at com.microsoft.playwright.assertions.LocatorAssertions.containsText(LocatorAssertions.java:853)
+	at com.ae.fixtures.OrderFlow.placeOrder(OrderFlow.java:46)
+	at com.ae.specs.ui.InvoiceTest.orderAs(InvoiceTest.java:70)
 	at com.ae.specs.ui.InvoiceTest.tcInvoice03_twiceIdentical(InvoiceTest.java:115)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
+]]></failure>
   </testcase>
 </testsuite>
