@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-20T11:07:05+00:00",
+  "generatedAt": "2026-11-21T10:33:55+00:00",
   "commit": "c0f2900e967e536d8d484490977ed7f870408511",
-  "runUrl": "https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/44720917331",
-  "result": "red",
+  "runUrl": "https://github.com/YasserHawass/SubAgentWorkflowTesting/actions/runs/44893831430",
+  "result": "green-with-known-bugs",
   "totals": {
-    "passed": 162,
-    "failed": 32,
+    "passed": 182,
+    "failed": 12,
     "skipped": 0
   },
   "perClass": {
@@ -15,18 +15,18 @@
       "skipped": 0
     },
     "AccountApiTest": {
-      "passed": 10,
-      "failed": 2,
+      "passed": 12,
+      "failed": 0,
       "skipped": 0
     },
     "AuthApiTest": {
-      "passed": 10,
-      "failed": 1,
+      "passed": 11,
+      "failed": 0,
       "skipped": 0
     },
     "BrandsApiTest": {
-      "passed": 5,
-      "failed": 1,
+      "passed": 6,
+      "failed": 0,
       "skipped": 0
     },
     "ProductsApiTest": {
@@ -45,28 +45,28 @@
       "skipped": 0
     },
     "CartTest": {
-      "passed": 9,
-      "failed": 6,
+      "passed": 13,
+      "failed": 2,
       "skipped": 0
     },
     "CategoriesTest": {
-      "passed": 7,
-      "failed": 3,
+      "passed": 8,
+      "failed": 2,
       "skipped": 0
     },
     "CheckoutTest": {
-      "passed": 9,
-      "failed": 1,
+      "passed": 10,
+      "failed": 0,
       "skipped": 0
     },
     "ContactUsTest": {
-      "passed": 10,
-      "failed": 1,
+      "passed": 11,
+      "failed": 0,
       "skipped": 0
     },
     "InvoiceTest": {
-      "passed": 3,
-      "failed": 5,
+      "passed": 6,
+      "failed": 2,
       "skipped": 0
     },
     "LoginTest": {
@@ -75,8 +75,8 @@
       "skipped": 0
     },
     "LogoutTest": {
-      "passed": 5,
-      "failed": 3,
+      "passed": 7,
+      "failed": 1,
       "skipped": 0
     },
     "OrderTest": {
@@ -90,18 +90,18 @@
       "skipped": 0
     },
     "RegisterTest": {
-      "passed": 11,
-      "failed": 1,
+      "passed": 12,
+      "failed": 0,
       "skipped": 0
     },
     "ReviewsTest": {
-      "passed": 11,
-      "failed": 1,
+      "passed": 12,
+      "failed": 0,
       "skipped": 0
     },
     "ScrollTest": {
-      "passed": 5,
-      "failed": 1,
+      "passed": 6,
+      "failed": 0,
       "skipped": 0
     },
     "SearchTest": {
@@ -110,128 +110,38 @@
       "skipped": 0
     },
     "SubscriptionTest": {
-      "passed": 5,
-      "failed": 1,
+      "passed": 6,
+      "failed": 0,
       "skipped": 0
     }
   },
   "failures": [
     {
-      "id": "TC-APIACCOUNT-12",
-      "class": "AccountApiTest",
-      "method": "tcApiAccount12_passwordChangeViaUpdate",
-      "status": "failed",
-      "timeSec": 1.641,
-      "message": "com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $ See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-APIACCOUNT-04",
-      "class": "AccountApiTest",
-      "method": "tcApiAccount04_lifecycle",
-      "status": "failed",
-      "timeSec": 5.649,
-      "message": "com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $ See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-APIAUTH-09",
-      "class": "AuthApiTest",
-      "method": "tcApiAuth09_emptyStringsReturnUserNotFound",
-      "status": "failed",
-      "timeSec": 1.7,
-      "message": "com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $ See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-APIBRANDS-03",
-      "class": "BrandsApiTest",
-      "method": "tcApiBrands03_productBrandsAreListed",
-      "status": "failed",
-      "timeSec": 1.966,
-      "message": "com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $ See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json",
-      "known": false,
-      "bug": ""
-    },
-    {
       "id": "TC-CART-09",
       "class": "CartTest",
       "method": "tcCart09c_quantityNonNumeric",
       "status": "failed",
-      "timeSec": 3.466,
+      "timeSec": 1.045,
       "message": "Expecting actual: 500 to be less than: 500",
       "known": true,
       "bug": "tests/reports/bugs/cart-2.md"
-    },
-    {
-      "id": "TC-CART-06",
-      "class": "CartTest",
-      "method": "tcCart06_removeProducts",
-      "status": "failed",
-      "timeSec": 12.526,
-      "message": "Locator expected to have count: 0 Received: 1 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\"#cart_info_table tbody tr\").filter(new Locator.FilterOptions().setHas(getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(\"Blue Top\").setExact(true)))) 9 \u00d7 locator resolved to",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-CART-04",
-      "class": "CartTest",
-      "method": "tcCart04_quantityFourFromDetailPage",
-      "status": "failed",
-      "timeSec": 12.256,
-      "message": "Locator expected to have text: 4 Received: <element(s) not found> Call log: - Locator.expect with timeout 5000ms - waiting for locator(\"#cart_info_table tbody tr\").filter(new Locator.FilterOptions().setHas(getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(\"Blue Top\").setExact(true)))).loc",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-CART-08",
-      "class": "CartTest",
-      "method": "tcCart08_recommendedItem",
-      "status": "failed",
-      "timeSec": 30.308,
-      "message": "Error { message='Timeout 30000ms exceeded. name='TimeoutError stack='TimeoutError: Timeout 30000ms exceeded. at ProgressController.run (/tmp/playwright-java-3810083321611255698/package/lib/server/progress.js:75:26) at Frame.waitForSelector (/tmp/playwright-java-3810083321611255698/package/lib/server",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-CART-01",
-      "class": "CartTest",
-      "method": "tcCart01_addTwoProducts",
-      "status": "failed",
-      "timeSec": 30.943,
-      "message": "Error { message='Timeout 30000ms exceeded. name='TimeoutError stack='TimeoutError: Timeout 30000ms exceeded. at ProgressController.run (/tmp/playwright-java-3810083321611255698/package/lib/server/progress.js:75:26) at Frame.click (/tmp/playwright-java-3810083321611255698/package/lib/server/frames.js",
-      "known": false,
-      "bug": ""
     },
     {
       "id": "TC-CART-09",
       "class": "CartTest",
       "method": "tcCart09b_quantityNegative",
       "status": "failed",
-      "timeSec": 10.93,
+      "timeSec": 6.236,
       "message": "Locator expected to have count: 0 Received: 1 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\"#cart_info_table tbody tr\").locator(\".cart_quantity\").filter(new Locator.FilterOptions().setHasText(Pattern.compile(\"-\"))) 9 \u00d7 locator resolved to 1 element - unexpected value \"1\"",
       "known": true,
       "bug": "tests/reports/bugs/cart-1.md"
-    },
-    {
-      "id": "TC-CATEGORIES-08",
-      "class": "CategoriesTest",
-      "method": "tcCategories08_everySubcategoryLinkResolves",
-      "status": "failed",
-      "timeSec": 16.349,
-      "message": "expected: 200 but was: 503",
-      "known": false,
-      "bug": ""
     },
     {
       "id": "TC-CATEGORIES-07",
       "class": "CategoriesTest",
       "method": "tcCategories07a_malformedIdAbc",
       "status": "failed",
-      "timeSec": 0.812,
+      "timeSec": 1.036,
       "message": "Expecting actual: \"<!DOCTYPE html><html lang=\"en\"><head> <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"> <title>Page not found at /category_products/abc</title> <meta name=\"robots\" content=\"NONE,NOARCHIVE\"> <style type=\"text/css\"> html * { padding:0; margin:0; } body * { padding:",
       "known": true,
       "bug": "tests/reports/bugs/categories-1.md"
@@ -241,58 +151,18 @@
       "class": "CategoriesTest",
       "method": "tcCategories07c_malformedIdMinusOne",
       "status": "failed",
-      "timeSec": 1.104,
+      "timeSec": 1.116,
       "message": "Expecting actual: \"<!DOCTYPE html><html lang=\"en\"><head> <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"> <title>Page not found at /category_products/-1</title> <meta name=\"robots\" content=\"NONE,NOARCHIVE\"> <style type=\"text/css\"> html * { padding:0; margin:0; } body * { padding:1",
       "known": true,
       "bug": "tests/reports/bugs/categories-1.md"
-    },
-    {
-      "id": "TC-CHECKOUT-10",
-      "class": "CheckoutTest",
-      "method": "tcCheckout10_reloadAndBack",
-      "status": "failed",
-      "timeSec": 1.571,
-      "message": "com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $ See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-CONTACTUS-02",
-      "class": "ContactUsTest",
-      "method": "tcContactUs02_homeButtonReturnsHome",
-      "status": "failed",
-      "timeSec": 30.362,
-      "message": "Error { message='Timeout 30000ms exceeded. name='TimeoutError stack='TimeoutError: Timeout 30000ms exceeded. at ProgressController.run (/tmp/playwright-java-3810083321611255698/package/lib/server/progress.js:75:26) at Frame.fill (/tmp/playwright-java-3810083321611255698/package/lib/server/frames.js:",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-INVOICE-06",
-      "class": "InvoiceTest",
-      "method": "tcInvoice06_otherUsersInvoice",
-      "status": "failed",
-      "timeSec": 72.395,
-      "message": "Error { message='Timeout 30000ms exceeded. name='TimeoutError stack='TimeoutError: Timeout 30000ms exceeded. at ProgressController.run (/tmp/playwright-java-3810083321611255698/package/lib/server/progress.js:75:26) at Frame.fill (/tmp/playwright-java-3810083321611255698/package/lib/server/frames.js:",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-INVOICE-04",
-      "class": "InvoiceTest",
-      "method": "tcInvoice04_continueAfterDownload",
-      "status": "failed",
-      "timeSec": 47.211,
-      "message": "Timeout 30000ms exceeded",
-      "known": false,
-      "bug": ""
     },
     {
       "id": "TC-INVOICE-08",
       "class": "InvoiceTest",
       "method": "tcInvoice08_forgedAmount",
       "status": "failed",
-      "timeSec": 10.834,
-      "message": "Expecting actual: \"Hi Inv1387208415470x7 Payer, Your total purchase amount is 999999. Thank you\" not to contain: \"purchase amount is 999999\"",
+      "timeSec": 8.991,
+      "message": "Expecting actual: \"Hi Inv728836926614x7 Payer, Your total purchase amount is 999999. Thank you\" not to contain: \"purchase amount is 999999\"",
       "known": true,
       "bug": "tests/reports/bugs/invoice-2.md"
     },
@@ -301,58 +171,28 @@
       "class": "InvoiceTest",
       "method": "tcInvoice07_noSession",
       "status": "failed",
-      "timeSec": 0.991,
-      "message": "com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $ See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json",
+      "timeSec": 7.793,
+      "message": "Expecting actual: \"Hi , Your total purchase amount is 500. Thank you\" not to contain: \"purchase amount is 500\"",
       "known": true,
       "bug": "tests/reports/bugs/invoice-1.md"
-    },
-    {
-      "id": "TC-INVOICE-03",
-      "class": "InvoiceTest",
-      "method": "tcInvoice03_twiceIdentical",
-      "status": "failed",
-      "timeSec": 50.611,
-      "message": "Timeout 30000ms exceeded",
-      "known": false,
-      "bug": ""
     },
     {
       "id": "TC-LOGOUT-08",
       "class": "LogoutTest",
       "method": "tcLogout08_logoutWhileLoggedOut",
       "status": "failed",
-      "timeSec": 2.012,
+      "timeSec": 1.066,
       "message": "Expecting actual: \"KeyError at /logout\" not to contain: \"KeyError\"",
       "known": true,
       "bug": "tests/reports/bugs/logout-1.md"
-    },
-    {
-      "id": "TC-LOGOUT-01",
-      "class": "LogoutTest",
-      "method": "tcLogout01_logoutFromHome",
-      "status": "failed",
-      "timeSec": 15.892,
-      "message": "Locator expected to contain text: Logged in as AE Tester 1795171456150-13 Received: <element(s) not found> Call log: - Locator.expect with timeout 5000ms - waiting for getByRole(AriaRole.BANNER).getByText(\"Logged in as\")",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-LOGOUT-06",
-      "class": "LogoutTest",
-      "method": "tcLogout06_loginAgain",
-      "status": "failed",
-      "timeSec": 1.8,
-      "message": "com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $ See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json",
-      "known": false,
-      "bug": ""
     },
     {
       "id": "TC-ORDER-09",
       "class": "OrderTest",
       "method": "tcOrder09_paymentEmptyCart",
       "status": "failed",
-      "timeSec": 6.463,
-      "message": "Locator expected to be visible Call log: - Locator.expect with timeout 5000ms - waiting for getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName(\"Login to your account\"))",
+      "timeSec": 10.444,
+      "message": "Page URL expected not to match regex: .*/payment_done/\\d+$ Received: https://www.automationexercise.com/payment_done/0 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automationexercise.com",
       "known": true,
       "bug": "tests/reports/bugs/order-3.md"
     },
@@ -361,7 +201,7 @@
       "class": "OrderTest",
       "method": "tcOrder07_pastExpiry",
       "status": "failed",
-      "timeSec": 22.13,
+      "timeSec": 15.896,
       "message": "Page URL expected to be: https://www.automationexercise.com/payment Received: https://www.automationexercise.com/payment_done/500 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automatione",
       "known": true,
       "bug": "tests/reports/bugs/order-2.md"
@@ -371,8 +211,8 @@
       "class": "OrderTest",
       "method": "tcOrder06_nonNumericCard",
       "status": "failed",
-      "timeSec": 2.616,
-      "message": "com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $ See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json",
+      "timeSec": 12.369,
+      "message": "Page URL expected to be: https://www.automationexercise.com/payment Received: https://www.automationexercise.com/payment_done/500 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automatione",
       "known": true,
       "bug": "tests/reports/bugs/order-1.md"
     },
@@ -381,82 +221,21 @@
       "class": "ProductsTest",
       "method": "tcProducts10_nonNumericId",
       "status": "failed",
-      "timeSec": 1.021,
+      "timeSec": 0.555,
       "message": "Expecting actual: \"<!DOCTYPE html><html lang=\"en\"><head> <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"> <title>Page not found at /product_details/abc</title> <meta name=\"robots\" content=\"NONE,NOARCHIVE\"> <style type=\"text/css\"> html * { padding:0; margin:0; } body * { padding:10",
       "known": true,
       "bug": "tests/reports/bugs/products-1.md"
-    },
-    {
-      "id": "TC-REGISTER-06",
-      "class": "RegisterTest",
-      "method": "tcRegister06_requiredFieldsOnSignup",
-      "status": "failed",
-      "timeSec": 40.7,
-      "message": "Error { message='Timeout 30000ms exceeded. name='TimeoutError stack='TimeoutError: Timeout 30000ms exceeded. at ProgressController.run (/tmp/playwright-java-3810083321611255698/package/lib/server/progress.js:75:26) at Frame.fill (/tmp/playwright-java-3810083321611255698/package/lib/server/frames.js:",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-REVIEWS-07",
-      "class": "ReviewsTest",
-      "method": "tcReviews07_loggedIn",
-      "status": "failed",
-      "timeSec": 2.155,
-      "message": "com.google.gson.stream.MalformedJsonException: Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON at line 1 column 20 path $ See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json",
-      "known": false,
-      "bug": ""
-    },
-    {
-      "id": "TC-SCROLL-03",
-      "class": "ScrollTest",
-      "method": "tcScroll03_arrowAppearsAfterScroll",
-      "status": "failed",
-      "timeSec": 5.444,
-      "message": "Locator expected to have count: 1 Received: 0 Call log: - Locator.expect with timeout 5000ms - waiting for locator(\"#scrollUp\") 9 \u00d7 locator resolved to 0 elements - unexpected value \"0\"",
-      "known": false,
-      "bug": ""
     },
     {
       "id": "TC-SEARCH-07",
       "class": "SearchTest",
       "method": "tcSearch07_ampersand",
       "status": "failed",
-      "timeSec": 15.075,
+      "timeSec": 13.084,
       "message": "Page URL expected to match regex: ^.*/products\\?search=%26$ Received: https://www.automationexercise.com/products?search=& Call log: - Locator.expect with timeout 5000ms - waiting for locator(\":root\") 9 \u00d7 locator resolved to <html lang=\"en\">\u2026</html> - unexpected value \"https://www.automationexercise",
       "known": true,
       "bug": "tests/reports/bugs/search-1.md"
-    },
-    {
-      "id": "TC-SUBSCRIPTION-06",
-      "class": "SubscriptionTest",
-      "method": "tcSubscription06_placementAndInput",
-      "status": "failed",
-      "timeSec": 30.578,
-      "message": "Error { message='Timeout 30000ms exceeded. name='TimeoutError stack='TimeoutError: Timeout 30000ms exceeded. at ProgressController.run (/tmp/playwright-java-3810083321611255698/package/lib/server/progress.js:75:26) at Frame.waitForSelector (/tmp/playwright-java-3810083321611255698/package/lib/server",
-      "known": false,
-      "bug": ""
     }
   ],
-  "newFailures": [
-    "TC-APIACCOUNT-12",
-    "TC-APIACCOUNT-04",
-    "TC-APIAUTH-09",
-    "TC-APIBRANDS-03",
-    "TC-CART-06",
-    "TC-CART-04",
-    "TC-CART-08",
-    "TC-CART-01",
-    "TC-CATEGORIES-08",
-    "TC-CHECKOUT-10",
-    "TC-CONTACTUS-02",
-    "TC-INVOICE-06",
-    "TC-INVOICE-04",
-    "TC-INVOICE-03",
-    "TC-LOGOUT-01",
-    "TC-LOGOUT-06",
-    "TC-REGISTER-06",
-    "TC-REVIEWS-07",
-    "TC-SCROLL-03",
-    "TC-SUBSCRIPTION-06"
-  ]
+  "newFailures": []
 }
